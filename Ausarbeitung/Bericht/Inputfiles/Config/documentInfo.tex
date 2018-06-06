@@ -1,0 +1,48 @@
+%% Thesis date definitions
+\newdate{reportdate}{\the\day}{\the\month}{\the\year}
+\newdate{topicdate}{13}{11}{2017}
+
+%% Thesis information
+\newcommand{\reportauthor}{Rainer Stellnberger, Julian Buschbaum, Benjamin Lars Northe}
+%\newcommand{\reportgroup}{1}
+%\newcommand{\reportsubsubtitle}{Subsubtitle}
+\newcommand{\reporttitle}{Seminarausarbeitung Projektseminar Beschleunigertechnik}
+\newcommand{\reporttopic}{Parameteranalyse Impedanz Rinkern-Kurzschluss}
+\newcommand{\reportkeywords}{-}
+
+
+
+\hypersetup{%
+	pdftitle={\reporttitle},
+	pdfauthor={\reportauthor},
+	pdfsubject={\reporttitle},
+	pdfkeywords={\reportkeywords},
+	pdfview=FitH,
+	pdfstartview=FitV,
+	pdfcopyright={\copyright 2018 by \reportauthor.  All rights reserved.},
+	pdfinfo={
+				Copyright={\copyright Date by \reportauthor.  All rights reserved.}
+			},
+	}
+
+
+
+%%% ============ Title Page Setup ============
+
+%%% Title page configuration
+%\title{\fontsize{31}{31}\selectfont\reporttitle} % unmodified font-size (32,32?) would introduce an ugly line break
+%\subtitle{\reporttopic\vspace{0.5em}}
+%\subsubtitle{Autor: \reportauthor\\Datum: \displaydate{reportdate}}
+%\setinstitutionlogo{../Material/logo/ies_logo_vectorized}
+
+%% Title page from IES Template
+\title{\reporttopic}
+\subtitle{\reporttitle\ von \reportauthor}
+\subsubtitle{Matrikelnummer: --\\
+    Betreuer: Jens Harzheim\\
+    Start: -- \textbar\ Ende: --\\
+    Fachgebiet --\hfill\textbar\hfill Prof.\,Dr.-Ing.\, --}
+%\uppertitleback{(\textaccent{\textbackslash uppertitleback})}
+%\lowertitleback{(\textaccent{\textbackslash lowertitleback})\hfill\today}
+\institution{}
+\setinstitutionlogo{../Inputfiles/Graphics/Logo/temf.png}

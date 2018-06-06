@@ -12,3 +12,84 @@
 %% apply \textbf to math mode as well (via \boldmath)
 \let\oldtextbf=\textbf
 \renewcommand\textbf[1]{{\boldmath\oldtextbf{#1}}}
+
+
+\renewcommand{\textrightarrow}{\ensuremath{\rightarrow}\xspace}
+
+\renewcommand\plparsep{1ex}									% vertical list item spacing
+
+%% calculate longtable width
+\newlength{\longtablewidth}
+\setlength{\longtablewidth}{0.7\linewidth}
+\addtolength{\longtablewidth}{-\marginparsep}
+\addtolength{\longtablewidth}{-\marginparwidth}
+
+%% marginalia (side node) configuration
+\newif\ifTUDmargin\TUDmarginfalse
+	% \TUDmargintrue 					% uncommenting the line below will enable marginalia
+	\ifTUDmargin\makeatletter
+	\TUD@setmarginpar{2}
+\makeatother\fi
+
+%% automatic quotation mark adjustment settings
+\MakeInnerQuote{|}						% define character for inner quotation marks (to be replaced by correct quotation marks by csquotes)
+\MakeOuterQuote{"}						% define character for outer quotation marks (to be replaced by correct quotation marks by csquotes)
+
+%% configuration of enumerations
+%\setlist{noitemsep}					% disable whitespace in enumerations
+
+%% xspace exceptions
+\xspaceaddexceptions{"}					% remove whitespace in front of quotation marks if \xspace command is used
+
+%% change format for subfigures (style 'simple'): Add small space in between
+\makeatletter
+\g@addto@macro\p@subfigure{\,}
+\makeatother
+
+%\pgfplotsset{compat=newest}
+
+\addparagraphcolumntypes{X}				% Register tabularx column type for use with celltypes package
+
+%\titleclass{\chapter}{straight}			%% start new chapter on same page by default
+
+%% listings style for plain text reports
+\lstdefinestyle{report}{
+	language={},
+	captionpos=b,
+	frame=single,
+	keepspaces=true,
+	breakatwhitespace=false,
+	breaklines=true,
+	captionpos=t,
+	literate={\-}{}{0\discretionary{-}{}{-}},
+	basicstyle=\tiny
+}
+
+
+%%% ============ Color Definitions ============
+
+\definecolor{optionalcolor}{named}{lightgray}				% define color to be used for optional parts
+\definecolor{shadecolor}{named}{optionalcolor}		% define color to be used for optional parts using the "optionalbox" environment
+
+
+%%% ============  Other Hacks ============
+
+%%% ------------  URL Hacks ------------
+
+\urlstyle{rm}													% use \rmfamily instead of default \ttfamily style for URL links
+
+
+%%% ============ Commands and Environments ============
+
+%% Chapter without pagebreak
+\makeatletter
+\newcommand\Chapter{\par\vspace{2cm}
+                    \global\@topnum\z@
+                    \@afterindentfalse
+                    \secdef\@chapter\@schapter}
+
+%% Bring book-type's frontmatter/mainmatter/backmatter commands to tudreport
+\newcommand\frontmatter{\cleardoublepage\pagenumbering{roman}}
+\newcommand\mainmatter{\cleardoublepage\pagenumbering{arabic}}
+\newcommand\backmatter{\if@openright\cleardoublepage\else\clearpage\fi}
+

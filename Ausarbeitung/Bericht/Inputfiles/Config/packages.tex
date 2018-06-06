@@ -1,0 +1,108 @@
+
+%% main packages
+\usepackage[utf8]{inputenc}  			% file encoding: UTF-8
+\usepackage[ngerman]{babel}			    % language selection
+\usepackage{microtype} 					% typographic refinements
+
+%% tables
+\usepackage{booktabs}					% alternative table style
+\usepackage{multirow}					% support tabular cells spanning multiple rows
+\usepackage{longtable}					% multi-page tables
+\usepackage{tabularx}					% tables with adjustable cell width
+
+%% figures / placement
+\usepackage{multicol}					% support for multi-column sections
+\usepackage{subfig}
+% \usepackage{subcaption}					% support multiple figures within one figure
+\usepackage{float}						% support forced "here" placement
+\usepackage{wrapfig}					% support figures with text wrapped around
+
+%% graphics
+\usepackage{graphicx}					% enhanced graphics support
+\usepackage{xcolor}		% color support (already loaded by "pgf")
+\usepackage{soul}
+%\usepackage{pgf}						% graphics creation environment backend
+
+\usepackage{tikz}						% graphics creation environment frontend
+\usepackage{tikz-cd}
+\usepackage{import}
+\usepackage{multicol}
+% 
+\usepackage{pgfplots}					% graph plotting for pgf/tikz
+\pgfplotsset{compat=1.12, grid style={gray,dotted}}
+
+\usetikzlibrary{external} %% comment out to stop externalization of tikz pictures
+\tikzexternalize[optimize=false, prefix=tikz-external/] % path to store the externalized stuff in
+\tikzset{external/force remake = false}
+\tikzexternalize
+
+%% mathematics
+\usepackage{amsmath}					% enhanced mathematics support
+\usepackage{nicefrac}					% nice inline fractions
+\usepackage{icomma}						% support comma as decimal separator
+
+%% source code
+%\usepackage{listings}					% support for source code listings
+\usepackage[many]{tcolorbox}
+\tcbuselibrary{listings}
+
+%% misc
+\usepackage{paralist}					% enhanced list styles and environments
+\usepackage{textcomp} 					% additional symbols
+\usepackage[nottoc, numbib]{tocbibind}	% ToC modification: do not include ToC, number bibliography heading
+\usepackage{enumerate}					% simplified enumeration formatting (counter style)
+\usepackage{enumitem}					% enhanced enumeration manipulation
+\usepackage[stable]{footmisc}			% support footnotes in section titles
+% \usepackage{makeidx}					% support for makeindex
+\usepackage{xstring}					% support for string manipulation
+\usepackage{xkeyval}					% extended key-value decoder
+%\usepackage{soul}						% enhanced highlighing support
+\usepackage[super]{nth}					% superscript 1st, 2nd ...
+\usepackage[english=american]{csquotes}	% automatic quotation marks
+\usepackage{datetime}					% date and time formatting
+\usepackage{etoolbox}					% LaTeX programming toolbox
+\usepackage{xpatch}						% enhanced latex patching support
+\usepackage{xspace}						% support for content-dependent spacing
+\usepackage[binary-units=true,exponent-product=\cdot]{siunitx}	% support values with SI units and binary units
+\usepackage{ifdraft}					% allow commands that depend on the draft/final option
+\usepackage{framed}						% environmant drawing a frame around the text
+\usepackage{comment}					% selectively include / exclude text
+\usepackage{verbatim}					% use reimplemented verbatim environment
+\usepackage{outlines}					% support for simplified lists
+\usepackage{rotating}					% support for rotated floating environments
+%\usepackage{circuitikz}					% add circuit symbols for tikz/pgf
+\usepackage[percent]{overpic}			% suppoerr image overlays
+\usepackage{pict2e}						% allow graphical vector with floating point units
+\usepackage[section]{placeins}					% provide \FloatBarrier command
+\usepackage[normalem]{ulem}				% support for underlining in text mode (withough breaking \em)
+\usepackage[version=4]{mhchem}			% support for chemistry stuff
+\usepackage{chngcntr}					% commands for influencing counters
+\usepackage{varwidth}					% variable width minipages
+\usepackage[referable,flushleft]{threeparttablex}	% table with footnotes, reqired for own hypertabular environment
+\usepackage{afterpage}					% support for delayed commands (invoked on next page)
+\usepackage{calc}						% latex arithmetics
+%\usepackage{tikz-timing}				% timing diagrams for tikz/pgf
+\usepackage{xparse}						% enhanced commands interface
+%\usepackage{todonotes}
+\usepackage[disable]{todonotes}					% support for todo notes
+% \usepackage[list=true, listformat=simple]{subcaption}					% subfigure support
+\usepackage{cellspace}					% enhanced spacing in tables
+\usepackage{blindtext}
+%\usepackage{rotfloat}
+%\usepackage{lscape}
+\usepackage{titlesec}					% title format manipulation
+
+%% referencing (do not change package order!)
+\usepackage{varioref}					% improved referencing
+\usepackage[american, breaklinks]{hyperref} 	% cross-referencing and PDF metadata (direct loading in non-PDF/A mode only)
+\usepackage{hyperxmp}
+\usepackage[sort,compress,noabbrev,nameinlink]{cleveref}	% simplified referencing
+\usepackage[numbers]{natbib}
+\bibliographystyle{unsrt}
+
+%% hacks
+\usepackage{scrhack}					% fixes some latex interoperability issues
+
+%% others
+% \usepackage{array}
+% \newcolumntype{M}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
