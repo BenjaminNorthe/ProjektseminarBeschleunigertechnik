@@ -1,0 +1,208 @@
+% This file was created with JabRef 2.10.
+% Encoding: UTF-8
+
+
+@Book{bathe2002finite,
+  Title                    = {Finite-elemente-methoden},
+  Author                   = {Bathe, Klaus-J{\"u}rgen},
+  Publisher                = {Springer Berlin},
+  Year                     = {2002},
+  Volume                   = {2}
+}
+
+@Article{behrensneue,
+  Title                    = {Neue Methoden zur Vermeidung der Schwingungen des Pressen-k{\"o}rpers und des Pressenst{\"o}{\ss}els beim Scherschneiden},
+  Author                   = {Behrens, Ing Bernd-Arno and Krimm, Ing Richard and Hilscher, Stefan},
+  Journal                  = {Verlag Meisenbach GmbH, Franz-Ludwig-Str. 7 a, 96047 Bamberg, http://www.utfscience.de},
+  Year                     = {2014}
+}
+
+@Electronic{bruderer2013,
+  Title                    = {Datenblatt BSTA 810},
+
+  Address                  = {CH - 9320 Frasnacht},
+  Author                   = {BrudererAG},
+  Year                     = {2013},
+
+  Owner                    = {julian},
+  Timestamp                = {2017.03.03}
+}
+
+@Book{dankert2013technische,
+  Title                    = {Technische Mechanik: Statik, Festigkeitslehre, Kinematik/Kinetik},
+  Author                   = {Dankert, J{\"u}rgen and Dankert, Helga},
+  Publisher                = {Springer-Verlag},
+  Year                     = {2013}
+}
+
+@Book{doege2010handbuch,
+  Title                    = {Handbuch Umformtechnik},
+  Author                   = {Doege, Bernd-Arno Behrens Eckart and Behrens, Bernd-Arno},
+  Publisher                = {Springer},
+  Year                     = {2010}
+}
+
+@Book{dresig2006schwingungen,
+  Title                    = {Schwingungen mechanischer Antriebssysteme},
+  Author                   = {Dresig, Hans},
+  Publisher                = {Springer},
+  Year                     = {2006}
+}
+
+@Book{dresig2013maschinendynamik,
+  Title                    = {Maschinendynamik},
+  Author                   = {Dresig, Hans and Holzwei{\ss}ig, Franz},
+  Publisher                = {Springer-Verlag},
+  Year                     = {2013}
+}
+
+@Book{freymann2011strukturdynamik,
+  Title                    = {Strukturdynamik: ein anwendungsorientiertes Lehrbuch},
+  Author                   = {Freymann, Raymond},
+  Publisher                = {Springer-Verlag},
+  Year                     = {2011}
+}
+
+@InCollection{gross1960biegefedern,
+  Title                    = {Die Biegefedern},
+  Author                   = {Gross, Dipl-Ing Siegfried},
+  Booktitle                = {Berechnung und Gestaltung von Metallfedern},
+  Publisher                = {Springer},
+  Year                     = {1960},
+  Pages                    = {14--91}
+}
+
+@Book{janocha1999adaptronics,
+  Title                    = {Adaptronics and smart structures},
+  Author                   = {Janocha, Hartmut and others},
+  Publisher                = {Springer},
+  Year                     = {1999}
+}
+
+@Misc{klocke2006fertigungsverfahren,
+  Title                    = {Fertigungsverfahren 4-Umformen, 5. neu bearbeitete Auflage},
+
+  Author                   = {Klocke, F and K{\"o}nig, W},
+  Year                     = {2006},
+
+  Publisher                = {Springer Verlag}
+}
+
+@Book{koether1999fertigungstechnik,
+  Title                    = {Fertigungstechnik f{\"u}r Wirtschaftsingenieure},
+  Author                   = {Koether, Reinhard and Rau, Wolfgang},
+  Publisher                = {Hanser},
+  Year                     = {1999}
+}
+
+@MastersThesis{Lieberenz2017,
+  Title                    = {Untersuchung des Einflusses der Werkzeugspannsituation auf das dynamische Verhalten eines Scherschneidwerkzeugs},
+  Author                   = {Marc Lieberenz},
+  School                   = {TU Darmstadt},
+  Year                     = {2017},
+  Month                    = {Februar},
+
+  Owner                    = {julian},
+  Timestamp                = {2017.03.04}
+}
+
+@Book{markert2013strukturdynamik,
+  Title                    = {Strukturdynamik},
+  Author                   = {Markert, Richard},
+  Publisher                = {Shaker},
+  Year                     = {2013}
+}
+
+@Book{porat1997course,
+  Title                    = {A course in digital signal processing},
+  Author                   = {Porat, Boaz},
+  Publisher                = {Wiley New York},
+  Year                     = {1997},
+  Volume                   = {1}
+}
+
+@Book{priestley1981,
+  Title                    = {Spectral Analysis and Time Series},
+  Author                   = {Priestley, MB},
+  Publisher                = {London: Academic Press},
+  Year                     = {1981},
+  Number                   = {ISBN: 0125649223},
+  Series                   = {Univariate Series.},
+  Volume                   = {1},
+
+  Owner                    = {julian},
+  Timestamp                = {2017.03.19}
+}
+
+@Book{roddeck1997einfuhrung,
+  Title                    = {Einf{\"u}hrung in die Mechatronik},
+  Author                   = {Roddeck, Werner},
+  Publisher                = {Springer},
+  Year                     = {1997}
+}
+
+@Book{schafer1999numerik,
+  Title                    = {Numerik im Maschinenbau},
+  Author                   = {Sch{\"a}fer, Michael},
+  Publisher                = {Springer},
+  Year                     = {1999}
+}
+
+@Electronic{solidworks2016,
+  Title                    = {Dynamische Analyse},
+  Author                   = {Solidworks},
+  Language                 = {deutsch},
+  Url                      = {http://www.solidworks.de/sw/products/simulation/dynamic-analysis.htm},
+  Year                     = {2016},
+
+  Owner                    = {julian},
+  Timestamp                = {2017.01.17}
+}
+
+@Article{sommer2010verschleiss,
+  Title                    = {Verschlei{\ss} metallischer Werkstoffe},
+  Author                   = {Sommer, Karl and Heinz, Rudolf and Sch{\"o}fer, J{\"o}rg},
+  Journal                  = {Wiesbaden: Vieweg+ Teubner},
+  Year                     = {2010},
+  Number                   = {4},
+  Volume                   = {90},
+
+  Publisher                = {Springer}
+}
+
+@Book{voth2007dynamik,
+  Title                    = {Dynamik schwingungsf{\"a}higer Systeme: Von der Modellbildung bis zur Betriebsfestigkeitsrechnung mit MATLAB/SIMULINK{\textregistered}},
+  Author                   = {V{\"o}th, Stefan},
+  Publisher                = {Springer-Verlag},
+  Year                     = {2007}
+}
+
+@Electronic{VDI2016schwingungsreduzierung,
+  Title                    = {Ursachenermittlung und Reduzierung der Schwingungen},
+  Author                   = {VDI-Wissensforum},
+  Url                      = {https://www.vdi-wissensforum.de/weiterbildung-maschinenbau/reduzierung-der-schwingungen/},
+  Year                     = {2016},
+
+  Owner                    = {julian},
+  Timestamp                = {2016.11.08}
+}
+
+@Article{wandinger2013elastodynamik,
+  Title                    = {Elastodynamik},
+  Author                   = {Wandinger, Ing Johannes},
+  Journal                  = {Vorlesungsskript, HAW Landshut},
+  Year                     = {2013}
+}
+
+@InProceedings{wang1992fuzzy,
+  Title                    = {Fuzzy systems are universal approximators},
+  Author                   = {Wang, L-X},
+  Booktitle                = {Fuzzy Systems, 1992., IEEE International Conference on},
+  Year                     = {1992},
+  Organization             = {IEEE},
+  Pages                    = {1163--1170}
+}
+
+@Misc{dsp,
+}
+

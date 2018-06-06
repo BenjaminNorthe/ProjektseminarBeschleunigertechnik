@@ -1,0 +1,27 @@
+%% Remove whitespace in front of this commands
+\newcommand{\erasewhitespacebefore}{\leavevmode\unskip}
+
+%% Comment to print arrow (workaround for the missing \textrightarrow in TUD design fonts)
+\newcommand{\arrowright}{$\rightarrow$\xspace}
+
+%% Add \tocless in front of \section to omit adding section to ToC, without affecting numbering
+\newcommand{\nocontentsline}[3]{}
+\newcommand{\tocless}[2]{\bgroup\let\addcontentsline=\nocontentsline#1{#2}\egroup}
+
+%% Rotate content 90° on odd and 270° on even pages
+\newcommand{\sidewaysbox}[1]{\ifthispageodd{\rotatebox{90}{#1}}{\rotatebox{270}{#1}}}
+
+%% Captions that include references at the end that should not be shown in the list of figures / tables
+%% #1:	The caption, without references
+%% #2:	The references
+\newcommand{\capref}[2]{\caption[#1]{#1 #2}}
+
+%% Print something rotated by 90 degrees
+%% #1:	The part to print rotated
+\newcommand\tabrotate[1]{\rotatebox{90}{{~#1}}}
+
+\newcommand{\bitstyle}[1]{#1}
+\newcommand{\bytestyle}[1]{\textbf{#1}}
+
+%% Format for assembler operations
+\newcommand{\op}[1]{\texttt{\MakeUppercase{#1}}}

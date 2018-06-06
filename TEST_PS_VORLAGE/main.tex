@@ -1,0 +1,29 @@
+\documentclass[accentcolor=tud9b, toc=bib, toc=listof, captions=abovetable, parskip=half, colorbacktitle, inverttitle, bigchapter, 11pt]{tudreport}
+
+\input{input/praeambel}
+	
+\begin{document}
+	\maketitle
+	\pagenumbering{Roman}
+	\pagestyle{headings} %Kopf- und Fußzeile an
+	\setcounter{tocdepth}{2} %Tiefe des Inhaltsverzeichnisses
+	\tableofcontents %Inhaltsverzeichnis erstellen
+	
+	\clearpage %muss hier stehen sonst klappt die Umschaltung der Seitennummerierung nicht
+	\pagenumbering{arabic}
+	
+	%einfuegen der einzelnen Unterkapitel
+	\input{input/test1}
+	%************* Verzeichnisse ************
+	\clearpage
+	\printbibliography %Literatur
+	%\listoffigures %Abbildungen
+	%****************************************
+
+	%****************************************
+	% Anhang
+	%****************************************	
+	
+	\appendix
+	\addcontentsline{toc}{chapter}{Anhang}
+\end{document}

@@ -1,0 +1,14 @@
+
+%% ============== Configuration flags ============== 
+
+\def\outputstyledraft{} 		% enables draft style if active
+
+\DeclareFontFamily{OT1}{pzc}{}
+\DeclareFontShape{OT1}{pzc}{m}{it}{<-> s * [0.900] pzcmi7t}{}
+\DeclareMathAlphabet{\mathpzc}{OT1}{pzc}{m}{it}
+
+%% ============== Hacks ============== 
+
+%% apply \textbf to math mode as well (via \boldmath)
+\let\oldtextbf=\textbf
+\renewcommand\textbf[1]{{\boldmath\oldtextbf{#1}}}

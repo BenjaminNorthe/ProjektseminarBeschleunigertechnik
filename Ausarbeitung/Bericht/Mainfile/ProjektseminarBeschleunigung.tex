@@ -1,0 +1,320 @@
+\documentclass[parskip, twoside, accentcolor=tud9b, colorback, breaklinks, noresetcounter, noheadingspace, pdfencoding=unicode, 11pt, bigchapter, numbersubsubsec, numbers=noenddot, linedtoc, longdoc]{tudreport}
+
+
+%%% ============ Package Section ============
+
+%% main packages
+\usepackage[utf8]{inputenc}  			% file encoding: UTF-8
+\usepackage[german]{babel}			    % language selection
+\usepackage{microtype} 					% typographic refinements
+
+%% tables
+\usepackage{booktabs}					% alternative table style
+\usepackage{multirow}					% support tabular cells spanning multiple rows
+\usepackage{longtable}					% multi-page tables
+\usepackage{tabularx}					% tables with adjustable cell width
+
+%% figures / placement
+\usepackage{multicol}					% support for multi-column sections
+\usepackage{subcaption}					% support multiple figures within one figure
+\usepackage{float}						% support forced "here" placement
+\usepackage{wrapfig}					% support figures with text wrapped around
+
+%% graphics
+\usepackage{graphicx}					% enhanced graphics support
+\usepackage{xcolor}		% color support (already loaded by "pgf")
+\usepackage{soul}
+%\usepackage{pgf}						% graphics creation environment backend
+\usepackage{tikz}						% graphics creation environment frontend
+\usepackage{pgfplots}					% graph plotting for pgf/tikz
+\usepackage{tikzscale}
+
+
+%% mathematics
+\usepackage{amsmath}					% enhanced mathematics support
+\usepackage{nicefrac}					% nice inline fractions
+\usepackage{icomma}						% support comma as decimal separator
+
+%% source code
+%\usepackage{listings}					% support for source code listings
+\usepackage[many]{tcolorbox}
+\tcbuselibrary{listings}
+
+%% misc
+\usepackage{paralist}					% enhanced list styles and environments
+\usepackage{textcomp} 					% additional symbols
+\usepackage[nottoc, numbib]{tocbibind}	% ToC modification: do not include ToC, number bibliography heading
+\usepackage{enumerate}					% simplified enumeration formatting (counter style)
+\usepackage{enumitem}					% enhanced enumeration manipulation
+\usepackage[stable]{footmisc}			% support footnotes in section titles
+% \usepackage{makeidx}					% support for makeindex
+\usepackage{xstring}					% support for string manipulation
+\usepackage{xkeyval}					% extended key-value decoder
+%\usepackage{soul}						% enhanced highlighing support
+\usepackage[super]{nth}					% superscript 1st, 2nd ...
+\usepackage[english=american]{csquotes}	% automatic quotation marks
+\usepackage{datetime}					% date and time formatting
+\usepackage{etoolbox}					% LaTeX programming toolbox
+\usepackage{xpatch}						% enhanced latex patching support
+\usepackage{xspace}						% support for content-dependent spacing
+\usepackage[binary-units=true,exponent-product=\cdot]{siunitx}	% support values with SI units and binary units
+\usepackage{ifdraft}					% allow commands that depend on the draft/final option
+\usepackage{framed}						% environmant drawing a frame around the text
+\usepackage{comment}					% selectively include / exclude text
+\usepackage{verbatim}					% use reimplemented verbatim environment
+\usepackage{outlines}					% support for simplified lists
+\usepackage{rotating}					% support for rotated floating environments
+%\usepackage{circuitikz}					% add circuit symbols for tikz/pgf
+\usepackage[percent]{overpic}			% suppoerr image overlays
+\usepackage{pict2e}						% allow graphical vector with floating point units
+\usepackage[section]{placeins}					% provide \FloatBarrier command
+\usepackage[normalem]{ulem}				% support for underlining in text mode (withough breaking \em)
+\usepackage[version=4]{mhchem}			% support for chemistry stuff
+\usepackage{chngcntr}					% commands for influencing counters
+\usepackage{varwidth}					% variable width minipages
+\usepackage[referable,flushleft]{threeparttablex}	% table with footnotes, reqired for own hypertabular environment
+\usepackage{afterpage}					% support for delayed commands (invoked on next page)
+\usepackage{calc}						% latex arithmetics
+%\usepackage{tikz-timing}				% timing diagrams for tikz/pgf
+\usepackage{xparse}						% enhanced commands interface
+%\usepackage{todonotes}
+\usepackage[disable]{todonotes}					% support for todo notes
+\usepackage[list=true, listformat=simple]{subcaption}					% subfigure support
+\usepackage{cellspace}					% enhanced spacing in tables
+\usepackage{blindtext}
+%\usepackage{rotfloat}
+%\usepackage{lscape}
+\usepackage{titlesec}					% title format manipulation
+
+%% referencing (do not change package order!)
+\usepackage{varioref}					% improved referencing
+\usepackage[american, breaklinks]{hyperref} 	% cross-referencing and PDF metadata (direct loading in non-PDF/A mode only)
+\usepackage{hyperxmp}
+\usepackage[sort,compress,noabbrev,nameinlink]{cleveref}	% simplified referencing
+\usepackage[numbers]{natbib}
+\bibliographystyle{unsrt}
+
+%% hacks
+\usepackage{scrhack}					% fixes some latex interoperability issues
+
+%% others
+%\usepackage{subfigure}
+\usepackage{array}
+\newcolumntype{M}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
+
+
+%%% ============ Configuration and Refinements ============
+
+%% Load special configuration (flags)
+\input{../Inputfiles/Config/configuration.tex}
+
+\renewcommand{\textrightarrow}{\ensuremath{\rightarrow}\xspace}
+
+\renewcommand\plparsep{1ex}									% vertical list item spacing
+
+%% calculate longtable width
+\newlength{\longtablewidth}
+\setlength{\longtablewidth}{0.7\linewidth}
+\addtolength{\longtablewidth}{-\marginparsep}
+\addtolength{\longtablewidth}{-\marginparwidth}
+
+%% marginalia (side node) configuration
+\newif\ifTUDmargin\TUDmarginfalse
+	% \TUDmargintrue 					% uncommenting the line below will enable marginalia
+	\ifTUDmargin\makeatletter
+	\TUD@setmarginpar{2}
+\makeatother\fi
+
+%% automatic quotation mark adjustment settings
+\MakeInnerQuote{|}						% define character for inner quotation marks (to be replaced by correct quotation marks by csquotes)
+\MakeOuterQuote{"}						% define character for outer quotation marks (to be replaced by correct quotation marks by csquotes)
+
+%% configuration of enumerations
+%\setlist{noitemsep}					% disable whitespace in enumerations
+
+%% xspace exceptions
+\xspaceaddexceptions{"}					% remove whitespace in front of quotation marks if \xspace command is used
+
+%% change format for subfigures (style 'simple'): Add small space in between
+\makeatletter
+\g@addto@macro\p@subfigure{\,}
+\makeatother
+
+%\pgfplotsset{compat=newest}
+
+\addparagraphcolumntypes{X}				% Register tabularx column type for use with celltypes package
+
+%\titleclass{\chapter}{straight}			%% start new chapter on same page by default
+
+%% listings style for plain text reports
+\lstdefinestyle{report}{
+	language={},
+	captionpos=b,
+	frame=single,
+	keepspaces=true,
+	breakatwhitespace=false,
+	breaklines=true,
+	captionpos=t,
+	literate={\-}{}{0\discretionary{-}{}{-}},
+	basicstyle=\tiny
+}
+
+
+%%% ============ Color Definitions ============
+
+\definecolor{optionalcolor}{named}{lightgray}				% define color to be used for optional parts
+\definecolor{shadecolor}{named}{optionalcolor}		% define color to be used for optional parts using the "optionalbox" environment
+
+
+%%% ============  Other Hacks ============
+
+%%% ------------  URL Hacks ------------
+
+\urlstyle{rm}													% use \rmfamily instead of default \ttfamily style for URL links
+
+
+%%% ============ Commands and Environments ============
+
+%% Chapter without pagebreak
+\makeatletter
+\newcommand\Chapter{\par\vspace{2cm}
+                    \global\@topnum\z@
+                    \@afterindentfalse
+                    \secdef\@chapter\@schapter}
+
+%% Bring book-type's frontmatter/mainmatter/backmatter commands to tudreport
+\newcommand\frontmatter{\cleardoublepage\pagenumbering{roman}}
+\newcommand\mainmatter{\cleardoublepage\pagenumbering{arabic}}
+\newcommand\backmatter{\if@openright\cleardoublepage\else\clearpage\fi}
+
+
+\makeatother
+
+%%% ============ Document Information ============
+
+%% Thesis date definitions
+\newdate{reportdate}{\the\day}{\the\month}{\the\year}
+\newdate{topicdate}{13}{11}{2017}
+
+%% Thesis information
+\newcommand{\reportauthor}{Rainer Stellnberger, Julian Buschbaum, Benjamin Lars Northe}
+%\newcommand{\reportgroup}{1}
+%\newcommand{\reportsubsubtitle}{Subsubtitle}
+\newcommand{\reporttitle}{Seminarausarbeitung Projektseminar Beschleunigertechnik}
+\newcommand{\reporttopic}{Parameteranalyse Impedanz Rinkern-Kurzschluss}
+\newcommand{\reportkeywords}{-}
+
+
+
+\hypersetup{%
+	pdftitle={\reporttitle},
+	pdfauthor={\reportauthor},
+	pdfsubject={\reporttitle},
+	pdfkeywords={\reportkeywords},
+	pdfview=FitH,
+	pdfstartview=FitV,
+	pdfcopyright={\copyright 2018 by \reportauthor.  All rights reserved.},
+	pdfinfo={
+				Copyright={\copyright Date by \reportauthor.  All rights reserved.}
+			},
+	}
+
+
+
+%%% ============ Title Page Setup ============
+
+%%% Title page configuration
+%\title{\fontsize{31}{31}\selectfont\reporttitle} % unmodified font-size (32,32?) would introduce an ugly line break
+%\subtitle{\reporttopic\vspace{0.5em}}
+%\subsubtitle{Autor: \reportauthor\\Datum: \displaydate{reportdate}}
+%\setinstitutionlogo{../Material/logo/ies_logo_vectorized}
+
+%% Title page from IES Template
+\title{\reporttopic}
+\subtitle{\reporttitle\ von \reportauthor}
+\subsubtitle{Matrikelnummer: --\\
+    Betreuer: Jens Harzheim\\
+    Start: -- \textbar\ Ende: --\\
+    Fachgebiet --\hfill\textbar\hfill Prof.\,Dr.-Ing.\, --}
+%\uppertitleback{(\textaccent{\textbackslash uppertitleback})}
+%\lowertitleback{(\textaccent{\textbackslash lowertitleback})\hfill\today}
+\institution{}
+\setinstitutionlogo{../Inputfiles/Graphics/Logo/temf.png}
+
+%%% ============ Initialization Commands ============
+
+%\makeindex											% invoke index creation
+\tikzstyle{every picture}+=[remember picture]		% set remember pricture flag to allow tikz/pgf-based annotation of images
+\tikzstyle{na} = [baseline=-.5ex]					% tikz formatting
+\usetikzlibrary{arrows.meta, positioning, calc, decorations.pathreplacing, matrix, fit, plotmarks, shapes, arrows, automata, patterns}		% tikz libraries to be included
+
+%%% ============ Custom Commands ============
+
+\input{../Inputfiles/Config/commands.tex}
+
+%%% ============ Document ============
+
+\begin{document}
+
+%% Title Page %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frontmatter
+\hypersetup{pageanchor=false}
+\maketitle
+\hypersetup{pageanchor=true}
+\cleardoublepage
+
+%% Erklärung
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\pagestyle{empty}
+%\pagenumbering{roman}
+%\input{./Inputfiles/erklaerung.tex}
+
+%% Table of Contents %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cleardoublepage
+\pagestyle{plain}
+\pdfbookmark{\contentsname}{contents}
+\tableofcontents
+\cleardoublepage
+
+
+%% Main Part %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\mainmatter
+\pagestyle{headings}
+\pagenumbering{arabic}
+
+\chapter{Einleitung}\label{chap:Kapitel1}
+    \input{../Inputfiles/Chapters/Motivation.tex}
+    \input{../Inputfiles/Chapters/Aufgabenstellung.tex}
+    
+\chapter{Bearbeitung}
+    \input{../Inputfiles/Chapters/Vorbereitung.tex}
+    \input{../Inputfiles/Chapters/Messung.tex}
+    \input{../Inputfiles/Chapters/Simulation.tex}
+
+
+%% Appendix %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagestyle{plain}
+\appendix
+\newcommand{\hiddensection}[1]{
+    \stepcounter{section}
+    \section*{\Alph{chapter}.\arabic{section}\hspace{0.8em}{#1}}
+}
+\chapter{Appendix: --}
+%    \input{../Inputfiles/Chapters/_.tex}
+\cleardoublepage
+
+%% Literatur %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\bibliographystyle{plain}
+%\bibliography{../Inputfiles/Literature/_.bib}
+\cleardoublepage
+
+%% Tabellen und Abbildungen %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% List of figures:
+\listoffigures
+\cleardoublepage
+
+% List of tables:
+\listoftables
+\cleardoublepage
+
+\end{document}

@@ -1,0 +1,14 @@
+\chapter{test1}
+\begin{figure}[h]
+	\centering
+	\begin{tikzpicture}
+		\begin{axis}[ymode=log, width=0.85\textwidth, height = 0.5\textwidth, xmin = 0.1, xmax = 100, xlabel=Frequenz in MHz, ylabel=Realteil der Impedanz der Kavit\"at in Ohm, xticklabel style={/pgf/number format/fixed,/pgf/number format/precision=5}, every axis plot/.append style={thick},every axis legend/.append style={at={(0.02,0.95)},anchor=north west}, grid=both]
+			\addplot table[x index=0,y index=1,mark=none] {data/Box.txt};
+			\addplot table[x index=0,y index=1,mark=none] {data/Rk.txt};
+			\addplot table[x index=0,y index=1,mark=none] {data/Rk24Ks15.txt};
+			\legend{leere Box, Box mit Ringkern, 24 Kurzschl\"usse}
+		\end{axis}
+	\end{tikzpicture}
+	\caption{Verhaltend der Kavit\"at ohne Ringkern im Vergleich zur Kavit\"at mit Ringekern}
+	\label{fig:m1spannkraft}
+\end{figure}

@@ -1,0 +1,3 @@
+tikz_externalize/main-figure0.pdf: data/Box.txt
+tikz_externalize/main-figure0.pdf: data/Rk.txt
+tikz_externalize/main-figure0.pdf: data/Rk24Ks15.txt
