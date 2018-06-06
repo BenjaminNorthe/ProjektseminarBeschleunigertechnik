@@ -33,7 +33,8 @@
 
 \usetikzlibrary{external} %% comment out to stop externalization of tikz pictures
 \tikzexternalize[optimize=false, prefix=tikz-external/] % path to store the externalized stuff in
-\tikzset{external/force remake = false}
+\tikzset{external/system call={lualatex \tikzexternalcheckshellescape -halt-on-error-interaction=batchmode -jobname "\image" "\texsource"}, force remake = false}
+% \tikzset{external/force remake = false}
 \tikzexternalize
 
 %% mathematics

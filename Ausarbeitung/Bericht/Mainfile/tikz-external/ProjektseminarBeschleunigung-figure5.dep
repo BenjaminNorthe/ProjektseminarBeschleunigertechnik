@@ -1,0 +1,2 @@
+tikz-external/ProjektseminarBeschleunigung-figure5.pdf: ../Inputfiles/plotData/Rk.txt
+tikz-external/ProjektseminarBeschleunigung-figure5.pdf: ../Inputfiles/plotData/KupferschieneOffen.txt

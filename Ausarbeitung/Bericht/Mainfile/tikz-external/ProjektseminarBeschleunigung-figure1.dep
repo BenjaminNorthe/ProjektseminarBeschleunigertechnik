@@ -1,0 +1,4 @@
+tikz-external/ProjektseminarBeschleunigung-figure1.pdf: ../Inputfiles/plotData/Box.txt
+tikz-external/ProjektseminarBeschleunigung-figure1.pdf: ../Inputfiles/plotData/Rk.txt
+tikz-external/ProjektseminarBeschleunigung-figure1.pdf: ../Inputfiles/plotData/Rk4Ks30.txt
+tikz-external/ProjektseminarBeschleunigung-figure1.pdf: ../Inputfiles/plotData/Rk4Ks90.txt

@@ -1,0 +1,5 @@
+tikz-external/ProjektseminarBeschleunigung-figure4.pdf: ../Inputfiles/plotData/Box.txt
+tikz-external/ProjektseminarBeschleunigung-figure4.pdf: ../Inputfiles/plotData/Rk.txt
+tikz-external/ProjektseminarBeschleunigung-figure4.pdf: ../Inputfiles/plotData/Kupferschiene.txt
+tikz-external/ProjektseminarBeschleunigung-figure4.pdf: ../Inputfiles/plotData/KupferschieneAbstandsvariation.txt
+tikz-external/ProjektseminarBeschleunigung-figure4.pdf: ../Inputfiles/plotData/KupferschieneEngRK.txt

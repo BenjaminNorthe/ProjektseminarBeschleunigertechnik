@@ -57,11 +57,29 @@ F\"ur diese Analyse wird die Form der Kurzschl\"usse analysiert. Dazu wird wiede
 
 \newpage
 
-\section{Einfluss des Abstands der Kurzschl\"usse vom Ringkern}
+Des Weiteren wird der Vergleich mit mehreren Kurzschl\"ussen gezogen. Hierbei werden 4 Toruskurzschl\"usse 4 Kupferschienenkurzschl\"ussen gegen\"uber gestellt.
 \begin{figure}[h]
 	\centering
 	\begin{tikzpicture}
 		\begin{axis}[ymode=log, width=0.85\textwidth, height = 0.5\textwidth, xmin = 0.1, xmax = 100, xlabel=Frequenz in MHz, ylabel=Realteil der Impedanz der Kavit\"at in Ohm, xticklabel style={/pgf/number format/fixed,/pgf/number format/precision=5}, every axis plot/.append style={thick},every axis legend/.append style={at={(0.02,0.97)},anchor=north west}, grid=both, cycle list name=color list]
+			\addplot table[x index=0,y index=1,mark=none] {../Inputfiles/plotData/Box.txt};
+			\addplot table[x index=0,y index=1,mark=none] {../Inputfiles/plotData/Rk.txt};
+			\addplot table[x index=0,y index=1,mark=none] {../Inputfiles/plotData/Rk4Ks90.txt};
+			\addplot table[x index=0,y index=1,mark=none] {../Inputfiles/plotData/Kupferschiene4x.txt};
+			\legend{leere Box, Box mit Ringkern, 4 Kurzschl\"usse(Torus), 4 Kupferschienen}
+		\end{axis}
+	\end{tikzpicture}
+	\caption{Verhaltend der Box ohne Ringkern im Vergleich zur Box mit Ringkern, sowie mit mehreren Kurzschl\"ussen}
+	\label{fig:Form4Ks}
+\end{figure}
+
+\newpage
+
+\section{Einfluss des Abstands der Kurzschl\"usse vom Ringkern}
+\begin{figure}[h]
+	\centering
+	\begin{tikzpicture}
+		\begin{axis}[ymode=log, width=0.85\textwidth, height = 0.5\textwidth, xmin = 0.1, xmax = 100, xlabel=Frequenz in MHz, ylabel=Realteil der Impedanz der Kavit\"at in Ohm, xticklabel style={/pgf/number format/fixed,/pgf/number format/precision=5}, every axis plot/.append style={thick},every axis legend/.append style={at={(0.32,0.4)},anchor=north west}, grid=both, cycle list name=color list]
 			\addplot table[x index=0,y index=1,mark=none] {../Inputfiles/plotData/Box.txt};
 			\addplot table[x index=0,y index=1,mark=none] {../Inputfiles/plotData/Rk.txt};
 			\addplot table[x index=0,y index=1,mark=none] {../Inputfiles/plotData/Kupferschiene.txt};
