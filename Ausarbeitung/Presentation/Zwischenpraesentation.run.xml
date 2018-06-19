@@ -79,8 +79,5 @@
     <requires type="dynamic">
       <file>Zwischenpraesentation.bcf</file>
     </requires>
-    <requires type="editable">
-      <file>References_PSBeschl_2018.bib</file>
-    </requires>
   </external>
 </requests>

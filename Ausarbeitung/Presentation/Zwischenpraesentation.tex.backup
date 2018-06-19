@@ -8,8 +8,10 @@
 \usepackage{xcolor}
 \usepackage{tikz}
 \usepackage{lipsum,multicol}
+% \usepackage[backend=biber]{biblatex}
+% \addbibresource{References_PSBeschl_2018.bib}
 
-
+% style=alphabetic, 
 \usepackage{tikz}						% graphics creation environment frontend
 \usepackage{tikz-cd}
 \usepackage{import}
@@ -317,6 +319,11 @@ Mithilfe von CST wurden mehrere Faktoren f\"ur die Kurzschl\"usse durchsimuliert
 \begin{frame}\frametitle{Modifikation der Testbox}
  
 \end{frame}
+
+% \begin{frame}\frametitle{Quellen}
+% 	\printbibliography
+% \end{frame}
+
 
 
 \end{document}

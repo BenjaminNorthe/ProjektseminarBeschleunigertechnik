@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.23)  19 JUN 2018 11:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.23)  19 JUN 2018 13:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1716,7 +1716,7 @@ Pretend that you're Hercule Poirot: Examine all clues,
 and deduce the truth by order and method.
 
 \TUD@institutelogoboxheight=\skip85
-No file Zwischenpraesentation.aux.
+(./Zwischenpraesentation.aux)
 \openout1 = `Zwischenpraesentation.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
@@ -1736,6 +1736,7 @@ LaTeX Font Info:    ... okay on input line 38.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 38.
 LaTeX Font Info:    ... okay on input line 38.
 LaTeX Font Info:    Try loading font information for T1+phv on input line 38.
+
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
@@ -1804,6 +1805,8 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 38.
 LaTeX Info: Redefining \pageref on input line 38.
 LaTeX Info: Redefining \nameref on input line 38.
+
+(./Zwischenpraesentation.out) (./Zwischenpraesentation.out)
 \@outlinefile=\write6
 \openout6 = `Zwischenpraesentation.out'.
 
@@ -1876,32 +1879,32 @@ LaTeX Font Info:    Font shape `OT1/phv/m/sl' will be
 <graph/Kavitaet.jpg, id=16, 1310.496pt x 982.872pt>
 File: graph/Kavitaet.jpg Graphic file (type jpg)
  <use graph/Kavitaet.jpg>
-Package pdftex.def Info: graph/Kavitaet.jpg used on input line 47.
+Package pdftex.def Info: graph/Kavitaet.jpg used on input line 46.
 (pdftex.def)             Requested size: 247.82458pt x 185.86276pt.
 
-Overfull \vbox (13.42033pt too high) detected at line 47
+Overfull \vbox (13.42033pt too high) detected at line 46
  []
 
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 3.76001pt on input line 47.
+(Font)              scaled to size 3.76001pt on input line 46.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 11.28003pt on input line 47.
+(Font)              scaled to size 11.28003pt on input line 46.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 47.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 46.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 11.28003pt on input line 47.
+(Font)              scaled to size 11.28003pt on input line 46.
 LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 11.28003pt on input line 47.
+(Font)              scaled to size 11.28003pt on input line 46.
 LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 7.52002pt on input line 47.
+(Font)              scaled to size 7.52002pt on input line 46.
 LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 5.64001pt on input line 47.
+(Font)              scaled to size 5.64001pt on input line 46.
 LaTeX Font Info:    Font shape `OT1/phv/m/sl' will be
-(Font)              scaled to size 11.28003pt on input line 47.
+(Font)              scaled to size 11.28003pt on input line 46.
 LaTeX Font Info:    Font shape `OT1/phv/m/sl' will be
-(Font)              scaled to size 7.52002pt on input line 47.
+(Font)              scaled to size 7.52002pt on input line 46.
 LaTeX Font Info:    Font shape `OT1/phv/m/sl' will be
-(Font)              scaled to size 5.64001pt on input line 47.
+(Font)              scaled to size 5.64001pt on input line 46.
 
 Overfull \hbox (6.00092pt too wide) has occurred while \output is active
 [][] 
@@ -1909,7 +1912,7 @@ Overfull \hbox (6.00092pt too wide) has occurred while \output is active
 
 File: graph/temf.png Graphic file (type png)
 <use graph/temf.png>
-Package pdftex.def Info: graph/temf.png used on input line 47.
+Package pdftex.def Info: graph/temf.png used on input line 46.
 (pdftex.def)             Requested size: 42.27783pt x 42.27783pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -1921,15 +1924,15 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  </usr/share/texmf/tex/latex/tuddesign/logo/tud_logo.pdf> <./graph/Kavitaet.jpg
 > <./graph/temf.png>]
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 6.58002pt on input line 60.
+(Font)              scaled to size 6.58002pt on input line 59.
 LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 6.58002pt on input line 60.
+(Font)              scaled to size 6.58002pt on input line 59.
 LaTeX Font Info:    Font shape `OT1/phv/m/sl' will be
-(Font)              scaled to size 6.58002pt on input line 60.
+(Font)              scaled to size 6.58002pt on input line 59.
 File: graph/temf.png Graphic file (type png)
 
 <use graph/temf.png>
-Package pdftex.def Info: graph/temf.png used on input line 60.
+Package pdftex.def Info: graph/temf.png used on input line 59.
 (pdftex.def)             Requested size: 42.27783pt x 42.27783pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -1941,20 +1944,20 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 ]
 File: graph/Kavitaet.jpg Graphic file (type jpg)
  <use graph/Kavitaet.jpg>
-Package pdftex.def Info: graph/Kavitaet.jpg used on input line 76.
+Package pdftex.def Info: graph/Kavitaet.jpg used on input line 77.
 (pdftex.def)             Requested size: 172.10011pt x 129.06761pt.
 
-Overfull \hbox (5.0pt too wide) in paragraph at lines 76--76
+Overfull \hbox (5.0pt too wide) in paragraph at lines 77--77
  [] 
  []
 
 
-Overfull \vbox (8.89362pt too high) detected at line 76
+Overfull \vbox (8.89362pt too high) detected at line 77
  []
 
 File: graph/temf.png Graphic file (type png)
 <use graph/temf.png>
-Package pdftex.def Info: graph/temf.png used on input line 76.
+Package pdftex.def Info: graph/temf.png used on input line 77.
 (pdftex.def)             Requested size: 42.27783pt x 42.27783pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -1967,15 +1970,15 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 File: graph/opentest.PNG Graphic file (type png)
 
 <use graph/opentest.PNG>
-Package pdftex.def Info: graph/opentest.PNG used on input line 85.
+Package pdftex.def Info: graph/opentest.PNG used on input line 86.
 (pdftex.def)             Requested size: 247.82458pt x 186.21pt.
 
-Overfull \vbox (10.23596pt too high) detected at line 85
+Overfull \vbox (10.23596pt too high) detected at line 86
  []
 
 File: graph/temf.png Graphic file (type png)
 <use graph/temf.png>
-Package pdftex.def Info: graph/temf.png used on input line 85.
+Package pdftex.def Info: graph/temf.png used on input line 86.
 (pdftex.def)             Requested size: 42.27783pt x 42.27783pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -1989,11 +1992,16 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 File: graph/test_ks_adapted_v2.png Graphic file (type png)
 
 <use graph/test_ks_adapted_v2.png>
-Package pdftex.def Info: graph/test_ks_adapted_v2.png used on input line 96.
-(pdftex.def)             Requested size: 247.82458pt x 139.14868pt.
+Package pdftex.def Info: graph/test_ks_adapted_v2.png used on input line 106.
+(pdftex.def)             Requested size: 172.10011pt x 96.6257pt.
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 106--106
+ [] 
+ []
+
 File: graph/temf.png Graphic file (type png)
- <use graph/temf.png>
-Package pdftex.def Info: graph/temf.png used on input line 96.
+<use graph/temf.png>
+Package pdftex.def Info: graph/temf.png used on input line 106.
 (pdftex.def)             Requested size: 42.27783pt x 42.27783pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -2005,7 +2013,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  <./graph/test_ks_adapted_v2.png>]
 File: graph/temf.png Graphic file (type png)
  <use graph/temf.png>
-Package pdftex.def Info: graph/temf.png used on input line 110.
+Package pdftex.def Info: graph/temf.png used on input line 120.
 (pdftex.def)             Requested size: 42.27783pt x 42.27783pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -2018,34 +2026,34 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 File: graph/1ksTorus.png Graphic file (type png)
 
 <use graph/1ksTorus.png>
-Package pdftex.def Info: graph/1ksTorus.png used on input line 122.
+Package pdftex.def Info: graph/1ksTorus.png used on input line 132.
 (pdftex.def)             Requested size: 105.88036pt x 103.26111pt.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 7.52002pt on input line 122.
+(Font)              scaled to size 7.52002pt on input line 132.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 8.46002pt on input line 122.
+(Font)              scaled to size 8.46002pt on input line 132.
 
 <graph/4ksTorus.png, id=59, 508.14844pt x 465.99094pt>
 File: graph/4ksTorus.png Graphic file (type png)
 
 <use graph/4ksTorus.png>
-Package pdftex.def Info: graph/4ksTorus.png used on input line 122.
+Package pdftex.def Info: graph/4ksTorus.png used on input line 132.
 (pdftex.def)             Requested size: 112.59938pt x 103.26111pt.
 
 <graph/24ksTorus.png, id=60, 426.84468pt x 449.42906pt>
 File: graph/24ksTorus.png Graphic file (type png)
 
 <use graph/24ksTorus.png>
-Package pdftex.def Info: graph/24ksTorus.png used on input line 122.
+Package pdftex.def Info: graph/24ksTorus.png used on input line 132.
 (pdftex.def)             Requested size: 98.068pt x 103.26111pt.
 
-Underfull \hbox (badness 1546) in paragraph at lines 122--122
+Underfull \hbox (badness 1546) in paragraph at lines 132--132
 []|\T1/phv/b/n/12 Feldimpedanz für ver-schie-de-ne An-zah-len an
  []
 
 File: graph/temf.png Graphic file (type png)
 <use graph/temf.png>
-Package pdftex.def Info: graph/temf.png used on input line 122.
+Package pdftex.def Info: graph/temf.png used on input line 132.
 (pdftex.def)             Requested size: 42.27783pt x 42.27783pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -2058,17 +2066,17 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 ===== Image 'tikz-external/Zwischenpraesentation-figure0' is up-to-date. ======
 
 
-Underfull \hbox (badness 1546) in paragraph at lines 142--142
+Underfull \hbox (badness 1546) in paragraph at lines 152--152
 []|\T1/phv/b/n/12 Feldimpedanz für ver-schie-de-ne An-zah-len an
  []
 
 
-Overfull \vbox (12.3917pt too high) detected at line 142
+Overfull \vbox (12.3917pt too high) detected at line 152
  []
 
 File: graph/temf.png Graphic file (type png)
 <use graph/temf.png>
-Package pdftex.def Info: graph/temf.png used on input line 142.
+Package pdftex.def Info: graph/temf.png used on input line 152.
 (pdftex.def)             Requested size: 42.27783pt x 42.27783pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -2081,18 +2089,18 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 File: graph/4ksTorus.png Graphic file (type png)
 
 <use graph/4ksTorus.png>
-Package pdftex.def Info: graph/4ksTorus.png used on input line 153.
+Package pdftex.def Info: graph/4ksTorus.png used on input line 163.
 (pdftex.def)             Requested size: 150.13509pt x 137.678pt.
 
 <graph/4ksTorus30Grad.png, id=79, 497.60907pt x 462.97969pt>
 File: graph/4ksTorus30Grad.png Graphic file (type png)
 
 <use graph/4ksTorus30Grad.png>
-Package pdftex.def Info: graph/4ksTorus30Grad.png used on input line 153.
+Package pdftex.def Info: graph/4ksTorus30Grad.png used on input line 163.
 (pdftex.def)             Requested size: 147.97789pt x 137.678pt.
 File: graph/temf.png Graphic file (type png)
  <use graph/temf.png>
-Package pdftex.def Info: graph/temf.png used on input line 153.
+Package pdftex.def Info: graph/temf.png used on input line 163.
 (pdftex.def)             Requested size: 42.27783pt x 42.27783pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -2106,7 +2114,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 File: graph/temf.png Graphic file (type png)
 <use graph/temf.png>
-Package pdftex.def Info: graph/temf.png used on input line 172.
+Package pdftex.def Info: graph/temf.png used on input line 182.
 (pdftex.def)             Requested size: 42.27783pt x 42.27783pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -2119,30 +2127,30 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 File: graph/1ksTorus.png Graphic file (type png)
 
 <use graph/1ksTorus.png>
-Package pdftex.def Info: graph/1ksTorus.png used on input line 184.
+Package pdftex.def Info: graph/1ksTorus.png used on input line 194.
 (pdftex.def)             Requested size: 105.88036pt x 103.26111pt.
 
 <graph/1ksSchiene.png, id=95, 419.31656pt x 422.32782pt>
 File: graph/1ksSchiene.png Graphic file (type png)
 
 <use graph/1ksSchiene.png>
-Package pdftex.def Info: graph/1ksSchiene.png used on input line 184.
+Package pdftex.def Info: graph/1ksSchiene.png used on input line 194.
 (pdftex.def)             Requested size: 102.5255pt x 103.26111pt.
 
 <graph/1ksSchieneSchmal.png, id=96, 377.15906pt x 371.13657pt>
 File: graph/1ksSchieneSchmal.png Graphic file (type png)
 
 <use graph/1ksSchieneSchmal.png>
-Package pdftex.def Info: graph/1ksSchieneSchmal.png used on input line 184.
+Package pdftex.def Info: graph/1ksSchieneSchmal.png used on input line 194.
 (pdftex.def)             Requested size: 104.93623pt x 103.26111pt.
 
-Underfull \hbox (badness 2913) in paragraph at lines 184--184
+Underfull \hbox (badness 2913) in paragraph at lines 194--194
 []|\T1/phv/b/n/12 Feldimpedanz für ver-schie-de-ne For-men der
  []
 
 File: graph/temf.png Graphic file (type png)
 <use graph/temf.png>
-Package pdftex.def Info: graph/temf.png used on input line 184.
+Package pdftex.def Info: graph/temf.png used on input line 194.
 (pdftex.def)             Requested size: 42.27783pt x 42.27783pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -2155,13 +2163,13 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 ===== Image 'tikz-external/Zwischenpraesentation-figure2' is up-to-date. ======
 
 
-Underfull \hbox (badness 2913) in paragraph at lines 204--204
+Underfull \hbox (badness 2913) in paragraph at lines 214--214
 []|\T1/phv/b/n/12 Feldimpedanz für ver-schie-de-ne For-men der
  []
 
 File: graph/temf.png Graphic file (type png)
 <use graph/temf.png>
-Package pdftex.def Info: graph/temf.png used on input line 204.
+Package pdftex.def Info: graph/temf.png used on input line 214.
 (pdftex.def)             Requested size: 42.27783pt x 42.27783pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -2174,13 +2182,13 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 ===== Image 'tikz-external/Zwischenpraesentation-figure3' is up-to-date. ======
 
 
-Underfull \hbox (badness 2913) in paragraph at lines 223--223
+Underfull \hbox (badness 2913) in paragraph at lines 233--233
 []|\T1/phv/b/n/12 Feldimpedanz für ver-schie-de-ne For-men der
  []
 
 File: graph/temf.png Graphic file (type png)
 <use graph/temf.png>
-Package pdftex.def Info: graph/temf.png used on input line 223.
+Package pdftex.def Info: graph/temf.png used on input line 233.
 (pdftex.def)             Requested size: 42.27783pt x 42.27783pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -2194,11 +2202,11 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 File: graph/1ksSchieneWeit.png Graphic file (type png)
 
 <use graph/1ksSchieneWeit.png>
-Package pdftex.def Info: graph/1ksSchieneWeit.png used on input line 234.
+Package pdftex.def Info: graph/1ksSchieneWeit.png used on input line 244.
 (pdftex.def)             Requested size: 154.88905pt x 172.67987pt.
 File: graph/temf.png Graphic file (type png)
  <use graph/temf.png>
-Package pdftex.def Info: graph/temf.png used on input line 234.
+Package pdftex.def Info: graph/temf.png used on input line 244.
 (pdftex.def)             Requested size: 42.27783pt x 42.27783pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -2212,7 +2220,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 File: graph/temf.png Graphic file (type png)
 <use graph/temf.png>
-Package pdftex.def Info: graph/temf.png used on input line 254.
+Package pdftex.def Info: graph/temf.png used on input line 264.
 (pdftex.def)             Requested size: 42.27783pt x 42.27783pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -2226,11 +2234,11 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 File: graph/1ksSchieneOffen.png Graphic file (type png)
 
 <use graph/1ksSchieneOffen.png>
-Package pdftex.def Info: graph/1ksSchieneOffen.png used on input line 265.
+Package pdftex.def Info: graph/1ksSchieneOffen.png used on input line 275.
 (pdftex.def)             Requested size: 120.47218pt x 172.69818pt.
 File: graph/temf.png Graphic file (type png)
  <use graph/temf.png>
-Package pdftex.def Info: graph/temf.png used on input line 265.
+Package pdftex.def Info: graph/temf.png used on input line 275.
 (pdftex.def)             Requested size: 42.27783pt x 42.27783pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -2244,7 +2252,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 File: graph/temf.png Graphic file (type png)
 <use graph/temf.png>
-Package pdftex.def Info: graph/temf.png used on input line 282.
+Package pdftex.def Info: graph/temf.png used on input line 292.
 (pdftex.def)             Requested size: 42.27783pt x 42.27783pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -2258,7 +2266,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 File: graph/temf.png Graphic file (type png)
 <use graph/temf.png>
-Package pdftex.def Info: graph/temf.png used on input line 299.
+Package pdftex.def Info: graph/temf.png used on input line 309.
 (pdftex.def)             Requested size: 42.27783pt x 42.27783pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -2272,7 +2280,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 File: graph/temf.png Graphic file (type png)
 <use graph/temf.png>
-Package pdftex.def Info: graph/temf.png used on input line 316.
+Package pdftex.def Info: graph/temf.png used on input line 326.
 (pdftex.def)             Requested size: 42.27783pt x 42.27783pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -2282,9 +2290,19 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [19
 
  <./tikz-external/Zwischenpraesentation-figure7.pdf>]
+<graph/halterung.png, id=178, 632.3625pt x 631.35875pt>
+File: graph/halterung.png Graphic file (type png)
+
+<use graph/halterung.png>
+Package pdftex.def Info: graph/halterung.png used on input line 345.
+(pdftex.def)             Requested size: 154.88905pt x 154.64088pt.
+
+Overfull \vbox (23.46689pt too high) detected at line 345
+ []
+
 File: graph/temf.png Graphic file (type png)
- <use graph/temf.png>
-Package pdftex.def Info: graph/temf.png used on input line 321.
+<use graph/temf.png>
+Package pdftex.def Info: graph/temf.png used on input line 345.
 (pdftex.def)             Requested size: 42.27783pt x 42.27783pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -2293,7 +2311,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 [20
 
-]
+ <./graph/halterung.png>]
 \tf@nav=\write7
 \openout7 = `Zwischenpraesentation.nav'.
 
@@ -2303,27 +2321,20 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 \tf@snm=\write9
 \openout9 = `Zwischenpraesentation.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 329.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 329.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 354.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 354.
  (./Zwischenpraesentation.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 329.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 329.
-
-
-Package rerunfilecheck Warning: File `Zwischenpraesentation.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Zwischenpraesentation.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 329.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 354.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 354.
+Package rerunfilecheck Info: File `Zwischenpraesentation.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 354.
  ) 
 Here is how much of TeX's memory you used:
- 33668 strings out of 493029
- 794812 string characters out of 6136234
- 1103966 words of memory out of 5000000
- 36400 multiletter control sequences out of 15000+600000
+ 33677 strings out of 493029
+ 795060 string characters out of 6136234
+ 1102966 words of memory out of 5000000
+ 36402 multiletter control sequences out of 15000+600000
  35970 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  67i,22n,102p,768b,689s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2331,10 +2342,10 @@ Here is how much of TeX's memory you used:
 e/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on Zwischenpraesentation.pdf (20 pages, 29005217 bytes).
+Output written on Zwischenpraesentation.pdf (20 pages, 29033678 bytes).
 PDF statistics:
- 206 PDF objects out of 1000 (max. 8388607)
+ 207 PDF objects out of 1000 (max. 8388607)
  149 compressed objects within 2 object streams
  41 named destinations out of 1000 (max. 500000)
- 148 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 153 words of extra memory for PDF output out of 10000 (max. 10000000)
 

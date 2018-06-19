@@ -43,7 +43,6 @@
 		\centering
 		\includegraphics[width=0.72\textwidth]{Kavitaet}
 	\end{figure}
-
 \end{titleframe}
 
 
@@ -70,7 +69,9 @@
 	\vfill\null
 	\columnbreak
 	\begin{itemize}
-		\item Eisenringkerne zur Stimmung der Kavit\"at bei Beschleunigung 
+		\item Ferritringkerne zur Stimmung der Kavit\"at
+		\item Im passiven Betrieb der Kavit\"at m\"oglichst wenig Einfluss n\"otig
+		\item Theorie: Kurzschlussschaltung um die Ferritkerne soll den Einfluss dieser negieren
 	\end{itemize}
 \end{multicols}
 \end{frame}
@@ -88,11 +89,20 @@
 
 
 \begin{frame}\frametitle{Bisherige Messungen}
+\begin{multicols}{2}
 	\vspace{-2em}
 	\begin{figure}[h]
 		\centering
-		\includegraphics[width=0.72\textwidth]{test_ks_adapted_v2}
+		\includegraphics[width=0.5\textwidth]{test_ks_adapted_v2}
 	\end{figure}
+	\vfill\null
+	\columnbreak
+	\begin{itemize}
+		\item Fixierung der Kurzschl\"usse schwierig
+		\item Messung dadurch nur bedingt reproduzierbar
+	\end{itemize}
+
+\end{multicols}
 \end{frame}
 
 
@@ -101,10 +111,10 @@
 \begin{frame}\frametitle{Simulationen}
 Mithilfe von CST wurden mehrere Faktoren f\"ur die Kurzschl\"usse durchsimuliert:
 \begin{itemize}
-	\item Feldimpedanz f\"ur verschiedene Anzahlen an Kurzschl\"ussen
-	\item Feldimpedanz f\"ur verschiedene Positionen der Kurzschl\"usse
-	\item Feldimpedanz f\"ur verschiedene Formen der Kurzschl\"usse
-	\item Feldimpedanz f\"ur verschiedene Abst\"ande der Kurzschlusswicklung zum Ringkern
+	\item Anzahl der Kurzschl\"usse
+	\item Positionen der Kurzschl\"usse
+	\item Formen der Kurzschl\"usse
+	\item Verschiedene Abst\"ande der Kurzschlusswicklung zum Ringkern
 	\item Feldimpedanz mit einer unterbrochenen Schiene (wenn sich diese im Leerlauf befindet)
 \end{itemize}
 \end{frame}
@@ -317,11 +327,26 @@ Mithilfe von CST wurden mehrere Faktoren f\"ur die Kurzschl\"usse durchsimuliert
 
 
 \begin{frame}\frametitle{Modifikation der Testbox}
- 
+\begin{multicols}{2}
+\vspace{-2em}
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.45\textwidth]{halterung}
+	\end{figure}
+	\vfill\null
+	\columnbreak
+	\begin{itemize}
+		\item Montage der Kurzschl\"usse an verschiedenen Positionen 
+		\item Vergleichbarkeit, durch immer gleiche Positionen
+		\item Verschiedene Anzahl an Kurzschl\"ussen m\"oglich
+	\end{itemize}
+
+\end{multicols}
 \end{frame}
 
 % \begin{frame}\frametitle{Quellen}
-% 	\printbibliography
+% % 	\bibliographystyle{plain}
+% 	\bibliography{References_PSBeschl_2018.bib} 
 % \end{frame}
 
 
