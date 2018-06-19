@@ -1,0 +1,5 @@
+tikz-external/Zwischenpraesentation-figure4.pdf: graph/plotData/Box.txt
+tikz-external/Zwischenpraesentation-figure4.pdf: graph/plotData/Rk.txt
+tikz-external/Zwischenpraesentation-figure4.pdf: graph/plotData/Kupferschiene.txt
+tikz-external/Zwischenpraesentation-figure4.pdf: graph/plotData/KupferschieneAbstandsvariation.txt
+tikz-external/Zwischenpraesentation-figure4.pdf: graph/plotData/KupferschieneEngRK.txt

@@ -1,4 +1,4 @@
-\documentclass[accentcolor=tud9b, colorbacktitle]{tudbeamer}
+\documentclass[accentcolor=tud9b, colorbacktitle, inverttitle]{tudbeamer}
 
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -9,8 +9,21 @@
 \usepackage{tikz}
 \usepackage{lipsum,multicol}
 
-\newcommand{\rot}{\mathrm{rot}\,}
-\newcommand{\dive}{\mathrm{div}\,}
+
+\usepackage{tikz}						% graphics creation environment frontend
+\usepackage{tikz-cd}
+\usepackage{import}
+\usepackage{multicol}
+\usepackage{subfig}
+% 
+\usepackage{pgfplots}					% graph plotting for pgf/tikz
+\pgfplotsset{compat=1.12, grid style={gray,dotted}}
+
+\usetikzlibrary{external} %% comment out to stop externalization of tikz pictures
+\tikzexternalize[optimize=false, prefix=tikz-external/] % path to store the externalized stuff in
+\tikzset{external/system call={lualatex \tikzexternalcheckshellescape -halt-on-error-interaction=batchmode -jobname "\image" "\texsource"}, force remake = false}
+% \tikzset{external/force remake = false}
+\tikzexternalize
 
 \graphicspath{{graph/}}
 
@@ -18,7 +31,7 @@
 \institute{Institut TEMF}
 \logo[1.5]{\includegraphics{temf}}
 \date{\today}
-\title{}
+\title{Parameteranalyse von kurzgeschlossenen Ringkernen mittels Impedanzmessung}
 
 \begin{document}
 
@@ -35,5 +48,208 @@
 
 \end{frame}
 
+
+\begin{frame}\frametitle{Aufgabenstellung}
+ 
+\end{frame}
+
+
+
+\begin{frame}\frametitle{Simulationen}
+Mithilfe von CST wurden mehrere Faktoren f\"ur die Kurzschl\"usse durchsimuliert:
+\begin{itemize}
+	\item Feldimpedanz f\"ur verschiedene Anzahlen an Kurzschl\"ussen
+	\item Feldimpedanz f\"ur verschiedene Positionen der Kurzschl\"usse
+	\item Feldimpedanz f\"ur verschiedene Formen der Kurzschl\"usse
+	\item Feldimpedanz f\"ur verschiedene Abst\"ande der Kurzschlusswicklung zum Ringkern
+	\item Feldimpedanz mit einer unterbrochenen Schiene (wenn sich diese im Leerlauf befindet)
+\end{itemize}
+\end{frame}
+
+
+
+\begin{frame}\frametitle{Feldimpedanz f\"ur verschiedene Anzahlen an Kurzschl\"ussen}
+\vspace{-2em}
+\begin{figure}[h]
+	\subfloat[]{\includegraphics[height = 0.3\textwidth]{1ksTorus}} \hspace{1em}
+	\subfloat[]{\includegraphics[height = 0.3\textwidth]{4ksTorus}}\hspace{1em}
+	\subfloat[]{\includegraphics[height = 0.3\textwidth]{24ksTorus}}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}\frametitle{Feldimpedanz f\"ur verschiedene Anzahlen an Kurzschl\"ussen}
+\vspace{-2em}
+\begin{figure}[h]
+	\centering
+	\begin{tikzpicture}
+		\begin{axis}[width=0.85\textwidth, height = 0.58\textwidth, xmin = 0.1, xmax = 50, xlabel=Frequenz in MHz, ylabel=Realteil der Impedanz der Box in Ohm, xticklabel style={/pgf/number format/fixed,/pgf/number format/precision=5}, every axis plot/.append style={thick},every axis legend/.append style={at={(0,1)},anchor=north west}, grid=both, cycle list name=color list]
+			\addplot table[x index=0,y index=1,mark=none] {graph/plotData/Box.txt};
+			\addplot table[x index=0,y index=1,mark=none] {graph/plotData/Rk.txt};
+			\addplot table[x index=0,y index=1,mark=none] {graph/plotData/Rk1Ks0.txt};
+			\addplot table[x index=0,y index=1,mark=none] {graph/plotData/Rk4Ks90.txt};
+			\addplot table[x index=0,y index=1,mark=none] {graph/plotData/Rk24Ks15.txt};
+			\legend{\small leere Box,\small Box mit Ringkern,\small 1 Kurzschluss,\small 4 Kurzschl\"usse (90 Grad versetzt),\small  24 Kurzschl\"usse}
+		\end{axis}
+	\end{tikzpicture}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}\frametitle{Feldimpedanz f\"ur verschiedene Positionen der Kurzschl\"usse}
+\vspace{-2em}
+\begin{figure}[h]
+	\subfloat[]{\includegraphics[height = 0.4\textwidth]{4ksTorus}} \hspace{1em}
+	\subfloat[]{\includegraphics[height = 0.4\textwidth]{4ksTorus30Grad}}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}\frametitle{Feldimpedanz f\"ur verschiedene Positionen der Kurzschl\"usse}
+\vspace{-2em}
+\begin{figure}[h]
+	\centering
+	\begin{tikzpicture}
+		\begin{axis}[width=0.85\textwidth, height = 0.5\textwidth, xmin = 0.1, xmax = 50, xlabel=Frequenz in MHz, ylabel=Realteil der Impedanz der Box in Ohm, xticklabel style={/pgf/number format/fixed,/pgf/number format/precision=5}, every axis plot/.append style={thick},every axis legend/.append style={at={(0,1)},anchor=north west}, grid=both, cycle list name=color list]
+			\addplot table[x index=0,y index=1,mark=none] {graph/plotData/Box.txt};
+			\addplot table[x index=0,y index=1,mark=none] {graph/plotData/Rk.txt};
+			\addplot table[x index=0,y index=1,mark=none] {graph/plotData/Rk4Ks30.txt};
+			\addplot table[x index=0,y index=1,mark=none] {graph/plotData/Rk4Ks90.txt};
+			\legend{leere Box, Box mit Ringkern, 4 Kurzschl\"usse (30 Grad versetzt), 4 Kurzschl\"usse (90 Grad versetzt)}
+		\end{axis}
+	\end{tikzpicture}
+\end{figure}
+\end{frame}
+
+\begin{frame}\frametitle{Feldimpedanz f\"ur verschiedene Formen der Kurzschl\"usse (jeweils 1 KS)}
+\vspace{-2em}
+\begin{figure}[h]
+	\subfloat[]{\includegraphics[height = 0.3\textwidth]{1ksTorus}} \hspace{1em}
+	\subfloat[]{\includegraphics[height = 0.3\textwidth]{1ksSchiene}}\hspace{1em}
+	\subfloat[]{\includegraphics[height = 0.3\textwidth]{1ksSchieneSchmal}}
+\end{figure}
+\end{frame}
+
+
+
+\begin{frame}\frametitle{Feldimpedanz f\"ur verschiedene Formen der Kurzschl\"usse (jeweils 1 KS)}
+\vspace{-2em}
+\begin{figure}[h]
+	\centering
+	\begin{tikzpicture}
+		\begin{axis}[width=0.85\textwidth, height = 0.5\textwidth, xmin = 0.1, xmax = 50, xlabel=Frequenz in MHz, ylabel=Realteil der Impedanz der Box in Ohm, xticklabel style={/pgf/number format/fixed,/pgf/number format/precision=5}, every axis plot/.append style={thick},every axis legend/.append style={at={(0,1)},anchor=north west}, grid=both, cycle list name=color list]
+			\addplot table[x index=0,y index=1,mark=none] {graph/plotData/Box.txt};
+			\addplot table[x index=0,y index=1,mark=none] {graph/plotData/Rk.txt};
+			\addplot table[x index=0,y index=1,mark=none] {graph/plotData/Rk1Ks0.txt};
+			\addplot table[x index=0,y index=1,mark=none] {graph/plotData/Kupferschiene.txt};
+			\addplot table[x index=0,y index=1,mark=none] {graph/plotData/KupferschieneSchmal.txt};
+			\legend{leere Box, Box mit Ringkern, 1 Kurzschluss(Torus), 1 Kupferschiene, 1 Kupferschiene (schmal)}
+		\end{axis}
+	\end{tikzpicture}
+\end{figure} 
+\end{frame}
+
+
+
+\begin{frame}\frametitle{Feldimpedanz f\"ur verschiedene Formen der Kurzschl\"usse (jeweils 4 KS)}
+\vspace{-2em}
+\begin{figure}[h]
+	\centering
+	\begin{tikzpicture}
+		\begin{axis}[width=0.85\textwidth, height = 0.5\textwidth, xmin = 0.1, xmax = 50, xlabel=Frequenz in MHz, ylabel=Realteil der Impedanz der Box in Ohm, xticklabel style={/pgf/number format/fixed,/pgf/number format/precision=5}, every axis plot/.append style={thick},every axis legend/.append style={at={(0,1)},anchor=north west}, grid=both, cycle list name=color list]
+			\addplot table[x index=0,y index=1,mark=none] {graph/plotData/Box.txt};
+			\addplot table[x index=0,y index=1,mark=none] {graph/plotData/Rk.txt};
+			\addplot table[x index=0,y index=1,mark=none] {graph/plotData/Rk4Ks90.txt};
+			\addplot table[x index=0,y index=1,mark=none] {graph/plotData/Kupferschiene4x.txt};
+			\legend{leere Box, Box mit Ringkern, 4 Kurzschl\"usse(Torus), 4 Kupferschienen}
+		\end{axis}
+	\end{tikzpicture}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}\frametitle{Feldimpedanz f\"ur verschiedene Abst\"ande der Kurzschlusswicklung zum Ringkern}
+\vspace{-2em}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.45\textwidth]{1ksSchieneWeit}
+\end{figure}
+\end{frame}
+
+
+
+
+\begin{frame}\frametitle{Feldimpedanz f\"ur verschiedene Abst\"ande der Kurzschlusswicklung zum Ringkern}
+\vspace{-2em}
+\begin{figure}[h]
+	\centering
+	\begin{tikzpicture}
+		\begin{axis}[width=0.85\textwidth, height = 0.5\textwidth, xmin = 0.1, xmax = 50, xlabel=Frequenz in MHz, ylabel=Realteil der Impedanz der Box in Ohm, xticklabel style={/pgf/number format/fixed,/pgf/number format/precision=5}, every axis plot/.append style={thick},every axis legend/.append style={at={(0,1)},anchor=north west}, grid=both, cycle list name=color list]
+			\addplot table[x index=0,y index=1,mark=none] {graph/plotData/Box.txt};
+			\addplot table[x index=0,y index=1,mark=none] {graph/plotData/Rk.txt};
+			\addplot table[x index=0,y index=1,mark=none] {graph/plotData/Kupferschiene.txt};
+			\addplot table[x index=0,y index=1,mark=none] {graph/plotData/KupferschieneAbstandsvariation.txt};
+			\addplot table[x index=0,y index=1,mark=none] {graph/plotData/KupferschieneEngRK.txt};
+			\legend{\small leere Box,\small Box mit Ringkern,\small 1 Kupferschiene,\small 1 Kupferschiene (weiter Abstand),\small 1 Kupferschiene (eng am Ringkern)}
+		\end{axis}
+	\end{tikzpicture}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}\frametitle{Feldimpedanz mit einer unterbrochenen Schiene (wenn sich diese im Leerlauf befindet)}
+\vspace{-2em}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.35\textwidth]{1ksSchieneOffen}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}\frametitle{Feldimpedanz mit einer unterbrochenen Schiene (wenn sich diese im Leerlauf befindet)}
+\vspace{-2em}
+\begin{figure}[h]
+	\centering
+	\begin{tikzpicture}
+		\begin{axis}[width=0.85\textwidth, height = 0.5\textwidth, xmin = 0.1, xmax = 50, xlabel=Frequenz in MHz, ylabel=Realteil der Impedanz der Box in Ohm, xticklabel style={/pgf/number format/fixed,/pgf/number format/precision=5}, every axis plot/.append style={thick},every axis legend/.append style={at={(1,0)},anchor=south east}, grid=both, cycle list name=color list]
+			\addplot table[x index=0,y index=1,mark=none] {graph/plotData/Rk.txt};
+			\addplot table[x index=0,y index=1,mark=none] {graph/plotData/KupferschieneOffen.txt};
+			\legend{Box mit Ringkern, Box mit einer offenen Kupferschiene}
+		\end{axis}
+	\end{tikzpicture}
+\end{figure}
+\end{frame}
+
+
+
+\begin{frame}\frametitle{Feldimpedanz mit vier unterbrochenen Schienen (wenn sich diese im Leerlauf befinden)}
+\vspace{-2em}
+\begin{figure}[h]
+	\centering
+	\begin{tikzpicture}
+		\begin{axis}[width=0.85\textwidth, height = 0.5\textwidth, xmin = 0.1, xmax = 50, xlabel=Frequenz in MHz, ylabel=Realteil der Impedanz der Box in Ohm, xticklabel style={/pgf/number format/fixed,/pgf/number format/precision=5}, every axis plot/.append style={thick},every axis legend/.append style={at={(1,0)},anchor=south east}, grid=both, cycle list name=color list]
+			\addplot table[x index=0,y index=1,mark=none] {graph/plotData/Rk.txt};
+			\addplot table[x index=0,y index=1,mark=none] {graph/plotData/KupferschieneOffen4x.txt};
+			\legend{Box mit Ringkern, Box mit vier offenen Kupferschienen}
+		\end{axis}
+	\end{tikzpicture}
+\end{figure}
+\end{frame}
+
+
+
+\begin{frame}\frametitle{Feldimpedanz mit vier unterbrochenen Schienen (wenn sich diese im Leerlauf befinden)}
+\vspace{-2em}
+\begin{figure}[h]
+	\centering
+	\begin{tikzpicture}
+		\begin{axis}[ymode=log, width=0.85\textwidth, height = 0.5\textwidth, xmin = 0.1, xmax = 100, xlabel=Frequenz in MHz, ylabel=Realteil der Impedanz der Box in Ohm, xticklabel style={/pgf/number format/fixed,/pgf/number format/precision=5}, every axis plot/.append style={thick},every axis legend/.append style={at={(1,0)},anchor=south east}, grid=both, cycle list name=color list]
+			\addplot table[x index=0,y index=1,mark=none] {graph/plotData/Rk.txt};
+			\addplot table[x index=0,y index=1,mark=none] {graph/plotData/KupferschieneOffen4x.txt};
+			\legend{Box mit Ringkern, Box mit vier offenen Kupferschienen}
+		\end{axis}
+	\end{tikzpicture}
+\end{figure}
+\end{frame}
 
 \end{document}
