@@ -1,8 +1,9 @@
-This is LuaTeX, Version beta-0.80.0 (TeX Live 2015/Debian) (rev 5238)  (format=lualatex 2017.8.23)  7 JUN 2018 15:14
+This is LuaTeX, Version beta-0.80.0 (TeX Live 2015/Debian) (rev 5238)  (format=lualatex 2017.8.23)  19 JUN 2018 09:31
  \write18 enabled.
-**\def\tikzexternalrealjob{ProjektseminarBeschleunigung}\input{ProjektseminarBe
-schleunigung}
+**ProjektseminarBeschleunigung.tex
 (./ProjektseminarBeschleunigung.tex
+LaTeX2e <2016/02/01>
+Babel <3.9q> and hyphenation patterns for 1 language(s) loaded.
 (/usr/share/texmf/tex/latex/tuddesign/tudreport.cls
 Document Class: tudreport 2009/11/17 1.13 Clemens von Loewenich's and Joe Werner
 's TUD-Design package
@@ -1343,11 +1344,7 @@ Package: luatex-loader 2010/03/09 v0.4 Lua module loader (HO)
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zexternalshared.code.tex))
-No auxiliary output files.
-
-\w@pgfexternal@auxout=\write4
-Package TikZ externalization: calling \geometry{driver=none} during externalizat
-ion.
+\openout3 = ProjektseminarBeschleunigung.auxlock
 
 
 ! Package pgfkeys Error: I do not know the key '/tikz/force remake', to which y
@@ -1457,8 +1454,8 @@ Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
 \tcb@temp=\box83
 \tcb@temp=\box84
 \tcb@temp=\box85
-\tcb@out=\write5
-\tcb@record@out=\write6
+\tcb@out=\write4
+\tcb@record@out=\write5
 
 (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbraster.code.tex
 Library (tcolorbox): 'tcbraster.code.tex' version '3.90'
@@ -1694,7 +1691,7 @@ Package footmisc Info: Declaring symbol style lamport*-robust on input line 924.
 )
 (/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.sty
 (/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.tex
-\@xs@message=\write7
+\@xs@message=\write6
 \integerpart=\count289
 \decimalpart=\count290
 )
@@ -2164,7 +2161,7 @@ Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 \FrameSep=\dimen351
 )
 (/usr/share/texlive/texmf-dist/tex/latex/comment/comment.sty
-\CommentStream=\write8
+\CommentStream=\write7
 
 Excluding comment 'comment')
 (/usr/share/texlive/texmf-dist/tex/latex/outlines/outlines.sty
@@ -2618,7 +2615,9 @@ Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'ngerman'.
 
-No file tikz-external/ProjektseminarBeschleunigung-figure0.aux.
+No file ProjektseminarBeschleunigung.aux.
+
+\openout1 = ProjektseminarBeschleunigung.aux
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
 LaTeX Font Info:    ... okay on input line 24.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
@@ -2684,9 +2683,9 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 \AtBeginShipoutBox=\box125
 
-*geometry* detected driver: <none>
+*geometry* detected driver: dvips
 *geometry* verbose mode - [ preamble ] result:
-* driver: \Gm@driver 
+* driver: dvips
 * paper: a4paper
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
@@ -2783,6 +2782,9 @@ LaTeX Info: Redefining \Ref on input line 513.
 LaTeX Info: Redefining \ref on input line 24.
 LaTeX Info: Redefining \pageref on input line 24.
 LaTeX Info: Redefining \nameref on input line 24.
+\@outlinefile=\write8
+
+\openout8 = ProjektseminarBeschleunigung.out
 LaTeX Info: Redefining \Ref on input line 24.
 
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/se-pdfdoc.def
@@ -2993,6 +2995,26 @@ Overfull \hbox (11.0pt too wide) in paragraph at lines 30--30
 [][][]  
  []
 
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 30.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 30.
+[-1
+Non-PDF special ignored!
+
+
+Non-PDF special ignored!
+
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}</usr/share/texmf/tex/latex/t
+uddesign/logo/tud_logo.pdf><../Inputfiles/Graphics/Logo/temf.png>]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 30.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 30.
+ [0
+
+]
 Package hyperref Info: Option `pageanchor' set `true' on input line 30.
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 42.
@@ -3000,6 +3022,38 @@ Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 42.
 Package tocbasic Info: character protrusion at toc deactivated on input line 43.
 
+\tf@toc=\write9
+
+\openout9 = ProjektseminarBeschleunigung.toc
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 44.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 44.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 44.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 44.
+ [1
+
+
+
+
+
+
+
+]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 44.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 44.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 44.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 44.
+ [2
+
+
+]
 chapter 1.
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 52.
@@ -3017,6 +3071,30 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
 )
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 56.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 56.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 56.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 56.
+ [1
+
+
+]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 56.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 56.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 56.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 56.
+ [2
+
+
+]
 chapter 2.
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 56.
@@ -3039,6 +3117,27 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
 )
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 61.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 61.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 61.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 61.
+ [3]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 61.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 61.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 61.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 61.
+ [4
+
+
+]
 chapter 3.
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 61.
@@ -3053,80 +3152,126 @@ Package babel Info: Redefining ngerman shorthand "~
 
 LaTeX Warning: Reference `fig:AnzahlKs' on page 5 undefined on input line 2.
 
-
-\openout4 = tikz-external/ProjektseminarBeschleunigung-figure0.dpth
-Package pgfplots info on input line 6: Using 'lua backend=false' for axis: ymode
-=log unsupported (yet).
-PGFPlots: reading {../Inputfiles/plotData/Box.txt}
-\tikzexternal@dep@file=\write9
-
-\openout9 = tikz-external/ProjektseminarBeschleunigung-figure0.dep
-PGFPlots: reading {../Inputfiles/plotData/Rk.txt}
-PGFPlots: reading {../Inputfiles/plotData/Rk1Ks0.txt}
-PGFPlots: reading {../Inputfiles/plotData/Rk4Ks90.txt}
-PGFPlots: reading {../Inputfiles/plotData/Rk24Ks15.txt}
+===== Image 'tikz-external/ProjektseminarBeschleunigung-figure0' is up-to-date. 
+======
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 14.
+(babel)             in language  on input line 19.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 14.
+(babel)             in language  on input line 19.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 14.
+(babel)             in language  on input line 19.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 14.
-[5
-
-
-Non-PDF special ignored!
-\providecommand\tcolorbox@label[2]{}
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+(babel)             in language  on input line 19.
+[5<./tikz-external/ProjektseminarBeschleunigung-figure0.pdf>]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 21.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 21.
-Package pgfplots info on input line 26: Using 'lua backend=false' for axis: ymod
-e=log unsupported (yet).
-PGFPlots: reading {../Inputfiles/plotData/Box.txt}
-PGFPlots: reading {../Inputfiles/plotData/Rk.txt}
-PGFPlots: reading {../Inputfiles/plotData/Rk4Ks30.txt}
-PGFPlots: reading {../Inputfiles/plotData/Rk4Ks90.txt}
+
+===== Image 'tikz-external/ProjektseminarBeschleunigung-figure1' is up-to-date. 
+======
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 38.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 38.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 38.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 38.
+[6<./tikz-external/ProjektseminarBeschleunigung-figure1.pdf>]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 40.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 40.
-Package pgfplots info on input line 45: Using 'lua backend=false' for axis: ymod
-e=log unsupported (yet).
-PGFPlots: reading {../Inputfiles/plotData/Box.txt}
-PGFPlots: reading {../Inputfiles/plotData/Rk.txt}
-PGFPlots: reading {../Inputfiles/plotData/Rk1Ks0.txt}
-PGFPlots: reading {../Inputfiles/plotData/Kupferschiene.txt}
-PGFPlots: reading {../Inputfiles/plotData/KupferschieneSchmal.txt}
-Package pgfplots info on input line 64: Using 'lua backend=false' for axis: ymod
-e=log unsupported (yet).
-PGFPlots: reading {../Inputfiles/plotData/Box.txt}
-PGFPlots: reading {../Inputfiles/plotData/Rk.txt}
-PGFPlots: reading {../Inputfiles/plotData/Rk4Ks90.txt}
-PGFPlots: reading {../Inputfiles/plotData/Kupferschiene4x.txt}
+
+===== Image 'tikz-external/ProjektseminarBeschleunigung-figure2' is up-to-date. 
+======
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 58.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 58.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 58.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 58.
+[7<./tikz-external/ProjektseminarBeschleunigung-figure2.pdf>]
+===== Image 'tikz-external/ProjektseminarBeschleunigung-figure3' is up-to-date. 
+======
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 76.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 76.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 76.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 76.
+[8<./tikz-external/ProjektseminarBeschleunigung-figure3.pdf>]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 78.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 78.
-Package pgfplots info on input line 82: Using 'lua backend=false' for axis: ymod
-e=log unsupported (yet).
-PGFPlots: reading {../Inputfiles/plotData/Box.txt}
-PGFPlots: reading {../Inputfiles/plotData/Rk.txt}
-PGFPlots: reading {../Inputfiles/plotData/Kupferschiene.txt}
-PGFPlots: reading {../Inputfiles/plotData/KupferschieneAbstandsvariation.txt}
-PGFPlots: reading {../Inputfiles/plotData/KupferschieneEngRK.txt}
+
+===== Image 'tikz-external/ProjektseminarBeschleunigung-figure4' is up-to-date. 
+======
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 95.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 95.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 95.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 95.
+[9<./tikz-external/ProjektseminarBeschleunigung-figure4.pdf>]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 97.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 97.
-Package pgfplots info on input line 101: Using 'lua backend=false' for axis: ymo
-de=log unsupported (yet).
-PGFPlots: reading {../Inputfiles/plotData/Rk.txt}
-PGFPlots: reading {../Inputfiles/plotData/KupferschieneOffen.txt}
+
+===== Image 'tikz-external/ProjektseminarBeschleunigung-figure5' is up-to-date. 
+======
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 112.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 112.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 112.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 112.
+[10<./tikz-external/ProjektseminarBeschleunigung-figure5.pdf>]
+===== 'mode=convert with system call': Invoking 'lualatex -shell-escape -halt-on
+-error-interaction=batchmode -jobname "tikz-external/ProjektseminarBeschleunigun
+g-figure6" "\def\tikzexternalrealjob{ProjektseminarBeschleunigung}\input{Projekt
+seminarBeschleunigung}"' ========
+
+\openout3 = ProjektseminarBeschleunigung.auxlock
+runsystem(lualatex -shell-escape -halt-on-error-interaction=batchmode -jobname "
+tikz-external/ProjektseminarBeschleunigung-figure6" "\def\tikzexternalrealjob{Pr
+ojektseminarBeschleunigung}\input{ProjektseminarBeschleunigung}")...executed.
+
+
+\openout3 = ProjektseminarBeschleunigung.auxlock
 )
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 64.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 64.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 64.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 64.
+ [11<./tikz-external/ProjektseminarBeschleunigung-figure6.pdf>]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 64.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 64.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 64.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 64.
+ [12
+
+
+]
 chapter 4.
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 64.
@@ -3138,7 +3283,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
 
-<../Inputfiles/Graphics/halterung.png, id=18, 632.3625pt x 631.35875pt>
+<../Inputfiles/Graphics/halterung.png, id=239, 632.3625pt x 631.35875pt>
 File: ../Inputfiles/Graphics/halterung.png Graphic file (type png)
 
 <use ../Inputfiles/Graphics/halterung.png>
@@ -3146,23 +3291,132 @@ Package pdftex.def Info: ../Inputfiles/Graphics/halterung.png used on input line
  5.
 (pdftex.def)             Requested size: 373.44243pt x 372.85489pt.
 )
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 74.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 74.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 74.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 74.
+ [13<../Inputfiles/Graphics/halterung.png>]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 74.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 74.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 74.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 74.
+ [14
+
+
+]
 chapter A.
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 74.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 74.
 Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 76.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 76.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 76.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 76.
+[15]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 76.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 76.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 76.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 76.
+ [16
+
+
+]
+Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 85.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 85.
+\tf@lof=\write10
+
+\openout10 = ProjektseminarBeschleunigung.lof
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 86.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 86.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 86.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 86.
+ [17
+
+
+
+
+]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 86.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 86.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 86.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 86.
+ [18
+
+
+]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 89.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 89.
+\tf@lot=\write11
+
+\openout11 = ProjektseminarBeschleunigung.lot
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 90.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 90.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 90.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 90.
+ [19
+
+
+]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 90.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 90.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 90.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 90.
+ [20
+
+
+]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 92.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 92.
+ (./ProjektseminarBeschleunigung.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 92.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 92.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 92.
+
+
+Package rerunfilecheck Warning: File `ProjektseminarBeschleunigung.out' has chan
+ged.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `ProjektseminarBeschleunigung.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  E5C8B9C5AE91A83EA48E94630FF17C70;3052.
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.5pt have occurred.
@@ -3170,27 +3424,29 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 )
 
 Here is how much of LuaTeX's memory you used:
- 63165 strings out of 495004
- 100000,2373549 words of node,token memory allocated
- 612 words of node memory still in use:
-   10 hlist, 2 vlist, 2 rule, 2 glue, 1 kern, 1 glyph, 93 glue_spec, 1 write, 3 
-pdf_refximage nodes
-   avail lists: 1:1,2:54,3:5888,4:806,5:87,6:651,7:46,8:17,9:266,10:89,12:1
- 64169 multiletter control sequences out of 65536+600000
+ 62635 strings out of 495004
+ 100000,1977958 words of node,token memory allocated
+ 586 words of node memory still in use:
+   8 hlist, 2 vlist, 2 rule, 2 glue, 1 kern, 1 glyph, 93 glue_spec, 1 write, 1 p
+df_refximage nodes
+   avail lists: 1:2,2:40,3:172,4:566,5:104,6:651,7:46,8:18,9:159,10:89,12:1
+ 63616 multiletter control sequences out of 65536+600000
  119 fonts using 4684663 bytes
- 71i,22n,108p,1196b,2385s stack positions out of 5000i,500n,10000p,200000b,100000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texlive/t
-exmf-dist/fonts/enc/dvips/ly1/texnansi.enc}<</usr/share/texmf/fonts/type1/softma
-ke/charter/5chr8a.pfb><</usr/share/texlive/texmf-dist/fonts/type1/bitstrea/chart
-er/bchr8a.pfb>
-Output written on tikz-external/ProjektseminarBeschleunigung-figure0.pdf (1 page
-, 63331 bytes).
+ 70i,12n,108p,1138b,973s stack positions out of 5000i,500n,10000p,200000b,100000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}<</usr/share/texmf/fo
+nts/type1/softmake/charter/5chb8a.pfb><</usr/share/texmf/fonts/type1/softmake/ch
+arter/5chr8a.pfb><</usr/share/texmf/fonts/type1/softmake/frontpage/5fpm8a.pfb><<
+/usr/share/texmf/fonts/type1/softmake/frontpage/5fpr8a.pfb>
+Output written on ProjektseminarBeschleunigung.pdf (24 pages, 485366 bytes).
 
-PDF statistics: 32 PDF objects out of 1000 (max. 8388607)
- 19 compressed objects within 1 object stream
- 1 named destinations out of 1000 (max. 131072)
+PDF statistics: 304 PDF objects out of 1000 (max. 8388607)
+ 242 compressed objects within 3 object streams
+ 70 named destinations out of 1000 (max. 131072)
  39 words of extra memory for PDF output out of 10000 (max. 10000000)
 

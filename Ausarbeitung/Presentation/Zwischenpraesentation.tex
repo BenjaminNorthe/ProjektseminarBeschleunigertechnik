@@ -1,0 +1,102 @@
+\documentclass[accentcolor=tud9b, colorbacktitle]{tudbeamer}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage{epstopdf}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{lipsum,multicol}
+
+
+\usepackage{tikz}						% graphics creation environment frontend
+\usepackage{tikz-cd}
+\usepackage{import}
+\usepackage{multicol}
+% 
+\usepackage{pgfplots}					% graph plotting for pgf/tikz
+\pgfplotsset{compat=1.12, grid style={gray,dotted}}
+
+\usetikzlibrary{external} %% comment out to stop externalization of tikz pictures
+\tikzexternalize[optimize=false, prefix=tikz-external/] % path to store the externalized stuff in
+\tikzset{external/system call={lualatex \tikzexternalcheckshellescape -halt-on-error-interaction=batchmode -jobname "\image" "\texsource"}, force remake = false}
+% \tikzset{external/force remake = false}
+\tikzexternalize
+
+\graphicspath{{graph/}}
+
+\author{Julian Buschbaum, Rainer Stellnberger, Benjamin Northe}
+\institute{Institut TEMF}
+\logo[1.5]{\includegraphics{temf}}
+\date{\today}
+\title{}
+
+\begin{document}
+
+\begin{titleframe}
+
+
+\end{titleframe}
+
+
+
+
+
+\begin{frame}\frametitle{Inhalt}
+
+\end{frame}
+
+
+\begin{frame}\frametitle{Simulationen}
+Mithilfe von CST wurden mehrere Faktoren f\"ur die Kurzschl\"usse durchsimuliert:
+\begin{itemize}
+	\item Feldimpedanz f\"ur verschiedene Anzahlen an Kurzschl\"ussen
+	\item Feldimpedanz f\"ur verschiedene Positionen der Kurzschl\"usse
+	\item Feldimpedanz f\"ur verschiedene Formen der Kurzschl\"usse
+	\item Feldimpedanz f\"ur verschiedene Abst\"ande der Kurzschlusswicklung zum Ringkern
+	\item Feldimpedanz mit einer unterbrochenen Schiene (wenn sich diese im Leerlauf befindet)
+\end{itemize}
+\end{frame}
+
+
+
+\begin{frame}\frametitle{Feldimpedanz f\"ur verschiedene Anzahlen an Kurzschl\"ussen}
+\vspace{-2em}
+\begin{figure}[h]
+	\centering
+	\begin{tikzpicture}
+		\begin{axis}[ymode = log, width=0.85\textwidth, height = 0.58\textwidth, xmin = 0.1, xmax = 100, xlabel=Frequenz in MHz, ylabel=Realteil der Impedanz der Kavit\"at in Ohm, xticklabel style={/pgf/number format/fixed,/pgf/number format/precision=5}, every axis plot/.append style={thick},every axis legend/.append style={at={(0.3,0.45)},anchor=north west}, grid=both, cycle list name=color list]
+			\addplot table[x index=0,y index=1,mark=none] {graph/plotData/Box.txt};
+			\addplot table[x index=0,y index=1,mark=none] {graph/plotData/Rk.txt};
+			\addplot table[x index=0,y index=1,mark=none] {graph/plotData/Rk1Ks0.txt};
+			\addplot table[x index=0,y index=1,mark=none] {graph/plotData/Rk4Ks90.txt};
+			\addplot table[x index=0,y index=1,mark=none] {graph/plotData/Rk24Ks15.txt};
+			\legend{leere Box, Box mit Ringkern, 1 Kurzschluss, 4 Kurzschl\"usse (90 Grad versetzt),  24 Kurzschl\"usse}
+		\end{axis}
+	\end{tikzpicture}
+\end{figure}
+\end{frame}
+
+
+
+\begin{frame}\frametitle{Feldimpedanz f\"ur verschiedene Positionen der Kurzschl\"usse}
+\vspace{-2em}
+\begin{figure}[h]
+	\centering
+	\begin{tikzpicture}
+		\begin{axis}[ymode=log, width=0.85\textwidth, height = 0.5\textwidth, xmin = 0.1, xmax = 100, xlabel=Frequenz in MHz, ylabel=Realteil der Impedanz der Kavit\"at in Ohm, xticklabel style={/pgf/number format/fixed,/pgf/number format/precision=5}, every axis plot/.append style={thick},every axis legend/.append style={at={(0.3,0.45)},anchor=north west}, grid=both, cycle list name=color list]
+			\addplot table[x index=0,y index=1,mark=none] {graph/plotData/Box.txt};
+			\addplot table[x index=0,y index=1,mark=none] {graph/plotData/Rk.txt};
+			\addplot table[x index=0,y index=1,mark=none] {graph/plotData/Rk4Ks30.txt};
+			\addplot table[x index=0,y index=1,mark=none] {graph/plotData/Rk4Ks90.txt};
+			\legend{leere Box, Box mit Ringkern, 4 Kurzschl\"usse (30 Grad versetzt), 4 Kurzschl\"usse (90 Grad versetzt)}
+		\end{axis}
+	\end{tikzpicture}
+\end{figure}
+ 
+\end{frame}
+
+
+
+\end{document}
