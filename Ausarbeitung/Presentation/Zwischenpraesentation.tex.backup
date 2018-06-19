@@ -36,7 +36,11 @@
 \begin{document}
 
 \begin{titleframe}
-
+\vspace{-1em}
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.72\textwidth]{Kavitaet}
+	\end{figure}
 
 \end{titleframe}
 
@@ -45,13 +49,50 @@
 
 
 \begin{frame}\frametitle{Inhalt}
-
+	\begin{itemize}
+		\item Aufgabenstellung
+		\item Der Messaufbau
+		\item Durchgef\"uhrte Simulationen
+		\item Modifikation der Testbox
+	\end{itemize}
 \end{frame}
 
 
 \begin{frame}\frametitle{Aufgabenstellung}
- 
+\begin{multicols}{2}
+\vspace{-2em}
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.5\textwidth]{Kavitaet}
+	\end{figure}
+	\vfill\null
+	\columnbreak
+	\begin{itemize}
+		\item Eisenringkerne zur Stimmung der Kavit\"at bei Beschleunigung 
+	\end{itemize}
+\end{multicols}
 \end{frame}
+
+
+\begin{frame}\frametitle{Der Messaufbau}
+\vspace{-2em}
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.72\textwidth]{opentest}
+	\end{figure}
+\end{frame}
+
+
+
+
+\begin{frame}\frametitle{Bisherige Messungen}
+	\vspace{-2em}
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.72\textwidth]{test_ks_adapted_v2}
+	\end{figure}
+\end{frame}
+
 
 
 
@@ -68,6 +109,7 @@ Mithilfe von CST wurden mehrere Faktoren f\"ur die Kurzschl\"usse durchsimuliert
 
 
 
+
 \begin{frame}\frametitle{Feldimpedanz f\"ur verschiedene Anzahlen an Kurzschl\"ussen}
 \vspace{-2em}
 \begin{figure}[h]
@@ -76,6 +118,8 @@ Mithilfe von CST wurden mehrere Faktoren f\"ur die Kurzschl\"usse durchsimuliert
 	\subfloat[]{\includegraphics[height = 0.3\textwidth]{24ksTorus}}
 \end{figure}
 \end{frame}
+
+
 
 
 \begin{frame}\frametitle{Feldimpedanz f\"ur verschiedene Anzahlen an Kurzschl\"ussen}
@@ -96,6 +140,8 @@ Mithilfe von CST wurden mehrere Faktoren f\"ur die Kurzschl\"usse durchsimuliert
 \end{frame}
 
 
+
+
 \begin{frame}\frametitle{Feldimpedanz f\"ur verschiedene Positionen der Kurzschl\"usse}
 \vspace{-2em}
 \begin{figure}[h]
@@ -103,6 +149,8 @@ Mithilfe von CST wurden mehrere Faktoren f\"ur die Kurzschl\"usse durchsimuliert
 	\subfloat[]{\includegraphics[height = 0.4\textwidth]{4ksTorus30Grad}}
 \end{figure}
 \end{frame}
+
+
 
 
 \begin{frame}\frametitle{Feldimpedanz f\"ur verschiedene Positionen der Kurzschl\"usse}
@@ -121,6 +169,9 @@ Mithilfe von CST wurden mehrere Faktoren f\"ur die Kurzschl\"usse durchsimuliert
 \end{figure}
 \end{frame}
 
+
+
+
 \begin{frame}\frametitle{Feldimpedanz f\"ur verschiedene Formen der Kurzschl\"usse (jeweils 1 KS)}
 \vspace{-2em}
 \begin{figure}[h]
@@ -129,6 +180,7 @@ Mithilfe von CST wurden mehrere Faktoren f\"ur die Kurzschl\"usse durchsimuliert
 	\subfloat[]{\includegraphics[height = 0.3\textwidth]{1ksSchieneSchmal}}
 \end{figure}
 \end{frame}
+
 
 
 
@@ -151,6 +203,7 @@ Mithilfe von CST wurden mehrere Faktoren f\"ur die Kurzschl\"usse durchsimuliert
 
 
 
+
 \begin{frame}\frametitle{Feldimpedanz f\"ur verschiedene Formen der Kurzschl\"usse (jeweils 4 KS)}
 \vspace{-2em}
 \begin{figure}[h]
@@ -166,6 +219,8 @@ Mithilfe von CST wurden mehrere Faktoren f\"ur die Kurzschl\"usse durchsimuliert
 	\end{tikzpicture}
 \end{figure}
 \end{frame}
+
+
 
 
 \begin{frame}\frametitle{Feldimpedanz f\"ur verschiedene Abst\"ande der Kurzschlusswicklung zum Ringkern}
@@ -197,6 +252,8 @@ Mithilfe von CST wurden mehrere Faktoren f\"ur die Kurzschl\"usse durchsimuliert
 \end{frame}
 
 
+
+
 \begin{frame}\frametitle{Feldimpedanz mit einer unterbrochenen Schiene (wenn sich diese im Leerlauf befindet)}
 \vspace{-2em}
 \begin{figure}[h]
@@ -204,6 +261,8 @@ Mithilfe von CST wurden mehrere Faktoren f\"ur die Kurzschl\"usse durchsimuliert
 	\includegraphics[width=0.35\textwidth]{1ksSchieneOffen}
 \end{figure}
 \end{frame}
+
+
 
 
 \begin{frame}\frametitle{Feldimpedanz mit einer unterbrochenen Schiene (wenn sich diese im Leerlauf befindet)}
@@ -222,6 +281,7 @@ Mithilfe von CST wurden mehrere Faktoren f\"ur die Kurzschl\"usse durchsimuliert
 
 
 
+
 \begin{frame}\frametitle{Feldimpedanz mit vier unterbrochenen Schienen (wenn sich diese im Leerlauf befinden)}
 \vspace{-2em}
 \begin{figure}[h]
@@ -238,6 +298,7 @@ Mithilfe von CST wurden mehrere Faktoren f\"ur die Kurzschl\"usse durchsimuliert
 
 
 
+
 \begin{frame}\frametitle{Feldimpedanz mit vier unterbrochenen Schienen (wenn sich diese im Leerlauf befinden)}
 \vspace{-2em}
 \begin{figure}[h]
@@ -251,5 +312,11 @@ Mithilfe von CST wurden mehrere Faktoren f\"ur die Kurzschl\"usse durchsimuliert
 	\end{tikzpicture}
 \end{figure}
 \end{frame}
+
+
+\begin{frame}\frametitle{Modifikation der Testbox}
+ 
+\end{frame}
+
 
 \end{document}
