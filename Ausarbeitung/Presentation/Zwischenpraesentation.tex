@@ -21,11 +21,11 @@
 \usepackage{pgfplots}					% graph plotting for pgf/tikz
 \pgfplotsset{compat=1.12, grid style={gray,dotted}}
 
-\usetikzlibrary{external} %% comment out to stop externalization of tikz pictures
-\tikzexternalize[optimize=false, prefix=tikz-external/] % path to store the externalized stuff in
-\tikzset{external/system call={lualatex \tikzexternalcheckshellescape -halt-on-error-interaction=batchmode -jobname "\image" "\texsource"}, force remake = false}
-% \tikzset{external/force remake = false}
-\tikzexternalize
+%\usetikzlibrary{external} %% comment out to stop externalization of tikz pictures
+%\tikzexternalize[optimize=false, prefix=tikz-external/] % path to store the externalized stuff in
+%\tikzset{external/system call={lualatex \tikzexternalcheckshellescape -halt-on-error-interaction=batchmode -jobname "\image" "\texsource"}, force remake = false}
+%% \tikzset{external/force remake = false}
+%\tikzexternalize
 
 \graphicspath{{graph/}}
 
@@ -69,9 +69,9 @@
 	\vfill\null
 	\columnbreak
 	\begin{itemize}
-		\item Ferritringkerne zur Stimmung der Kavit\"at
-		\item Im passiven Betrieb der Kavit\"at m\"oglichst wenig Einfluss n\"otig
-		\item Theorie: Kurzschlussschaltung um die Ferritkerne soll den Einfluss dieser negieren
+		\item MA(Magnetic Alloy)-Ringkerne zur Stimmung der Kavit\"at
+		\item Im passiven Betrieb der Kavit\"at m\"oglichst wenig Einfluss auf den Strahl gewünscht (Impendanz)
+		\item Theorie: Kurzschlussschaltung um die Ringkerne soll deren Einfluss auf die Impedanz reduzieren
 	\end{itemize}
 \end{multicols}
 \end{frame}
@@ -175,7 +175,7 @@ Mithilfe von CST wurden mehrere Faktoren f\"ur die Kurzschl\"usse durchsimuliert
 			\addplot table[x index=0,y index=1,mark=none] {graph/plotData/Rk.txt};
 			\addplot table[x index=0,y index=1,mark=none] {graph/plotData/Rk4Ks30.txt};
 			\addplot table[x index=0,y index=1,mark=none] {graph/plotData/Rk4Ks90.txt};
-			\legend{leere Box, Box mit Ringkern, 4 Kurzschl\"usse (30 Grad versetzt), 4 Kurzschl\"usse (90 Grad versetzt)}
+			\legend{\small leere Box, \small Box mit Ringkern, \small 4 Kurzschl\"usse (30 Grad versetzt), \small 4 Kurzschl\"usse (90 Grad versetzt)}
 		\end{axis}
 	\end{tikzpicture}
 \end{figure}
@@ -207,7 +207,7 @@ Mithilfe von CST wurden mehrere Faktoren f\"ur die Kurzschl\"usse durchsimuliert
 			\addplot table[x index=0,y index=1,mark=none] {graph/plotData/Rk1Ks0.txt};
 			\addplot table[x index=0,y index=1,mark=none] {graph/plotData/Kupferschiene.txt};
 			\addplot table[x index=0,y index=1,mark=none] {graph/plotData/KupferschieneSchmal.txt};
-			\legend{leere Box, Box mit Ringkern, 1 Kurzschluss(Torus), 1 Kupferschiene, 1 Kupferschiene (schmal)}
+			\legend{\small leere Box, \small Box mit Ringkern, \small 1 Kurzschluss(Torus), \small 1 Kupferschiene, \small 1 Kupferschiene (schmal)}
 		\end{axis}
 	\end{tikzpicture}
 \end{figure} 
@@ -226,7 +226,7 @@ Mithilfe von CST wurden mehrere Faktoren f\"ur die Kurzschl\"usse durchsimuliert
 			\addplot table[x index=0,y index=1,mark=none] {graph/plotData/Rk.txt};
 			\addplot table[x index=0,y index=1,mark=none] {graph/plotData/Rk4Ks90.txt};
 			\addplot table[x index=0,y index=1,mark=none] {graph/plotData/Kupferschiene4x.txt};
-			\legend{leere Box, Box mit Ringkern, 4 Kurzschl\"usse(Torus), 4 Kupferschienen}
+			\legend{\small leere Box, \small Box mit Ringkern, \small 4 Kurzschl\"usse(Torus), \small 4 Kupferschienen}
 		\end{axis}
 	\end{tikzpicture}
 \end{figure}
@@ -285,7 +285,7 @@ Mithilfe von CST wurden mehrere Faktoren f\"ur die Kurzschl\"usse durchsimuliert
 		\begin{axis}[width=0.85\textwidth, height = 0.5\textwidth, xmin = 0.1, xmax = 50, xlabel=Frequenz in MHz, ylabel=Realteil der Impedanz der Box in Ohm, xticklabel style={/pgf/number format/fixed,/pgf/number format/precision=5}, every axis plot/.append style={thick},every axis legend/.append style={at={(1,0)},anchor=south east}, grid=both, cycle list name=color list]
 			\addplot table[x index=0,y index=1,mark=none] {graph/plotData/Rk.txt};
 			\addplot table[x index=0,y index=1,mark=none] {graph/plotData/KupferschieneOffen.txt};
-			\legend{Box mit Ringkern, Box mit einer offenen Kupferschiene}
+			\legend{\small Box mit Ringkern, \small Box mit einer offenen Kupferschiene}
 		\end{axis}
 	\end{tikzpicture}
 \end{figure}
@@ -302,7 +302,7 @@ Mithilfe von CST wurden mehrere Faktoren f\"ur die Kurzschl\"usse durchsimuliert
 		\begin{axis}[width=0.85\textwidth, height = 0.5\textwidth, xmin = 0.1, xmax = 50, xlabel=Frequenz in MHz, ylabel=Realteil der Impedanz der Box in Ohm, xticklabel style={/pgf/number format/fixed,/pgf/number format/precision=5}, every axis plot/.append style={thick},every axis legend/.append style={at={(1,0)},anchor=south east}, grid=both, cycle list name=color list]
 			\addplot table[x index=0,y index=1,mark=none] {graph/plotData/Rk.txt};
 			\addplot table[x index=0,y index=1,mark=none] {graph/plotData/KupferschieneOffen4x.txt};
-			\legend{Box mit Ringkern, Box mit vier offenen Kupferschienen}
+			\legend{\small Box mit Ringkern, \small Box mit vier offenen Kupferschienen}
 		\end{axis}
 	\end{tikzpicture}
 \end{figure}
@@ -319,7 +319,7 @@ Mithilfe von CST wurden mehrere Faktoren f\"ur die Kurzschl\"usse durchsimuliert
 		\begin{axis}[ymode=log, width=0.85\textwidth, height = 0.5\textwidth, xmin = 0.1, xmax = 100, xlabel=Frequenz in MHz, ylabel=Realteil der Impedanz der Box in Ohm, xticklabel style={/pgf/number format/fixed,/pgf/number format/precision=5}, every axis plot/.append style={thick},every axis legend/.append style={at={(1,0)},anchor=south east}, grid=both, cycle list name=color list]
 			\addplot table[x index=0,y index=1,mark=none] {graph/plotData/Rk.txt};
 			\addplot table[x index=0,y index=1,mark=none] {graph/plotData/KupferschieneOffen4x.txt};
-			\legend{Box mit Ringkern, Box mit vier offenen Kupferschienen}
+			\legend{\small Box mit Ringkern, \small Box mit vier offenen Kupferschienen}
 		\end{axis}
 	\end{tikzpicture}
 \end{figure}
@@ -337,11 +337,26 @@ Mithilfe von CST wurden mehrere Faktoren f\"ur die Kurzschl\"usse durchsimuliert
 	\columnbreak
 	\begin{itemize}
 		\item Montage der Kurzschl\"usse an verschiedenen Positionen 
-		\item Vergleichbarkeit, durch immer gleiche Positionen
-		\item Verschiedene Anzahl an Kurzschl\"ussen m\"oglich
+		\item Vergleichbarkeit, durch feste Positionen
+		\item Variable Anzahl von Kurzschl\"ussen m\"oglich
 	\end{itemize}
 
 \end{multicols}
+\end{frame}
+
+
+\begin{frame}\frametitle{Ausblick}
+Was steht jetzt noch an:
+        \begin{itemize}
+            \item Montage der neuen Halterung
+            \item Messung der simulierten Kurzschlussanordnungen
+            \item Vergleich von Simulation und Messung
+            \item Bewertung der Einflussfaktoren
+            \item Ausarbeiten einer favorisierten Umsetzung der Kurzschlussanordnung
+            \item Übertragen der Teststandmessung auf die Breitbandkavität
+            
+        \end{itemize}
+
 \end{frame}
 
 % \begin{frame}\frametitle{Quellen}
