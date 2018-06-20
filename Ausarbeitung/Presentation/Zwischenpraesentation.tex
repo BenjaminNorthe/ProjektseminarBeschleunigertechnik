@@ -21,11 +21,11 @@
 \usepackage{pgfplots}					% graph plotting for pgf/tikz
 \pgfplotsset{compat=1.12, grid style={gray,dotted}}
 
-%\usetikzlibrary{external} %% comment out to stop externalization of tikz pictures
-%\tikzexternalize[optimize=false, prefix=tikz-external/] % path to store the externalized stuff in
-%\tikzset{external/system call={lualatex \tikzexternalcheckshellescape -halt-on-error-interaction=batchmode -jobname "\image" "\texsource"}, force remake = false}
-%% \tikzset{external/force remake = false}
-%\tikzexternalize
+\usetikzlibrary{external} %% comment out to stop externalization of tikz pictures
+\tikzexternalize[optimize=false, prefix=tikz-external/] % path to store the externalized stuff in
+\tikzset{external/system call={lualatex \tikzexternalcheckshellescape -halt-on-error-interaction=batchmode -jobname "\image" "\texsource"}, force remake = false}
+% \tikzset{external/force remake = false}
+\tikzexternalize
 
 \graphicspath{{graph/}}
 
@@ -55,6 +55,7 @@
 		\item Der Messaufbau
 		\item Durchgef\"uhrte Simulationen
 		\item Modifikation der Testbox
+		\item Ausblick
 	\end{itemize}
 \end{frame}
 
@@ -122,12 +123,23 @@ Mithilfe von CST wurden mehrere Faktoren f\"ur die Kurzschl\"usse durchsimuliert
 
 
 
-\begin{frame}\frametitle{Feldimpedanz f\"ur verschiedene Anzahlen an Kurzschl\"ussen}
+\begin{frame}\frametitle{Anzahl der Kurzschl\"usse}
 \vspace{-2em}
 \begin{figure}[h]
 	\subfloat[]{\includegraphics[height = 0.3\textwidth]{1ksTorus}} \hspace{1em}
 	\subfloat[]{\includegraphics[height = 0.3\textwidth]{4ksTorus}}\hspace{1em}
 	\subfloat[]{\includegraphics[height = 0.3\textwidth]{24ksTorus}}
+\end{figure}
+\end{frame}
+
+
+
+\begin{frame}\frametitle{Feldbilder f\"ur verschiedene Anzahlen an Kurzschl\"ussen}
+\vspace{-2em}
+\begin{figure}[h]
+	\subfloat[]{\includegraphics[height = 0.3\textwidth]{1ks_Hfeld_Contour_2D}} \hspace{0.6em}
+	\subfloat[]{\includegraphics[height = 0.3\textwidth]{4ksTorus}}\hspace{0.6em}
+	\subfloat[]{\includegraphics[height = 0.3\textwidth]{24ks_Hfeld_Contour_2D}}
 \end{figure}
 \end{frame}
 
@@ -154,7 +166,7 @@ Mithilfe von CST wurden mehrere Faktoren f\"ur die Kurzschl\"usse durchsimuliert
 
 
 
-\begin{frame}\frametitle{Feldimpedanz f\"ur verschiedene Positionen der Kurzschl\"usse}
+\begin{frame}\frametitle{Positionen der Kurzschl\"usse}
 \vspace{-2em}
 \begin{figure}[h]
 	\subfloat[]{\includegraphics[height = 0.4\textwidth]{4ksTorus}} \hspace{1em}
@@ -184,7 +196,7 @@ Mithilfe von CST wurden mehrere Faktoren f\"ur die Kurzschl\"usse durchsimuliert
 
 
 
-\begin{frame}\frametitle{Feldimpedanz f\"ur verschiedene Formen der Kurzschl\"usse (jeweils 1 KS)}
+\begin{frame}\frametitle{Formen der Kurzschl\"usse (jeweils 1 KS)}
 \vspace{-2em}
 \begin{figure}[h]
 	\subfloat[]{\includegraphics[height = 0.3\textwidth]{1ksTorus}} \hspace{1em}
@@ -235,7 +247,7 @@ Mithilfe von CST wurden mehrere Faktoren f\"ur die Kurzschl\"usse durchsimuliert
 
 
 
-\begin{frame}\frametitle{Feldimpedanz f\"ur verschiedene Abst\"ande der Kurzschlusswicklung zum Ringkern}
+\begin{frame}\frametitle{Verschiedene Abst\"ande der Kurzschlusswicklung zum Ringkern}
 \vspace{-2em}
 \begin{figure}[h]
 	\centering
@@ -266,7 +278,7 @@ Mithilfe von CST wurden mehrere Faktoren f\"ur die Kurzschl\"usse durchsimuliert
 
 
 
-\begin{frame}\frametitle{Feldimpedanz mit einer unterbrochenen Schiene (wenn sich diese im Leerlauf befindet)}
+\begin{frame}\frametitle{Einer unterbrochene Schiene (wenn sich diese im Leerlauf befindet)}
 \vspace{-2em}
 \begin{figure}[h]
 	\centering
