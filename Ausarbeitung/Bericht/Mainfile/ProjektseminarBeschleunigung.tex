@@ -49,9 +49,41 @@
 \pagestyle{headings}
 \pagenumbering{arabic}
 
-\chapter{Einleitung}\label{chap:Kapitel1}
-    \input{../Inputfiles/Chapters/Motivation.tex}
-    \input{../Inputfiles/Chapters/Aufgabenstellung.tex}
+\chapter{Einleitung}\label{chap:einleitung}
+	\input{../Inputfiles/Chapters/Theorie.tex}
+	\input{../Inputfiles/Chapters/Aufgabenstellung.tex}
+	
+\chapter{Messaufbau}\label{chap:messaufbau}
+	\input{../Inputfiles/Chapters/Testbox.tex}
+	
+\chapter{Simulation}\label{chap:simulation}
+	\input{../Inputfiles/Chapters/TestboxMaterial.tex}
+	\input{../Inputfiles/Chapters/verschiedeneParameter.tex}
+	
+\chapter{Gegen\"uberstellugn und Ergebnisse}\label{chap:ergebnis}
+	\input{../Inputfiles/Chapters/SimulationMessung.tex}
+	\input{../Inputfiles/Chapters/Feldbilder.tex}
+	
+\chapter{Fazit und Ergebnis}\label{chap:fazit}
+	\input{../Inputfiles/Chapters/FazitErgebnis.tex}
+
+	
+%% Appendix %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagestyle{plain}
+\appendix
+\newcommand{\hiddensection}[1]{
+    \stepcounter{section}
+    \section*{\Alph{chapter}.\arabic{section}\hspace{0.8em}{#1}}
+}
+\chapter{Appendix: --}
+%    \input{../Inputfiles/Chapters/_.tex}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+{\Huge AB HIER WIP, NICHT IN DER ENDSTRUKTUR}
+\newpage
     
 \chapter{Bearbeitung}
     \input{../Inputfiles/Chapters/Vorbereitung.tex}
@@ -64,15 +96,10 @@
 \chapter{Konstruktion}
 	\input{../Inputfiles/Chapters/halterung.tex}
 	
-%% Appendix %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\pagestyle{plain}
-\appendix
-\newcommand{\hiddensection}[1]{
-    \stepcounter{section}
-    \section*{\Alph{chapter}.\arabic{section}\hspace{0.8em}{#1}}
-}
-\chapter{Appendix: --}
-%    \input{../Inputfiles/Chapters/_.tex}
+	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	
 \cleardoublepage
 
 %% Literatur %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
