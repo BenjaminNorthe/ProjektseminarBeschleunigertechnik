@@ -29,7 +29,19 @@
 \usepackage{multicol}
 % 
 \usepackage{pgfplots}					% graph plotting for pgf/tikz
-\pgfplotsset{compat=1.12, grid style={gray,dotted}}
+% \pgfplotsset{compat=1.12, grid style={gray,dotted}}
+ \pgfplotsset{ compat=1.12, grid style={gray,dotted}, %
+    discard if smaller/.style n args={2}{
+        x filter/.code={
+            \edef\tempa{\thisrow{#1}}
+            \edef\tempb{#2}
+                \ifnum\tempa<\tempb
+                    \def\pgfmathresult{inf}
+                \else
+                \fi
+        }
+    }
+    }
 
 \usetikzlibrary{external} %% comment out to stop externalization of tikz pictures
 \tikzexternalize[optimize=false, prefix=tikz-external/] % path to store the externalized stuff in

@@ -1,4 +1,4 @@
-This is LuaTeX, Version beta-0.80.0 (TeX Live 2015/Debian) (rev 5238)  (format=lualatex 2017.8.23)  6 JUN 2018 17:26
+This is LuaTeX, Version beta-0.80.0 (TeX Live 2015/Debian) (rev 5238)  (format=lualatex 2018.7.31)  3 SEP 2018 15:20
  \write18 enabled.
 **\def\tikzexternalrealjob{ProjektseminarBeschleunigung}\input{ProjektseminarBe
 schleunigung}
@@ -605,84 +605,84 @@ Package: babel 2016/02/24 3.9q The Babel package
 (/usr/share/texlive/texmf-dist/tex/generic/babel/luababel.def
 \l@dumylang=\language1
 \l@nohyphenation=\language2
-\l@ukenglish=\language3
-\l@welsh=\language4
-\l@polish=\language5
-\l@romansh=\language6
-\l@arabic=\language7
-\l@danish=\language8
-\l@swissgerman=\language9
-\l@estonian=\language10
-\l@mongolianlmc=\language11
-\l@usenglishmax=\language12
-\l@kannada=\language13
-\l@coptic=\language14
-\l@latvian=\language15
-\l@portuguese=\language16
-\l@slovenian=\language17
-\l@swedish=\language18
-\l@french=\language19
-\l@thai=\language20
-\l@italian=\language21
-\l@serbian=\language22
-\l@hindi=\language23
-\l@german=\language24
-\l@croatian=\language25
+\l@french=\language3
+\l@dutch=\language4
+\l@gujarati=\language5
+\l@pinyin=\language6
+\l@mongolian=\language7
+\l@finnish=\language8
+\l@monogreek=\language9
+\l@polish=\language10
+\l@spanish=\language11
+\l@occitan=\language12
+\l@esperanto=\language13
+\l@kannada=\language14
+\l@lithuanian=\language15
+\l@telugu=\language16
+\l@kurmanji=\language17
+\l@georgian=\language18
+\l@farsi=\language19
+\l@coptic=\language20
+\l@swedish=\language21
+\l@turkish=\language22
+\l@arabic=\language23
+\l@portuguese=\language24
+\l@serbian=\language25
 \l@friulan=\language26
-\l@ibycus=\language27
-\l@panjabi=\language28
-\l@mongolian=\language29
-\l@czech=\language30
-\l@russian=\language31
-\l@interlingua=\language32
-\l@pinyin=\language33
-\l@slovak=\language34
-\l@german-x-2014-05-21=\language35
-\l@marathi=\language36
-\l@malayalam=\language37
-\l@hungarian=\language38
-\l@piedmontese=\language39
-\l@dutch=\language40
-\l@classiclatin=\language41
-\l@assamese=\language42
-\l@monogreek=\language43
-\l@ethiopic=\language44
-\l@icelandic=\language45
-\l@romanian=\language46
-\l@lithuanian=\language47
-\l@gujarati=\language48
-\l@ngerman-x-2014-05-21=\language49
-\l@serbianc=\language50
-\l@uppersorbian=\language51
-\l@georgian=\language52
-\l@kurmanji=\language53
-\l@ngerman=\language54
-\l@turkish=\language55
-\l@afrikaans=\language56
-\l@spanish=\language57
-\l@catalan=\language58
-\l@esperanto=\language59
-\l@turkmen=\language60
-\l@finnish=\language61
-\l@ukrainian=\language62
-\l@latin=\language63
-\l@bengali=\language64
-\l@basque=\language65
-\l@occitan=\language66
-\l@greek=\language67
-\l@ancientgreek=\language68
-\l@tamil=\language69
-\l@nynorsk=\language70
-\l@telugu=\language71
-\l@indonesian=\language72
-\l@armenian=\language73
-\l@farsi=\language74
-\l@sanskrit=\language75
-\l@irish=\language76
-\l@oriya=\language77
-\l@bokmal=\language78
-\l@bulgarian=\language79
-\l@galician=\language80
+\l@russian=\language27
+\l@oriya=\language28
+\l@danish=\language29
+\l@usenglishmax=\language30
+\l@interlingua=\language31
+\l@estonian=\language32
+\l@indonesian=\language33
+\l@croatian=\language34
+\l@german=\language35
+\l@hungarian=\language36
+\l@ngerman-x-2014-05-21=\language37
+\l@galician=\language38
+\l@bokmal=\language39
+\l@ukenglish=\language40
+\l@piedmontese=\language41
+\l@hindi=\language42
+\l@ukrainian=\language43
+\l@czech=\language44
+\l@nynorsk=\language45
+\l@icelandic=\language46
+\l@latvian=\language47
+\l@greek=\language48
+\l@turkmen=\language49
+\l@catalan=\language50
+\l@welsh=\language51
+\l@armenian=\language52
+\l@romansh=\language53
+\l@malayalam=\language54
+\l@ibycus=\language55
+\l@assamese=\language56
+\l@basque=\language57
+\l@tamil=\language58
+\l@slovak=\language59
+\l@sanskrit=\language60
+\l@ethiopic=\language61
+\l@german-x-2014-05-21=\language62
+\l@ngerman=\language63
+\l@latin=\language64
+\l@panjabi=\language65
+\l@ancientgreek=\language66
+\l@romanian=\language67
+\l@slovenian=\language68
+\l@irish=\language69
+\l@marathi=\language70
+\l@italian=\language71
+\l@swissgerman=\language72
+\l@mongolianlmc=\language73
+\l@bulgarian=\language74
+\l@serbianc=\language75
+\l@uppersorbian=\language76
+\l@afrikaans=\language77
+\l@bengali=\language78
+\l@thai=\language79
+\l@classiclatin=\language80
 )
 (/usr/share/texlive/texmf-dist/tex/generic/babel-german/ngerman.ldf
 Language: ngerman 2013/12/13 v2.7 German support for babel (new orthography)
@@ -1357,7 +1357,7 @@ See the pgfkeys package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.36 ...\image" "\texsource"}, force remake = false}
+l.48 ...\image" "\texsource"}, force remake = false}
                                                   
 ? 
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
@@ -3005,7 +3005,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 52.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 52.
-(../Inputfiles/Chapters/Motivation.tex
+(../Inputfiles/Chapters/Theorie.tex
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
@@ -3022,6 +3022,85 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 56.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 56.
+(../Inputfiles/Chapters/Testbox.tex
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
+
+
+LaTeX Warning: Reference `ch:sim' on page 3 undefined on input line 2.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 6.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 6.
+
+LaTeX Warning: Reference `fig:leereBox' on page 3 undefined on input line 7.
+
+
+LaTeX Warning: Reference `fig:innenKern' on page 3 undefined on input line 14.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 19.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 19.
+)
+chapter 3.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 59.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 59.
+(../Inputfiles/Chapters/TestboxMaterial.tex
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
+)
+(../Inputfiles/Chapters/verschiedeneParameter.tex
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
+)
+chapter 4.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 64.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 64.
+(../Inputfiles/Chapters/SimulationMessung.tex
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
+)
+(../Inputfiles/Chapters/Feldbilder.tex
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
+)
+chapter 5.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 68.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 68.
+(../Inputfiles/Chapters/FazitErgebnis.tex
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
+)
+chapter A.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 79.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 79.
+chapter B.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 89.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 89.
 (../Inputfiles/Chapters/Vorbereitung.tex
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
@@ -3039,11 +3118,11 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
 )
-chapter 3.
+chapter C.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 61.
+(babel)             in language  on input line 94.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 61.
+(babel)             in language  on input line 94.
 (../Inputfiles/Chapters/boxmessungen.tex
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
@@ -3051,7 +3130,7 @@ Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
 
 
-LaTeX Warning: Reference `fig:AnzahlKs' on page 5 undefined on input line 2.
+LaTeX Warning: Reference `fig:AnzahlKs' on page 15 undefined on input line 2.
 
 Package pgfplots info on input line 6: Using 'lua backend=false' for axis: ymode
 =log unsupported (yet).
@@ -3111,7 +3190,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 90.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 90.
-[9
+[19
 
 
 Non-PDF special ignored!
@@ -3122,16 +3201,394 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 97.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 97.
-Package pgfplots info on input line 101: Using 'lua backend=false' for axis: ymo
+Package pgfplots info on input line 102: Using 'lua backend=false' for axis: ymo
 de=log unsupported (yet).
 PGFPlots: reading {../Inputfiles/plotData/Rk.txt}
 PGFPlots: reading {../Inputfiles/plotData/KupferschieneOffen.txt}
+ (./myfile.tex
+! Dimension too large.
+\pgfplotsaxisdeserializedatapointfrom@private@LUA ...
+                                                  \pgfplotsaxisdeserializeda...
+l.4664 \end{axis}
+               
+? 
+! Dimension too large.
+\pgfplotsaxisdeserializedatapointfrom@private@LUA ...
+                                                  \pgfplotsaxisdeserializeda...
+l.4664 \end{axis}
+               
+? 
+! Dimension too large.
+\pgfplotsaxisdeserializedatapointfrom@private@LUA ...
+                                                  \pgfplotsaxisdeserializeda...
+l.4664 \end{axis}
+               
+? 
+! Dimension too large.
+\pgfplotsaxisdeserializedatapointfrom@private@LUA ...
+                                                  \pgfplotsaxisdeserializeda...
+l.4664 \end{axis}
+               
+? 
+! Dimension too large.
+\pgfplotsaxisdeserializedatapointfrom@private@LUA ...
+                                                  \pgfplotsaxisdeserializeda...
+l.4664 \end{axis}
+               
+? 
+! Dimension too large.
+\pgfplotsaxisdeserializedatapointfrom@private@LUA ...
+                                                  \pgfplotsaxisdeserializeda...
+l.4664 \end{axis}
+               
+? 
+! Dimension too large.
+\pgfplotsaxisdeserializedatapointfrom@private@LUA ...
+                                                  \pgfplotsaxisdeserializeda...
+l.4664 \end{axis}
+               
+? 
+! Dimension too large.
+\pgfplotsaxisdeserializedatapointfrom@private@LUA ...
+                                                  \pgfplotsaxisdeserializeda...
+l.4664 \end{axis}
+               
+? 
+! Dimension too large.
+\pgfplotsaxisdeserializedatapointfrom@private@LUA ...
+                                                  \pgfplotsaxisdeserializeda...
+l.4664 \end{axis}
+               
+? 
+! Dimension too large.
+\pgfplotsaxisdeserializedatapointfrom@private@LUA ...
+                                                  \pgfplotsaxisdeserializeda...
+l.4664 \end{axis}
+               
+? 
+! Dimension too large.
+\pgfplotsaxisdeserializedatapointfrom@private@LUA ...
+                                                  \pgfplotsaxisdeserializeda...
+l.4664 \end{axis}
+               
+? 
+! Dimension too large.
+\pgfplotsaxisdeserializedatapointfrom@private@LUA ...
+                                                  \pgfplotsaxisdeserializeda...
+l.4664 \end{axis}
+               
+? 
+! Dimension too large.
+\pgfplotsaxisdeserializedatapointfrom@private@LUA ...
+                                                  \pgfplotsaxisdeserializeda...
+l.4664 \end{axis}
+               
+? 
+! Dimension too large.
+\pgfplotsaxisdeserializedatapointfrom@private@LUA ...
+                                                  \pgfplotsaxisdeserializeda...
+l.4664 \end{axis}
+               
+? 
+! Dimension too large.
+\pgfusepath ...@y by.5\pgflinewidth \ifdim \pgf@y 
+                                                  >\pgf@picmaxy \global \pgf...
+l.4664 \end{axis}
+               
+? 
+! Dimension too large.
+\pgfplotsaxisdeserializedatapointfrom@private@LUA ...
+                                                  \pgfplotsaxisdeserializeda...
+l.4664 \end{axis}
+               
+? 
+! Dimension too large.
+\pgfplotsaxisdeserializedatapointfrom@private@LUA ...
+                                                  \pgfplotsaxisdeserializeda...
+l.4664 \end{axis}
+               
+? 
+! Dimension too large.
+\pgfplotsaxisdeserializedatapointfrom@private@LUA ...
+                                                  \pgfplotsaxisdeserializeda...
+l.4664 \end{axis}
+               
+? 
+! Dimension too large.
+\pgfplotsaxisdeserializedatapointfrom@private@LUA ...
+                                                  \pgfplotsaxisdeserializeda...
+l.4664 \end{axis}
+               
+? 
+! Dimension too large.
+\pgfplotsaxisdeserializedatapointfrom@private@LUA ...
+                                                  \pgfplotsaxisdeserializeda...
+l.4664 \end{axis}
+               
+? 
+! Dimension too large.
+\pgfplotsaxisdeserializedatapointfrom@private@LUA ...
+                                                  \pgfplotsaxisdeserializeda...
+l.4664 \end{axis}
+               
+? 
+! Dimension too large.
+\pgfplotsaxisdeserializedatapointfrom@private@LUA ...
+                                                  \pgfplotsaxisdeserializeda...
+l.4664 \end{axis}
+               
+? 
+! Dimension too large.
+\pgfplotsaxisdeserializedatapointfrom@private@LUA ...
+                                                  \pgfplotsaxisdeserializeda...
+l.4664 \end{axis}
+               
+? 
+! Dimension too large.
+\pgfplotsaxisdeserializedatapointfrom@private@LUA ...
+                                                  \pgfplotsaxisdeserializeda...
+l.4664 \end{axis}
+               
+? 
+! Dimension too large.
+\pgfplotsaxisdeserializedatapointfrom@private@LUA ...
+                                                  \pgfplotsaxisdeserializeda...
+l.4664 \end{axis}
+               
+? 
+! Dimension too large.
+\pgfplotsaxisdeserializedatapointfrom@private@LUA ...
+                                                  \pgfplotsaxisdeserializeda...
+l.4664 \end{axis}
+               
+? 
+! Dimension too large.
+\pgfplotsaxisdeserializedatapointfrom@private@LUA ...
+                                                  \pgfplotsaxisdeserializeda...
+l.4664 \end{axis}
+               
+? 
+! Dimension too large.
+\pgfplotsaxisdeserializedatapointfrom@private@LUA ...
+                                                  \pgfplotsaxisdeserializeda...
+l.4664 \end{axis}
+               
+? 
+! Dimension too large.
+\pgfusepath ...@y by.5\pgflinewidth \ifdim \pgf@y 
+                                                  >\pgf@picmaxy \global \pgf...
+l.4664 \end{axis}
+               
+? 
+! Dimension too large.
+\pgfplotsaxisdeserializedatapointfrom@private@LUA ...
+                                                  \pgfplotsaxisdeserializeda...
+l.4664 \end{axis}
+               
+? 
+! Dimension too large.
+\pgfplotsaxisdeserializedatapointfrom@private@LUA ...
+                                                  \pgfplotsaxisdeserializeda...
+l.4664 \end{axis}
+               
+? 
+! Dimension too large.
+\pgfplotsaxisdeserializedatapointfrom@private@LUA ...
+                                                  \pgfplotsaxisdeserializeda...
+l.4664 \end{axis}
+               
+? 
+! Dimension too large.
+\pgfplotsaxisdeserializedatapointfrom@private@LUA ...
+                                                  \pgfplotsaxisdeserializeda...
+l.4664 \end{axis}
+               
+? 
+! Dimension too large.
+\pgfplotsaxisdeserializedatapointfrom@private@LUA ...
+                                                  \pgfplotsaxisdeserializeda...
+l.4664 \end{axis}
+               
+? 
+! Dimension too large.
+\pgfplotsaxisdeserializedatapointfrom@private@LUA ...
+                                                  \pgfplotsaxisdeserializeda...
+l.4664 \end{axis}
+               
+? 
+! Dimension too large.
+\pgfplotsaxisdeserializedatapointfrom@private@LUA ...
+                                                  \pgfplotsaxisdeserializeda...
+l.4664 \end{axis}
+               
+? 
+! Dimension too large.
+\pgfplotsaxisdeserializedatapointfrom@private@LUA ...
+                                                  \pgfplotsaxisdeserializeda...
+l.4664 \end{axis}
+               
+? 
+! Dimension too large.
+\pgfplotsaxisdeserializedatapointfrom@private@LUA ...
+                                                  \pgfplotsaxisdeserializeda...
+l.4664 \end{axis}
+               
+? 
+! Dimension too large.
+\pgfplotsaxisdeserializedatapointfrom@private@LUA ...
+                                                  \pgfplotsaxisdeserializeda...
+l.4664 \end{axis}
+               
+? 
+! Dimension too large.
+\pgfplotsaxisdeserializedatapointfrom@private@LUA ...
+                                                  \pgfplotsaxisdeserializeda...
+l.4664 \end{axis}
+               
+? 
+! Dimension too large.
+\pgfplotsaxisdeserializedatapointfrom@private@LUA ...
+                                                  \pgfplotsaxisdeserializeda...
+l.4664 \end{axis}
+               
+? 
+! Dimension too large.
+\pgfplotsaxisdeserializedatapointfrom@private@LUA ...
+                                                  \pgfplotsaxisdeserializeda...
+l.4664 \end{axis}
+               
+? 
+! Dimension too large.
+\pgfplotsaxisdeserializedatapointfrom@private@LUA ...
+                                                  \pgfplotsaxisdeserializeda...
+l.4664 \end{axis}
+               
+? 
+! Dimension too large.
+\pgfplotsaxisdeserializedatapointfrom@private@LUA ...
+                                                  \pgfplotsaxisdeserializeda...
+l.4664 \end{axis}
+               
+? 
+! Dimension too large.
+\pgfplotsaxisdeserializedatapointfrom@private@LUA ...
+                                                  \pgfplotsaxisdeserializeda...
+l.4664 \end{axis}
+               
+? 
+! Dimension too large.
+\pgfplotsaxisdeserializedatapointfrom@private@LUA ...
+                                                  \pgfplotsaxisdeserializeda...
+l.4664 \end{axis}
+               
+? 
+! Dimension too large.
+\pgfplotsaxisdeserializedatapointfrom@private@LUA ...
+                                                  \pgfplotsaxisdeserializeda...
+l.4664 \end{axis}
+               
+? 
+! Dimension too large.
+\pgfusepath ...@y by.5\pgflinewidth \ifdim \pgf@y 
+                                                  >\pgf@picmaxy \global \pgf...
+l.4664 \end{axis}
+               
+? 
+! Dimension too large.
+\pgfplotsaxisdeserializedatapointfrom@private@LUA ...
+                                                  \pgfplotsaxisdeserializeda...
+l.4664 \end{axis}
+               
+? 
+! Dimension too large.
+\pgfplotsaxisdeserializedatapointfrom@private@LUA ...
+                                                  \pgfplotsaxisdeserializeda...
+l.4664 \end{axis}
+               
+? 
+! Dimension too large.
+\pgfplotsaxisdeserializedatapointfrom@private@LUA ...
+                                                  \pgfplotsaxisdeserializeda...
+l.4664 \end{axis}
+               
+? 
+! Dimension too large.
+\pgfplotsaxisdeserializedatapointfrom@private@LUA ...
+                                                  \pgfplotsaxisdeserializeda...
+l.4664 \end{axis}
+               
+? 
+! Dimension too large.
+\pgfplotsaxisdeserializedatapointfrom@private@LUA ...
+                                                  \pgfplotsaxisdeserializeda...
+l.4664 \end{axis}
+               
+? 
+! Dimension too large.
+\pgfplotsaxisdeserializedatapointfrom@private@LUA ...
+                                                  \pgfplotsaxisdeserializeda...
+l.4664 \end{axis}
+               
+? 
+! Dimension too large.
+\pgfplotsaxisdeserializedatapointfrom@private@LUA ...
+                                                  \pgfplotsaxisdeserializeda...
+l.4664 \end{axis}
+               
+? 
+! Dimension too large.
+\pgfplotsaxisdeserializedatapointfrom@private@LUA ...
+                                                  \pgfplotsaxisdeserializeda...
+l.4664 \end{axis}
+               
+? 
+! Dimension too large.
+\pgfplotsaxisdeserializedatapointfrom@private@LUA ...
+                                                  \pgfplotsaxisdeserializeda...
+l.4664 \end{axis}
+               
+? 
+! Dimension too large.
+\pgfplotsaxisdeserializedatapointfrom@private@LUA ...
+                                                  \pgfplotsaxisdeserializeda...
+l.4664 \end{axis}
+               
+? 
+! Dimension too large.
+\pgfplotsaxisdeserializedatapointfrom@private@LUA ...
+                                                  \pgfplotsaxisdeserializeda...
+l.4664 \end{axis}
+               
+? 
+! Dimension too large.
+\pgfplotsaxisdeserializedatapointfrom@private@LUA ...
+                                                  \pgfplotsaxisdeserializeda...
+l.4664 \end{axis}
+               
+? 
+! Dimension too large.
+\pgfusepath ...@y by.5\pgflinewidth \ifdim \pgf@y 
+                                                  >\pgf@picmaxy \global \pgf...
+l.4664 \end{axis}
+               
+? 
 )
-chapter 4.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+Package pgfplots info on input line 125: Using 'lua backend=false' for axis: ymo
+de=log unsupported (yet).
+PGFPlots: reading {../Inputfiles/plotData/Rk.txt}
+PGFPlots: reading {../Inputfiles/plotData/KupferschieneOffen4x.txt}
+)
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+chapter D.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 64.
+(babel)             in language  on input line 97.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 64.
+(babel)             in language  on input line 97.
 (../Inputfiles/Chapters/halterung.tex
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
@@ -3146,26 +3603,22 @@ Package pdftex.def Info: ../Inputfiles/Graphics/halterung.png used on input line
  5.
 (pdftex.def)             Requested size: 373.44243pt x 372.85489pt.
 )
-chapter A.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 74.
+(babel)             in language  on input line 113.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 74.
+(babel)             in language  on input line 113.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 85.
+(babel)             in language  on input line 117.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 85.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 89.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 89.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 92.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 92.
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 92.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 92.
+(babel)             in language  on input line 117.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 120.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 120.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 120.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 120.
+
 
 LaTeX Font Warning: Size substitutions with differences
-(Font)              up to 0.5pt have occurred.
+(Font)              up to 0.85997pt have occurred.
 
 
 LaTeX Warning: There were undefined references.
@@ -3173,21 +3626,21 @@ LaTeX Warning: There were undefined references.
 )
 
 Here is how much of LuaTeX's memory you used:
- 63165 strings out of 495004
+ 63537 strings out of 495004
  100000,2373549 words of node,token memory allocated
- 612 words of node memory still in use:
+ 624 words of node memory still in use:
    10 hlist, 2 vlist, 2 rule, 2 glue, 1 kern, 1 glyph, 93 glue_spec, 1 write, 3 
 pdf_refximage nodes
-   avail lists: 1:1,2:53,3:5907,4:815,5:87,6:651,7:46,8:17,9:268,10:89,12:1
- 64169 multiletter control sequences out of 65536+600000
- 119 fonts using 4684663 bytes
- 71i,21n,108p,1196b,2370s stack positions out of 5000i,500n,10000p,200000b,100000s
+   avail lists: 1:1,2:53,3:12547,4:1735,5:93,6:2363,7:292,8:17,9:620,10:325,12:1
+ 64352 multiletter control sequences out of 65536+600000
+ 219 fonts using 8610519 bytes
+ 71i,21n,108p,1254b,2370s stack positions out of 5000i,500n,10000p,200000b,100000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texlive/t
 exmf-dist/fonts/enc/dvips/ly1/texnansi.enc}<</usr/share/texmf/fonts/type1/softma
 ke/charter/5chr8a.pfb><</usr/share/texlive/texmf-dist/fonts/type1/bitstrea/chart
 er/bchr8a.pfb>
 Output written on tikz-external/ProjektseminarBeschleunigung-figure4.pdf (1 page
-, 61924 bytes).
+, 61928 bytes).
 
 PDF statistics: 32 PDF objects out of 1000 (max. 8388607)
  19 compressed objects within 1 object stream
