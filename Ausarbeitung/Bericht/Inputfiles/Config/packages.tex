@@ -62,7 +62,7 @@
 %% misc
 \usepackage{paralist}					% enhanced list styles and environments
 \usepackage{textcomp} 					% additional symbols
-\usepackage[nottoc, numbib]{tocbibind}	% ToC modification: do not include ToC, number bibliography heading
+% \usepackage[nottoc, numbib]{tocbibind}	% ToC modification: do not include ToC, number bibliography heading
 \usepackage{enumerate}					% simplified enumeration formatting (counter style)
 \usepackage{enumitem}					% enhanced enumeration manipulation
 \usepackage[stable]{footmisc}			% support footnotes in section titles
@@ -110,8 +110,10 @@
 \usepackage[american, breaklinks]{hyperref} 	% cross-referencing and PDF metadata (direct loading in non-PDF/A mode only)
 \usepackage{hyperxmp}
 \usepackage[sort,compress,noabbrev,nameinlink]{cleveref}	% simplified referencing
-\usepackage[numbers]{natbib}
-\bibliographystyle{unsrt}
+% \usepackage[numbers]{natbib}
+\usepackage[backend=biber]{biblatex}
+\addbibresource{references.bib}
+% \bibliographystyle{unsrt}
 
 %% hacks
 \usepackage{scrhack}					% fixes some latex interoperability issues
