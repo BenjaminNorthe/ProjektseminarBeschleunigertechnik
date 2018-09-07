@@ -43,11 +43,11 @@
     }
     }
 
-\usetikzlibrary{external} %% comment out to stop externalization of tikz pictures
-\tikzexternalize[optimize=false, prefix=tikz-external/] % path to store the externalized stuff in
-\tikzset{external/system call={lualatex \tikzexternalcheckshellescape -halt-on-error-interaction=batchmode -jobname "\image" "\texsource"}, force remake = false}
-% \tikzset{external/force remake = false}
-\tikzexternalize
+% \usetikzlibrary{external} %% comment out to stop externalization of tikz pictures
+% \tikzexternalize[optimize=false, prefix=tikz-external/] % path to store the externalized stuff in
+% \tikzset{external/system call={lualatex \tikzexternalcheckshellescape -halt-on-error-interaction=batchmode -jobname "\image" "\texsource"}, force remake = false}
+% % \tikzset{external/force remake = false}
+% \tikzexternalize
 
 %% mathematics
 \usepackage{amsmath}					% enhanced mathematics support
@@ -83,7 +83,7 @@
 \usepackage{verbatim}					% use reimplemented verbatim environment
 \usepackage{outlines}					% support for simplified lists
 \usepackage{rotating}					% support for rotated floating environments
-%\usepackage{circuitikz}					% add circuit symbols for tikz/pgf
+\usepackage[siunitx, european]{circuitikz}				% add circuit symbols for tikz/pgf
 \usepackage[percent]{overpic}			% suppoerr image overlays
 \usepackage{pict2e}						% allow graphical vector with floating point units
 \usepackage[section]{placeins}					% provide \FloatBarrier command
