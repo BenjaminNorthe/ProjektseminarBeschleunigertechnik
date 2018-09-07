@@ -13,8 +13,9 @@
 *.m~
 *.net
 *.out
+*.pdf
 *.plt
 *.raw
 *.run.xml
 *.toc
-*.pdf
+
