@@ -1,0 +1,269 @@
+clear all;
+close all;
+clc;
+
+%set parameters for .csv file
+offset = 12;
+off_c = 0;
+
+%read CSV files
+emptybox = csvread('TXT099.CSV',offset, off_c);
+Cross = csvread('TXT101.CSV',offset, off_c);
+CrossPoly = csvread('TXT102.CSV',offset, off_c);
+CrossPolyRK = csvread('TXT103.CSV',offset, off_c);
+
+%load empty measured box
+offset =2;
+Box_measure = load('Box_empty_measure.dat');
+
+%load Simulation data of the empty box
+ind = 0;
+file = fopen('Box.txt','r');
+while (ind < 2)
+    fgetl(file); % advance the file pointer one line 
+    ind = ind + 1;
+end    
+Box = textscan(file, '%f %f');
+fclose(file); 
+
+%Simulation Box Measure
+offset = 2;
+ind = 0;
+file = fopen('Rk.txt','r');
+while (ind < 2)
+    fgetl(file); % advance the file pointer one line 
+    ind = ind + 1;
+end    
+Rk_Simulation = textscan(file, '%f %f');
+fclose(file);
+
+%Simulation of the box with RK and denys RK data
+offset = 2;
+ind = 0;
+file = fopen('Rk_sim_denysRK.txt','r');
+while (ind < 2)
+    fgetl(file); % advance the file pointer one line 
+    ind = ind + 1;
+end    
+Rk_sim_denysRK = textscan(file, '%f %f');
+fclose(file);
+
+%Simulation with wood
+offset = 2;
+ind = 0;
+file = fopen('BoxMitHolzOhneRK.txt','r');
+while (ind < 2)
+    fgetl(file); % advance the file pointer one line 
+    ind = ind + 1;
+end    
+Box_withWood = textscan(file, '%f %f');
+fclose(file);
+
+%Simulation Box ME889 
+offset = 2;
+ind = 0;
+file = fopen('RK_sim_ME889.txt','r');
+while (ind < 2)
+    fgetl(file); % advance the file pointer one line 
+    ind = ind + 1;
+end    
+RK_sim_ME889 = textscan(file, '%f %f');
+fclose(file);
+
+
+figure
+hold on;
+plot(Cross(:,1),Cross(:,2));
+plot(CrossPoly(:,1),CrossPoly(:,2));
+plot(Box{1}.*1e6,Box{2});
+plot(Box_measure(:,1),Box_measure(:,2));
+plot(Box_withWood{1}.*1e6,Box_withWood{2});
+hold off;
+legend('Kreuz','Kreuz + Poly', 'Box Simulation', 'Box Messung','Box mit Holz Simulation');
+%xlim([0,4e7]);
+
+
+
+%% Comparison of the test model with measured data
+L = 0.53e-6;
+C = 11.2e-12;
+%C = 6.420698884795390e-12; % new model
+C = 10.74e-12;
+
+fr = 1./sqrt(L.*C)./2./pi;
+w = 2.*pi.*Box_measure(:,1);
+f_box = Box_measure(:,1);
+f = linspace(fr-1e6,fr+1e6,100);
+
+Zl = 1i.*w.*L;
+Zlf = 1i.*f.*L;
+Zc = -1i./(w.*C);
+Zcf = -1i./(f.*C);
+par = @(x,y) (x.*y)./(x+y);
+Zges = par(Zl,Zc);
+Zges = 1i.*w.*L./(1-(w.^2) .*L.*C);
+R = max(abs(Box_measure(:,2)));
+Yges = 1./R - 1i./(w.*L) + 1i.*w.*C;
+Zges = 1./Yges;
+
+figure
+hold on;
+plot(Box_measure(:,1),Box_measure(:,2),'g')
+plot(Box_measure(:,1), abs(Zl),'r');
+plot(Box_measure(100:end,1),abs(Zc(100:end)),'p');
+plot(Box_measure(:,1),abs(Zges));
+hold off;
+legend('Box Messung', 'omega L', 'X_C','Zges');
+
+
+figure
+plot(f_box(1:400), abs(Zl(1:400)), f_box(1:400), abs(Zges(1:400)));
+figure
+plot(f_box(4000:end), abs(1./Zc(4000:end)), f_box(4000:end), abs(1./Zges(4000:end)));
+
+C_naeherung = abs(1./Zges(end))./w(end);
+%% Comparison measurement box with RK on 08.08.18 and 11.04.18
+
+Box_measure1_1104 = load('Mess1_110418.dat');
+Box_measure2_1104 = load('Mess2_110418.dat');
+Box_measure3_1104 = load('Mess3_110418.dat');
+Box_measure4_1104 = load('Mess4_110418.dat');
+
+Box_measure1_2504 = load('Mess1_250418.dat');
+Box_measure2_2504 = load('Mess2_250418.dat');
+Box_measure3_2504 = load('Mess3_250418.dat');
+
+RK_abs_1104 = sqrt(Box_measure4_1104(:,2).^2 + Box_measure4_1104(:,3).^2);
+RK_abs_2504 = sqrt(Box_measure2_2504(:,2).^2 + Box_measure2_2504(:,3).^2);
+
+figure
+hold on;
+%plot(Box_measure1_1104(:,1), Box_measure1_1104(:,2)) %KS
+%plot(Box_measure2_1104(:,1), Box_measure2_1104(:,2)) %KS
+%plot(Box_measure3_1104(:,1), Box_measure3_1104(:,2)) %KS
+%plot(Box_measure4_1104(:,1), Box_measure4_1104(:,2)); %KS
+plot(Box_measure4_1104(:,1), RK_abs_1104);
+%plot(Box_measure1_2504(:,1), Box_measure1_2504(:,2)); %empty box
+plot(Box_measure2_2504(:,1), RK_abs_2504); % box and RK
+%plot(Box_measure3_2504(:,1), Box_measure3_2504(:,2)); %KS
+plot(emptybox(:,1),emptybox(:,2)); % with RK
+
+plot(CrossPolyRK(:,1),CrossPolyRK(:,2));
+plot(Rk_Simulation{1}.*1e6,Rk_Simulation{2});
+%plot(Rk_sim_denysRK{1}.*1e6,Rk_sim_denysRK{2});
+legend('box + rk messung am 11.04 R&S','.... messung am 25.04 R&S' ,'.... messung am 8.08 mit Kack VA',...
+    'Kreuz + Poly + RK','RK Simulation','location', 'south');
+hold off;
+
+figure
+hold on;
+plot(Rk_sim_denysRK{1}.*1e6,Rk_sim_denysRK{2});
+plot(1e6.*RK_sim_ME889{1},RK_sim_ME889{2});
+plot(Box_measure4_1104(:,1), RK_abs_1104);
+plot(Box_measure2_2504(:,1), RK_abs_2504);
+hold off;
+legend('RK sim data denys','RK sim ME889', 'RK measurement from 11.04', 'RK measuremtn from 25.04');
+
+%% Model the empty box
+% Optimization
+
+
+%F(1) = R; F(2) = C1; F(3) = L1; F(4) = C2; F(5) = L2; 
+% % do it without R
+% zaehler = @(a,b,c,d,x) (x.*(b + d./(1-x.^2 .*d.*c)));
+% nenner = @(a,b,c,d,x) (1- x.^2.*a.*(b + d./(1 -x.^2.*d.*c)));
+
+
+zaehler = @(a,b,c,d,x) (x.*b -x.^3.*b.*d.*c + x.*d);
+nenner = @(a,b,c,d,x) (1- x.^2.*d.*c - x.^2.*b.*a + x.^4 .*b.*a.*c.*d - x.^2 .*d .* a);
+modelfun = @(F,x) (zaehler(F(1),F(2),F(3),F(4),x)./nenner(F(1),F(2),F(3),F(4),x));
+
+f_data = Box_measure(:,2); %compensated by R in a previous case?? Did it make sense???
+x_data = w;
+
+beta0 = [1e-11;1e-9;1e-11;1e-9];
+
+% 
+% rng('default') % for reproducibility
+% %set robust fitting options
+% opts = statset('nlinfit');
+% opts.RobustWgtFun = 'bisquare';
+% 
+% %result = nlinfit(x_data,f_data,modelfun,beta0,opts);
+% % Res = nlinfit(x_data,f_data,modelfun,beta0,opts);
+% Res = fitnlm(x_data,f_data,modelfun,beta0);
+% 
+% % [nominator,denominator] = ratpolyfit(x,y,)
+% 
+% figure
+% Zges = modelfun(Res.Coefficients{:,1},w);
+% plot(f_box,f_data,f_box,Zges);
+% title('Network without R');
+% xlabel('f');
+% ylabel('Zges')
+% legend('measurement','model nlinear fit');
+% 
+% 
+% modelfundiv = @(F,x) (nenner(F(1),F(2),F(3),F(4),x)./zaehler(F(1),F(2),F(3),F(4),x));
+% % Res = nlinfit(x_data,(1./f_data - 1./R),modelfundiv,beta0);
+% 
+% Res = fitnlm(x_data,(1./f_data - 1./R),modelfundiv,beta0);
+% 
+% 
+% figure
+% Zges = abs(1./(1./R + (modelfundiv(Res.Coefficients{:,1},w))));
+% plot(f_box,f_data,f_box,Zges);
+% title('Network with R');
+% xlabel('f');
+% ylabel('Zges');
+% legend('measurement','model nlinear fit');
+
+
+% Zers_simple = @(L,Cp,Cs) (1i.*(w.*L - 1./(w.*Cs))./(1 + Cp./Cs - w.^2 .*L.*Cp));
+% L = 1e-7;
+% Cp = 1e-12;
+% wr = 2.*pi.*fr;
+% %Cs = 1./(wr.^2 .*L);
+% Cs = Cp./(wr.^2.*L.*Cp -1);
+% 
+% fr1 = 1./sqrt(L.*Cs)./2./pi;;
+% fr2 = sqrt((1+ Cp./Cs)./(L.*Cp))./2./pi;
+% 
+% par = @(x,y)((x.*y).\(x+y));
+% Zers = Zers_simple(L,Cp,Cs);
+% 
+% figure
+% %plot(f_box,Box_measure(:,2),f_box,abs(par(Zers_simple(L,Cp,Cs),R)));
+% plot(f_box,Box_measure(:,2),f_box,abs(Zers_simple(L,Cp,Cs)));
+% grid on;
+% legend('measurement','3 component fit', 'location', 'west');
+
+
+Zers_simple = @(Lp,Ls,C) (1i.*w.*((Lp + w.^2 .*Ls.*Lp.*C)./(1-w.^2 .*Ls.*C)));
+L = 5.6e-7;
+Lfaktor = 0.5;
+
+Lp = 5.6e-7.*Lfaktor;
+Ls = L - Lp;
+wr = 2.*pi.*fr;
+%Cs = 1./(wr.^2 .*L);
+%C = (L)./(wr.^2.*Lp.*Ls);
+C = 1./(Ls.*wr.^2);
+
+
+fr1 = 1./sqrt(Ls.*C)./2./pi;
+fr2 = sqrt(L./(Lp.*Ls.*C))./2./pi;
+
+par = @(x,y)((x.*y)./(x+y));
+Zers = Zers_simple(Lp,Ls,C);
+
+figure
+hold on;
+plot(f_box,Box_measure(:,2),f_box,abs(par(Zers,R)));
+plot(Box_measure(:,1),abs(Zges));
+hold off;
+%plot(f_box,Box_measure(:,2),f_box,abs(Zers));
+grid on;
+legend('measurement','3 component fit', 'location', 'west');
+
+
