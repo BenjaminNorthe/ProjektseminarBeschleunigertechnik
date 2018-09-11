@@ -33,7 +33,7 @@
 %% Erklärung
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\pagestyle{empty}
-%\pagenumbering{roman}
+%\pagenumbering{roman} .
 %\input{./Inputfiles/erklaerung.tex}
 
 %% Table of Contents %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -51,12 +51,13 @@
 
 \chapter{Einleitung}\label{chap:einleitung}
 	\input{../Inputfiles/Chapters/Theorie.tex}
-	\input{../Inputfiles/Chapters/Aufgabenstellung.tex}
+	\input{../Inputfiles/Chapters/Aufgabenstellung.tex} 
 	
 \chapter{Messaufbau}\label{chap:messaufbau}
 	\input{../Inputfiles/Chapters/Testbox.tex}
 	
 \chapter{Simulation}\label{chap:simulation}
+	\label{ch:sim}
 	\input{../Inputfiles/Chapters/TestboxMaterial.tex}
 	\input{../Inputfiles/Chapters/verschiedeneParameter.tex}
 	
@@ -75,7 +76,7 @@
     \stepcounter{section}
     \section*{\Alph{chapter}.\arabic{section}\hspace{0.8em}{#1}}
 }
-\chapter{Appendix: --}
+\chapter{Appendix: --}<<<
 %    \input{../Inputfiles/Chapters/_.tex}
 
 
@@ -85,17 +86,17 @@
 {\Huge AB HIER WIP, NICHT IN DER ENDSTRUKTUR}
 \newpage
     
-\chapter{Bearbeitung}
-    \input{../Inputfiles/Chapters/Vorbereitung.tex}
-    \input{../Inputfiles/Chapters/Messung.tex}
-    \input{../Inputfiles/Chapters/Simulation.tex}
-
-\chapter{Plots}
-	\input{../Inputfiles/Chapters/boxmessungen.tex}
-	
-\chapter{Konstruktion}
-	\input{../Inputfiles/Chapters/halterung.tex}
-	
+% \chapter{Bearbeitung}
+%     \input{../Inputfiles/Chapters/Vorbereitung.tex}
+%     \input{../Inputfiles/Chapters/Messung.tex}
+%     \input{../Inputfiles/Chapters/Simulation.tex}
+% 
+% \chapter{Plots}
+% 	\input{../Inputfiles/Chapters/boxmessungen.tex}
+% 	
+% \chapter{Konstruktion}
+% 	\input{../Inputfiles/Chapters/halterung.tex}
+% 	
 	
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	
@@ -103,7 +104,8 @@
 \cleardoublepage
 
 %% Literatur %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\bibliographystyle{plain}
+% \bibliographystyle{plain}
+\printbibliography
 %\bibliography{../Inputfiles/Literature/_.bib}
 \cleardoublepage
 

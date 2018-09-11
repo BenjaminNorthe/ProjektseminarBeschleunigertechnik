@@ -1,5 +1,99 @@
 \section{Testbox}
+\label{sec:testbox}
+Der f\"ur Messungen verwendete Testaufbau wurde aus einem vorangegangenen Projekt an der GSI \"ubernommen~\cite{harzheim2016modeling}. Ziel des Testaufbaus war es, eine reproduzierbare Vermessung des Einflusses der Magnetic-Alloy-Ringkerne auf die Impedanz einer Einkopplung zu erreichen. Dadurch soll eine Absch\"atzung des Einfluss auf die Strahlimpedanz in der Kavit\"at erm\"oglicht werden. Im Rahmen der Bachelorarbeit von Denys Bast am Fachgebiet Beschleunigertechnik~\cite{bast2017ba} wurde f\"ur diese Testbox auch ein Simulationsmodell erstellt. Dieses wird in Abschnitt~\ref{ch:sim} behandelt. 
+\par
+Ausgehend von den bestehenden Aufbauten und Modellen wird im folgenden Analysiert, inwiefern ein oder mehrere Sekund\"are Kurzschl\"usse die Feldimpedanz\"anderung des Ringkerns annulieren k\"onnen. 
 
 \subsection{Anfangsmessung}
+Um eine Grobe Tendenz und ein Gef\"uhl f\"ur den Messaufbau zu erreichen wurden zun\"acht einige Messungen an der unmodifizierten Testbox ausgef\"uhrt. Die Testbox selbst besteht aus einem auf Rollen gelagerten Holzrahmen. Dieser ist von innen komplett mit Kupferblech der Dicke $\SI{1}{\milli\meter}$ \"uberzogen. Dieser Überzug schirmt die Messungen in der Testbox von \"au\ss{}eren Einfl\"ussen ab. Au\ss{}erdem wird damit f\"ur alle Messungen eine gleiche Umgebung geschaffen, womit diese am Ende vergleichbar bleiben. Um sp\"ater Ringkerne einbringen zu k\"onnen, befindet sich eine Konstruktion aus Holz in der Box, welche als Halterung dient. Diese besteht aus einem Quer und einem senkrechten Balken, an dem die Eigentliche Halterung angeschraubt werden kann. Diese Halterung ist Rund und entspricht dem Innendurchmesser der Ringkerne. Diese k\"onnen dadurch passgenau eingeh\"angt werden. Etwas versetzt zur Mitte der Halterung ist durch ein Loch das Einkopplungsrohr gef\"uhrt, welches mit einem Network-Analyser verbunden werden kann, um die Feldimpedanz zu bestimmen. Abbildung~\ref{fig:leereBox} zeigt das Innere der Testbox mit eingeh\"angtem Ringkern.
+\par
+\begin{figure}[htb]
+		\centering
+		\includegraphics[width=0.5\textwidth]{BoxMitRKCite}
+		\caption{Ge\"offnete Testbox mit eingeh\"angtem Ringkern.~\cite{harzheim2016modeling}}
+		\label{fig:leereBox}
+\end{figure}
+F\"ur die ersten Kurzschlussversuche wurden im Test einfache Kupferdr\"ahte mit L\"usterklemmen verwendet. Die Kupferdr\"ahte sind isoliert, sodass diese keinen Kontakt zum Ringkern herstellen. Lediglich die Enden in den Klemmen wurden abgeschliffen, um einen Kontakt herzustellen. Diese Kupferdr\"ahte lassen sich problemlos durch die Bohrungen an der Innenseite des Ringkerns (siehe Abbildung~\ref{fig:innenKern}) f\"uhren, was in Position zumindest an der Innenseite fixiert.
+\par
+\begin{figure}[htb]
+		\centering
+		\includegraphics[width=0.5\textwidth]{BoxMitRKCite}
+		\caption{Kurzschlusswicklung um den Ringekern mittels eines Drahtes, dessen Enden mit einer L\"usterklemme verbunden sind.}
+		\label{fig:innenKern}
+\end{figure}
+\textbf{???BILD HIER EINFÜGEN}
+
+
+% \newpage
+
+
 
 \subsection{Modifikation}
+Um reproduzierbare Messungen durchf\"uhren zu k\"onnen sind mehrere Anforderungen an den Aufbau der Testbox zu stellen. Zun\"achst muss die M\"oglichkeit bestehen, den Magnetic Alloy Ringkern in die Testbox einzubringen, sodass sich dieser bei jeder Messung an der gleichen Position befindet. Des weiteren ist eine M\"oglichkeit zu schaffen, bei der die Kurzschl\"usse an festgelegten  Stellen um den Ringkern zu f\"uhren sind, ohne dass diese den Kern dabei ber\"uhren. Um das zu erreichen wurden mehrere \"Uberlegungen angestellt.
+\par
+Zum einen Muss eine Ma\ss{}genaue Halterung f\"ur den Ringkern angebracht werden. Dar\"uber hinaus sollte die Halterung einen Anschlag besitzen, um die Position sicher zu stellen. Abbildung~\ref{fig:BoxKreuzPolygon} zeigt die \"Uberarbeitete Halterung. Das Holzkreuz im hinteren Teil der Halterung ragt einige Millimeter \"uber den Rand des Polygon-Rings hinaus, sodass dort ein sicherer Anschlag entsteht. Der Polygon-Ring entspricht mit dem Aus\ss{}enradius von $\SI{129}{\milli\meter}$ mit leichter Toleranz zur besseren Montage dem ben\"otigten Innenradius des Ringkerns von $\SI{130}{\milli\meter}$.
+
+
+\newpage
+
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=0.65\textwidth]{BoxKreuzPolygon}
+	\caption{Halterung aus einem Polygon, welches auf ein Holzkreuz aufgesetzt wurde mit sichtbarem Anschlag.}
+	\label{fig:BoxKreuzPolygon}
+\end{figure}
+\par
+Wie erw\"ahnt besitzt die Halterung auf der Innenseite einen Polygonzug. Durch diesen Polygonzug k\"onnen Kurzschlussb\"ugel reproduzierbar an immer gleichen Positionen platziert werden. Dazu wurden an den Fl\"achenmittelpunkten der inneren Polygonfl\"achen Bohrungen mit einem M4 Gewinde vorgesehen, an dem Kurzschl\"usse montiert werden k\"onnen. Abbildung~\ref{fig:BoxKreuzPolygonRK} zeigt den Polygonzug mit montiertem Ringkern.
+
+
+
+% \newpage
+
+
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=0.85\textwidth]{BoxKreuzPolygonRK}
+	\caption{Eingebrachter Ringkern auf der Halterung bestehend aus einem Polygon, welches auf ein Holzkreuz aufgesetzt wird.}
+	\label{fig:BoxKreuzPolygonRK}
+\end{figure}
+
+
+\newpage
+
+
+Durch die Schraubungen im Polygon wird sicher gestellt, dass Kurzschl\"usse stets an der gleichen Position angebracht werden, unabh\"angig der genauen Form der Kurzschl\"usse. Abbildung~\ref{fig:TZKS} zeigt eine Beispielhafte Kurzschlussschiene.
+\par
+\begin{figure}[htb]
+	\centering
+	\includegraphics[height=0.4\textwidth]{KS}
+	\caption{Kurzschlussschiene mit einer H\"ohe in z-Richtung von $\SI{160}{\milli\meter}$ einer Breite in x-Richtung von $\SI{30}{\milli\meter}$ und einer Blechdicke von $\SI{1}{\milli\meter}$.}
+	\label{fig:TZKS}
+\end{figure}
+Die getesteten Formen der Kurzschl\"usse sind in mehrere Variationsparameter unterteilt:
+\begin{itemize}
+	\item H\"ohe der Kurzschl\"usse in z-Richtung
+	\item Breite der Kurzschl\"usse in x-Richtung
+	\item Blechdicke der K\"urzschl\"usse
+\end{itemize}
+\par
+F\"ur die Messung wurde daher eine ganze Reihe an Kurzschlussschienen angefertigt, damit f\"ur jede Form der Schienen unterschiedliche Anzahlen an Kurzschl\"ussen gemessen werden k\"onnen und mehrere Stufen f\"ur jeden Variationsparameter vorhanden sind. Ein Bild aller Kurzschlussschienen ist in Abbildung~\ref{fig:AlleKs} zu sehen.
+\par
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=0.65\textwidth]{AlleKs}
+	\caption{Alle f\"ur Messungen angefertigte Kurzschlussschienen.}
+	\label{fig:AlleKs}
+\end{figure}
+Insgesamt wurden folgende Kurzschl\"usse angefertigt:
+\par
+\begin{itemize}
+	\item 8x $\SI{160}{\milli\meter}$ H\"ohe in z-Richtung, $\SI{30}{\milli\meter}$ Breite in x-Richtung und $\SI{1}{\milli\meter}$ Blechdicke
+	\item 2x $\SI{200}{\milli\meter}$ H\"ohe in z-Richtung, $\SI{30}{\milli\meter}$ Breite in x-Richtung und $\SI{1}{\milli\meter}$ Blechdicke
+	\item 2x $\SI{250}{\milli\meter}$ H\"ohe in z-Richtung, $\SI{30}{\milli\meter}$ Breite in x-Richtung und $\SI{1}{\milli\meter}$ Blechdicke
+	\item 2x $\SI{160}{\milli\meter}$ H\"ohe in z-Richtung, $\SI{20}{\milli\meter}$ Breite in x-Richtung und $\SI{1}{\milli\meter}$ Blechdicke
+	\item 2x $\SI{160}{\milli\meter}$ H\"ohe in z-Richtung, $\SI{50}{\milli\meter}$ Breite in x-Richtung und $\SI{1}{\milli\meter}$ Blechdicke
+	\item 2x $\SI{160}{\milli\meter}$ H\"ohe in z-Richtung, $\SI{30}{\milli\meter}$ Breite in x-Richtung und $\SI{2}{\milli\meter}$ Blechdicke
+\end{itemize}
+Daraus lie\ss{} sich folglich eine Gesamtzahl von 18 Messungen durchf\"uhren. Die Schienen selbst wurden jeweils aus einem l\"anglichen St\"uck Kupferblech gefertigt. Dieses wurde in die vorgesehene Dimension gebogen. Zum schlie\ss{}en der Schienen befinden sich an beiden Enden des Kupferblechs jeweils 2 L\"ocher, welche nach dem Biegen mit Schrauben und Muttern verbunden werden k\"onnen. In der Mitte des Kupferblechs, welche nach dem Biegen auf der Innenseite des Polygons liegt, befindet sich ein Loch mit dem Durchmesser $\SI{4}{\milli\meter}$. Dadurch k\"onnen werden die Schienen dann mittels einer Schraube positionsgenau auf die vorgesehenen Gewinde an den Polygonfl\"achen montiert.

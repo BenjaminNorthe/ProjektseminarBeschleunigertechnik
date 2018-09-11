@@ -19,6 +19,7 @@
 
 %% graphics
 \usepackage{graphicx}					% enhanced graphics support
+\usepackage[outdir=./]{epstopdf}
 \usepackage{xcolor}		% color support (already loaded by "pgf")
 \usepackage{soul}
 %\usepackage{pgf}						% graphics creation environment backend
@@ -29,6 +30,7 @@
 \usepackage{multicol}
 % 
 \usepackage{pgfplots}					% graph plotting for pgf/tikz
+<<<<<<< HEAD
 \pgfplotsset{compat=1.12, grid style={gray,dotted}}
 
 \usetikzlibrary{external} %% comment out to stop externalization of tikz pictures
@@ -36,6 +38,27 @@
 %\tikzset{external/system call={lualatex \tikzexternalcheckshellescape -halt-on-error-interaction=batchmode -jobname "\image" "\texsource"}, force remake = false}
 % \tikzset{external/force remake = false}
 \tikzexternalize
+=======
+% \pgfplotsset{compat=1.12, grid style={gray,dotted}}
+ \pgfplotsset{ compat=1.12, grid style={gray,dotted}, %
+    discard if smaller/.style n args={2}{
+        x filter/.code={
+            \edef\tempa{\thisrow{#1}}
+            \edef\tempb{#2}
+                \ifnum\tempa<\tempb
+                    \def\pgfmathresult{inf}
+                \else
+                \fi
+        }
+    }
+    }
+% 
+% \usetikzlibrary{external} %% comment out to stop externalization of tikz pictures
+% \tikzexternalize[optimize=false, prefix=tikz-external/] % path to store the externalized stuff in
+% \tikzset{external/system call={lualatex \tikzexternalcheckshellescape -halt-on-error-interaction=batchmode -jobname "\image" "\texsource"}, force remake = false}
+% % \tikzset{external/force remake = false}
+% \tikzexternalize
+>>>>>>> 4cc98eb4094b1667504b5752876600157d83f3ba
 
 %% mathematics
 \usepackage{amsmath}					% enhanced mathematics support
@@ -50,7 +73,7 @@
 %% misc
 \usepackage{paralist}					% enhanced list styles and environments
 \usepackage{textcomp} 					% additional symbols
-\usepackage[nottoc, numbib]{tocbibind}	% ToC modification: do not include ToC, number bibliography heading
+% \usepackage[nottoc, numbib]{tocbibind}	% ToC modification: do not include ToC, number bibliography heading
 \usepackage{enumerate}					% simplified enumeration formatting (counter style)
 \usepackage{enumitem}					% enhanced enumeration manipulation
 \usepackage[stable]{footmisc}			% support footnotes in section titles
@@ -71,7 +94,7 @@
 \usepackage{verbatim}					% use reimplemented verbatim environment
 \usepackage{outlines}					% support for simplified lists
 \usepackage{rotating}					% support for rotated floating environments
-%\usepackage{circuitikz}					% add circuit symbols for tikz/pgf
+\usepackage[siunitx, european]{circuitikz}				% add circuit symbols for tikz/pgf
 \usepackage[percent]{overpic}			% suppoerr image overlays
 \usepackage{pict2e}						% allow graphical vector with floating point units
 \usepackage[section]{placeins}					% provide \FloatBarrier command
@@ -98,8 +121,10 @@
 \usepackage[american, breaklinks]{hyperref} 	% cross-referencing and PDF metadata (direct loading in non-PDF/A mode only)
 \usepackage{hyperxmp}
 \usepackage[sort,compress,noabbrev,nameinlink]{cleveref}	% simplified referencing
-\usepackage[numbers]{natbib}
-\bibliographystyle{unsrt}
+% \usepackage[numbers]{natbib}
+\usepackage[backend=biber]{biblatex}
+\addbibresource{references.bib}
+% \bibliographystyle{unsrt}
 
 %% hacks
 \usepackage{scrhack}					% fixes some latex interoperability issues
