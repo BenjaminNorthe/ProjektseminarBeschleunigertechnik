@@ -30,15 +30,15 @@
 \usepackage{multicol}
 % 
 \usepackage{pgfplots}					% graph plotting for pgf/tikz
-<<<<<<< HEAD
+
 \pgfplotsset{compat=1.12, grid style={gray,dotted}}
 
-\usetikzlibrary{external} %% comment out to stop externalization of tikz pictures
-\tikzexternalize[optimize=false, prefix=tikz-external/] % path to store the externalized stuff in
-%\tikzset{external/system call={lualatex \tikzexternalcheckshellescape -halt-on-error-interaction=batchmode -jobname "\image" "\texsource"}, force remake = false}
-% \tikzset{external/force remake = false}
-\tikzexternalize
-=======
+%\usetikzlibrary{external} %% comment out to stop externalization of tikz pictures
+%\tikzexternalize[optimize=false, prefix=tikz-external/] % path to store the externalized stuff in
+%%\tikzset{external/system call={lualatex \tikzexternalcheckshellescape -halt-on-error-interaction=batchmode -jobname "\image" "\texsource"}, force remake = false}
+%% \tikzset{external/force remake = false}
+%\tikzexternalize
+
 % \pgfplotsset{compat=1.12, grid style={gray,dotted}}
  \pgfplotsset{ compat=1.12, grid style={gray,dotted}, %
     discard if smaller/.style n args={2}{
@@ -52,13 +52,6 @@
         }
     }
     }
-% 
-% \usetikzlibrary{external} %% comment out to stop externalization of tikz pictures
-% \tikzexternalize[optimize=false, prefix=tikz-external/] % path to store the externalized stuff in
-% \tikzset{external/system call={lualatex \tikzexternalcheckshellescape -halt-on-error-interaction=batchmode -jobname "\image" "\texsource"}, force remake = false}
-% % \tikzset{external/force remake = false}
-% \tikzexternalize
->>>>>>> 4cc98eb4094b1667504b5752876600157d83f3ba
 
 %% mathematics
 \usepackage{amsmath}					% enhanced mathematics support
