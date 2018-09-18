@@ -1,6 +1,24 @@
-\section{Simulation}
-    \begin{enumerate}
-        \item Simulation der Messaufbauten und Vergleich mit der Messung
-        \item Simulation als Vorbereitung für Messung
-        \item als Abschätzen der Einflüsse und deren Gewichtung
-    \end{enumerate}
+    \section{Motivation}
+    Um die Einflüsse verschiedener Kurzschlussanordnungen und -ausführungen schon im Vorfeld abschätzen zu können und ein erstes Gefühl für den Einfluss der Kurzschlüsse zu bekommen, wurde die Testanordnung zunächst ausgiebig mit der Simulationssoftware CST simuliert.\\
+    Die Simulationen dienten als Vorbereitung, um bei den Messungen präziser vorgehen zu können und gezielt Messungen durchzuführen. Zuletzt wurden die Simulationsergebnisse dann mit den Messergebnissen gegenübergestellt und verglichen, um deren Richtigkeit zu überprüfen.
+    
+    \section{Modellierung}
+        \subsection{Bestehendes Testbox- und Ringkernmodell}
+        Als Grundgerüst für die Simulation der Testbox und des Ringkerns dient das Simulationsmodell aus der Bachelorarbeit von Denys Bast.\\
+        In dieser Arbeit sind bereits wichtige Teile der Testbox, sowie der Ringkern selbst modelliert. Für die Modellierung der Testboxwände wird reines Kupfer verwendet. Die Signaleinkopplung ist geometrisch sehr genau dargestellt, die Einkopplungsstange wird aus reinem Kupfer modelliert und wird am Anschlusspunkt mittels eines elektrisch-nicht-leitenden Materials von der Außenwand isoliert, sodass die Stange also Hin- und die Außenwand als Rückleiter fungieren.\\
+        Ein grundsätzlicher Aspekt der Arbeit von Denys Bast war die Anpassung des Ringkernmaterials in der Simulation an die gemessenen Parameter. Diese Parameter wurden für die Simulation des Ringkerns beibehalten.\\
+        Eine detaillierte Beschreibung der Modellierung kann der Arbeit von Denys Bast entnommen werden.
+        
+        \subsection{Erweiterung}
+        Für die Simulation des Einflusses von Kurzschlüssen auf die Impedanz eines Ringkerns wurde das bestehende Simulationsmodell erweitert.
+        
+            \begin{enumerate}
+                \item ergänzung der testbox um enthaltene kupferbauteile
+                \item einfügen der holzbauteile und der halterung
+                \item einbringen der modifikationen an der testbox, polygon, holzkreuz
+                \item modellierung der kurzschlüsse
+                \begin{enumerate}
+                    \item mit exakten abmessungen
+                    \item un den verschiedenen ausführungen
+                \end{enumerate}
+            \end{enumerate}
