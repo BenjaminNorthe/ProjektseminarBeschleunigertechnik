@@ -17,11 +17,10 @@ F\"ur die ersten Kurzschlussversuche wurden im Test einfache Kupferdr\"ahte mit 
 \par
 \begin{figure}[htb]
 		\centering
-		\includegraphics[width=0.5\textwidth]{BoxMitRKCite}
-		\caption{Kurzschlusswicklung um den Ringekern mittels eines Drahtes, dessen Enden mit einer L\"usterklemme verbunden sind.}
+		\includegraphics[width=0.65\textwidth]{BoxRKKlemmeKS}
+		\caption{Kurzschlusswicklungen um den Ringekern mittels Dr\"ahten, deren Enden mit L\"usterklemmen verbunden sind.}
 		\label{fig:innenKern}
 \end{figure}
-\textbf{???BILD HIER EINFÜGEN}
 
 
 % \newpage
@@ -97,3 +96,15 @@ Insgesamt wurden folgende Kurzschl\"usse angefertigt:
 	\item 2x $\SI{160}{\milli\meter}$ H\"ohe in z-Richtung, $\SI{30}{\milli\meter}$ Breite in x-Richtung und $\SI{2}{\milli\meter}$ Blechdicke
 \end{itemize}
 Daraus lie\ss{} sich folglich eine Gesamtzahl von 18 Messungen durchf\"uhren. Die Schienen selbst wurden jeweils aus einem l\"anglichen St\"uck Kupferblech gefertigt. Dieses wurde in die vorgesehene Dimension gebogen. Zum schlie\ss{}en der Schienen befinden sich an beiden Enden des Kupferblechs jeweils 2 L\"ocher, welche nach dem Biegen mit Schrauben und Muttern verbunden werden k\"onnen. In der Mitte des Kupferblechs, welche nach dem Biegen auf der Innenseite des Polygons liegt, befindet sich ein Loch mit dem Durchmesser $\SI{4}{\milli\meter}$. Dadurch k\"onnen werden die Schienen dann mittels einer Schraube positionsgenau auf die vorgesehenen Gewinde an den Polygonfl\"achen montiert.
+
+
+\section{Messdurchf\"uhrung}
+Die Messungen wurden mittels eines [\textbf{HIER NETWORKANALYSER MODELL EINFUEGEN?????}] Network-Analysers durchgef\"uhrt, der mittels eines BNC-Kabels mit der Einkopplung verbunden wurde. Um eine Unverf\"alschte Messung zu gew\"ahrleisten wurde ein verwindungsfestes Kabel genutzt, da somit Phasenfehler, welche durch Lage\"anderung des Kabels nach der urspr\"unglichen Kalibrierung entstehen k\"onnen, vermieden werden.
+\par
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=0.75\textwidth]{messstand}
+	\caption{Messstand mit Network-Analyser, welcher mit der geschlossenen Testbox verbunden ist.}
+	\label{fig:messstand}
+\end{figure}
+Dar\"uber hinaus ist zu beachten, dass immer Imagin\"arteil und Realteil der Impedanz getrennt aufgenommen werden, damit bei der sp\"ateren Simulation das RLC-Modell der Testbox \"uberpr\"uft werden kann. F\"ur die Abschlie\ss{}ende Auswertung des Effekts der Kurzschl\"usse ist allerdings nur der Absolutwert der Impedanz relevant.
