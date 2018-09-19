@@ -36,7 +36,26 @@
         Abbildung~\ref{fig:BoxRKCST} bildet den modellierten Aufbau der Testbox mit Ringkern ab, wie er in \cite{bast2017ba} beschrieben wird.
 
         \subsection{Kurzschlüsse}
+        
+            \begin{figure}[htb]
+                \centering
+                \subfloat[Version 1]{
+                    \label{subfig:V1}
+                    \includegraphics[height=0.3\textwidth]{./Simulation/KSV1Torus.png}}
+                \hspace{0.01\textwidth}
+                \subfloat[Version 2]{
+                    \label{subfig:V2}
+                    \includegraphics[height=0.3\textwidth]{./Simulation/KSV2Schiene.png}}
+                \hspace{0.01\textwidth}
+                \subfloat[Version 3]{
+                    \label{subfig:V3}
+                    \includegraphics[height=0.3\textwidth]{./Simulation/KSV3MitSchrauben.png}}
+                \caption{Modellierung eines Kurzschluss \protect\subref{subfig:V1} als Torus, \protect\subref{subfig:V2} als Schiene und \protect\subref{subfig:V3} in gefertigter Ausführung}
+                \label{fig:KSCST}
+            \end{figure}
+        
         \todo[inline,color=red!30]{Hier weiter ausarbeiten!}
+        
         Die Aufgabe dieser Arbeit ist die Untersuchung des Einflusses von Kurzschlüssen auf die Impedanz eines MA-Ringkerns, hierfür wurden in der Simulation mit CST Studio Suite die Kurzschlüsse modelliert. Als Material wird ideales Kupfer, wie es in der Datenbank von CST zu finden ist, verwendet. Die Kurzschlüsse wurden in einer ersten Ausführung als einfache Ringe umgesetzt und im Laufe der Arbeit geometrisch an realen Versionen angepasst.\\
         Es wurden wie bei der Messung mehrere, verschieden Formen und Abmessungen für die Untersuchung der Parameter modelliert und simuliert.
         
