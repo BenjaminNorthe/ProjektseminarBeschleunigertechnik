@@ -53,7 +53,7 @@
                 \subfloat[Version 3]{
                     \label{subfig:V3}
                     \includegraphics[height=0.3\textwidth]{./Simulation/KSV3MitSchrauben.png}}
-                \caption{Modellierung eines Kurzschluss \protect\subref{subfig:V1} als Torus, \protect\subref{subfig:V2} als Schiene und \protect\subref{subfig:V3} in gefertigter Ausführung}
+                \caption{Modellierung eines Kurzschluss \protect\subref{subfig:V1} als Torus, \protect\subref{subfig:V2} als Schiene und \protect\subref{subfig:V3} in gefertigter Ausführung.}
                 \label{fig:KSCST}
             \end{figure}
         
@@ -61,18 +61,50 @@
         
         \subsection{Realitätsgetreue Anpassungen}
         
+            \begin{figure}[htb]
+                \centering
+                \subfloat[Bügel]{
+                    \label{subfig:Buegel}
+                    \includegraphics[height=0.3\textwidth]{./Simulation/Buegel.png}}
+                \hspace{0.01\textwidth}
+                \subfloat[Zylinder]{
+                    \label{subfig:Block}
+                    \includegraphics[height=0.3\textwidth]{./Simulation/Block.png}}
+                \hspace{0.01\textwidth}
+                \subfloat[Holzkonstruktion]{
+                    \label{subfig:HolzKonst}
+                    \includegraphics[height=0.3\textwidth]{./Simulation/HolzKonstrukt.png}}
+                \caption{Anpassung des Simulationsmodells an den realen Aufbau \protect\subref{subfig:Buegel} Bügel über Einkopplung, \protect\subref{subfig:Block} Kupferzylinder an der Rückwand und \protect\subref{subfig:HolzKonst} die hölzerne Halterung des Ringkerns.}
+                \label{fig:AnpassungCST}
+            \end{figure}
         \todo[inline,color=red!30]{Hier weiter ausarbeiten!}
         
         Um das bestehende Testboxmodell und die Simulation noch besser mit der Realität und Messung in Übereinstimmung zu bringen, wurde es um einige Komponenten erweitert.\\
         Das Modell der Testbox wurde um die hölzerne Halterung der Ringkerne ergänzt, da durch die dielektrischen Eigenschaften von Holz ein wenn auch kleiner Einfluss auf die elektrischen Eigenschaften der Testbox zu erwarten ist. Außerdem wurden einige in der Testbox enthaltene Bauteile aus Kupfer hinzugefügt, da diese den Feldverlauf beeinflussen. Dies sind unter anderem ein Bügel, der oberhalb der Einkopplung angebracht ist, sowie eine zylinderförmige Verstärkung am hinteren Ende der Einkopplungsstange.
         
             \subsubsection{Ringkern}
+            
+            \begin{figure}[htb]
+                \centering
+                \includegraphics[height=0.4\textwidth]{./Simulation/RKFeRing.png}
+                \caption{Ringkernmodell mit innerem Eisenring}
+                \label{fig:RKFeRingCST}
+            \end{figure}
+        
             Auch der Ringkern wurde im Laufe der Arbeit realitätsnäher modelliert.\\
             Dazu wurde wie bereits in der Arbeit von Denys Bast vorgegangen und aus der gemessenen Gesamtimpedanz die verlustbehafteten, magnetischen Materialparameter $\mu'$ und $\mu''$ errechnet und schließlich in CST dem Ringkernmaterial hinzugefügt.\\
             Zu Erst wird über die Impedanzgleichung einer Ersatzschaltungsanordnung für die TEstbox inklusive Ringkern die Impedanz des Ringkerns herausgerechnet. Daraus werden nun die Parameter gewonnen. Diese werden dann in CST den Materialparametern des Ringkerns hinterlegt.
            \todo[inline, color=red!30]{Formeln, Referenz}
            
         \subsection{Erweiterung des Modells}
+        
+        \begin{figure}[htb]
+            \centering
+            \includegraphics[height=0.4\textwidth]{./Simulation/KreuzPolygon.png}
+            \caption{Erweiterung der Testbox um die Holzkreuzhalterung und den Polygonzug zur Befestigung der Kurzschlüsse}
+            \label{fig:KreuzPolygonCST}
+        \end{figure}
+    
         Die Testbox wurde im Lauf dieser Arbeit modifiziert, um eine einfacherer Messdurchführung und eine erhöhte Reproduzierbarkeit der Messungen zu erreichen, diese Modifikationen wurden auch in die Simulationsmodellierung übernommen.\\
         Die Ringkernhalterung wurde um das Holzkreuz ergänzt und der Polygonzug zur Befestigung der Kurzschlüsse wurde geometrisch exakt eingefügt.\\
         
