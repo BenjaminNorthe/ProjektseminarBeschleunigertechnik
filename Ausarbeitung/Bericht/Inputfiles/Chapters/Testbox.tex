@@ -63,6 +63,7 @@ Auf der Innenseite des inneren Rings befindet sich ein Polygonzug. Durch diesen 
 
 
 \subsection{Entwurf der Kurzschlussschienen}
+\label{sec:shorts}
 Die Kurzschlussschienen selbst sind so zu entwerfen, dass diese unabh\"angig von der Form stets in gleicher Position an die vorgesehenen Verschraubungen im Polygonzug angebracht werden k\"onnen. Um das zu gew\"ahrleisten, wurden die Schienen genau auf die Geometrie des Polygonzugs angepasst. Abbildung~\ref{fig:TZKS} zeigt eine Beispielhafte Kurzschlussschiene.
 \par
 \begin{figure}[htb]
@@ -110,7 +111,7 @@ Daraus l\"asst sich folglich eine Gesamtzahl von 18 Messungen mit Kurzschl\"usse
 
 
 \section{Messdurchf\"uhrung}
-Die Messungen werden mit einem Agilent 8753ES~\cite{agilent2000} Network-Analyser durchgef\"uhrt, der mittels eines BNC-Kabels mit der Einkopplung verbunden wird. Um eine Unverf\"alschte Messung zu gew\"ahrleisten wird ein verwindungsfestes Kabel genutzt. Somit werden Phasenfehler, welche durch Lage\"anderung des Kabels nach der urspr\"unglichen Kalibrierung entstehen k\"onnen, vermieden.
+Die Messungen werden mit einem Agilent 8753ES~\cite{agilent2000} Network-Analyser durchgef\"uhrt, der mittels eines BNC-Kabels mit der Einkopplung verbunden wird. Um eine Unverf\"alschte Messung zu gew\"ahrleisten wird ein verwindungsfestes Kabel genutzt. Somit werden Phasenfehler, welche durch Lage\"anderung des Kabels nach der urspr\"unglichen Kalibrierung entstehen k\"onnen, vermieden. Abbildung~\ref{fig:messstand} bildet diesen Aufbau ab.
 \par
 \begin{figure}[htb]
 	\centering
@@ -119,4 +120,10 @@ Die Messungen werden mit einem Agilent 8753ES~\cite{agilent2000} Network-Analyse
 	\label{fig:messstand}
 \end{figure}
 
-Dar\"uber hinaus ist zu beachten, dass immer Imagin\"arteil und Realteil der Impedanz getrennt aufgenommen werden, damit bei der sp\"ateren Simulation das RLC-Modell der Testbox \"uberpr\"uft werden kann. F\"ur die Abschlie\ss{}ende Auswertung des Effekts der Kurzschl\"usse wird allerdings nur der Absolutwert der Impedanz f\"ur den Vergleich herangezogen.
+Dar\"uber hinaus ist zu beachten, dass immer Imagin\"arteil und Realteil der Impedanz getrennt aufgenommen werden, damit bei der sp\"ateren Simulation das RLC-Modell der Testbox \"uberpr\"uft werden kann. F\"ur die Abschlie\ss{}ende Auswertung des Effekts der Kurzschl\"usse wird allerdings nur der Absolutwert der Impedanz f\"ur den Vergleich herangezogen. Der Network-Analyser nimmt den Frequenzbereich mit einer Aufl\"osung von insgesamt 1601 Messpunkten auf. Der aufgenommene Messbereich erstreckt sich von $\SI{30}{\kilo\hertz}$ bis $\SI{100}{\mega\hertz}$. Daraus ergibt sich eine Messaufl\"osung nach Gleichung~\ref{eq:measureres}.
+\begin{equation}
+	\frac{\SI{100}{\mega\hertz} - \SI{0,03}{\mega\hertz} }{1601} \approx \SI{62,5}{\kilo\hertz\per DIV} 
+	\label{eq:measureres}
+\end{equation}
+
+
