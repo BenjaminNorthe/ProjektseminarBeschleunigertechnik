@@ -2,7 +2,27 @@
 \label{sec:testbox}
 Der f\"ur Messungen verwendete Testaufbau wurde aus einem vorangegangenen Projekt an der GSI \"ubernommen~\cite{harzheim2016modeling}. Ziel des Testaufbaus war es, eine reproduzierbare Vermessung des Einflusses der Magnetic-Alloy-Ringkerne auf die Impedanz einer Einkopplung zu erreichen. Dadurch soll eine Absch\"atzung des Einfluss auf die Strahlimpedanz in der Kavit\"at erm\"oglicht werden. Im Rahmen der Bachelorarbeit von Denys Bast am Fachgebiet Beschleunigertechnik~\cite{bast2017ba} wurde f\"ur diese Testbox auch ein Simulationsmodell erstellt. Dieses wird in Abschnitt~\ref{ch:sim} behandelt. 
 \par
+Die Abmessungen der Testbox sind Abbildung~\ref{fig:boxdimensions} zu entnehmen.
+\par
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=0.6\textwidth]{testbox}
+	\caption{Abmessungen der Testbox, alle L\"angenangaben in Millimeter.}
+	\label{fig:boxdimensions}
+\end{figure}
+Mit:\\
+H0 = $\SI{600}{\milli\meter}$\\
+H1 = $\SI{350}{\milli\meter}$\\
+H2 = $\SI{445}{\milli\meter}$\\
+H3 = $\SI{595}{\milli\meter}$
+
+
+\par
 Ausgehend von den bestehenden Aufbauten und Modellen wird im folgenden Analysiert, inwiefern ein oder mehrere Sekund\"are Kurzschl\"usse die Feldimpedanz\"anderung des Ringkerns annulieren k\"onnen. 
+
+
+\newpage
+
 
 \subsection{Anfangsmessung}
 Um eine Grobe Tendenz und ein Gef\"uhl f\"ur den Messaufbau zu erreichen wurden zun\"acht einige Messungen an der unmodifizierten Testbox ausgef\"uhrt. Die Testbox selbst besteht aus einem auf Rollen gelagerten Holzrahmen. Dieser ist von innen komplett mit Kupferblech der Dicke $\SI{1}{\milli\meter}$ \"uberzogen. Dieser Überzug schirmt die Messungen in der Testbox von \"au\ss{}eren Einfl\"ussen ab. Au\ss{}erdem wird damit f\"ur alle Messungen eine gleiche Umgebung geschaffen, womit diese am Ende vergleichbar bleiben. Um sp\"ater Ringkerne einbringen zu k\"onnen, befindet sich eine Konstruktion aus Holz in der Box, welche als Halterung dient. Diese besteht aus einem Quer und einem senkrechten Balken, an dem die Eigentliche Halterung angeschraubt werden kann. Diese Halterung ist Rund und entspricht dem Innendurchmesser der Ringkerne. Diese k\"onnen dadurch passgenau eingeh\"angt werden. Etwas versetzt zur Mitte der Halterung ist durch ein Loch das Einkopplungsrohr gef\"uhrt, welches mit einem Network-Analyser verbunden werden kann, um die Feldimpedanz zu bestimmen. Abbildung~\ref{fig:leereBox} zeigt das Innere der Testbox mit eingeh\"angtem Ringkern.
@@ -23,18 +43,15 @@ F\"ur die ersten Kurzschlussversuche wurden im Test einfache Kupferdr\"ahte mit 
 \end{figure}
 
 
-% \newpage
-
-
-
 \subsection{Modifikation der Ringkernhalterung}
 Um reproduzierbare Messungen durchf\"uhren zu k\"onnen sind mehrere Anforderungen an den Aufbau der Testbox zu stellen. Zun\"achst muss die M\"oglichkeit bestehen, den Magnetic Alloy Ringkern in die Testbox einzubringen, sodass sich dieser bei jeder Messung an der gleichen Position befindet. Des weiteren ist eine M\"oglichkeit zu schaffen, bei der die Kurzschl\"usse an festgelegten  Stellen um den Ringkern zu f\"uhren sind, ohne dass diese den Kern dabei ber\"uhren. Um das zu erreichen wurden mehrere \"Uberlegungen angestellt.
-\par
-Zum einen Muss eine Ma\ss{}genaue Halterung f\"ur den Ringkern angebracht werden. Dar\"uber hinaus sollte die Halterung einen Anschlag besitzen, um die Position sicher zu stellen. Abbildung~\ref{fig:BoxKreuzPolygon} zeigt die \"Uberarbeitete Halterung. Das Holzkreuz im hinteren Teil der Halterung ragt einige Millimeter \"uber den Rand des Inneren Halterungsrings hervor. Der Ring besitzt einen Au\ss{}endurchmesser von $\SI{129}{\milli\meter}$, damit MA-Ringkern mit einem Innenradius von $\SI{130}{\milli\meter}$ leicht und dennoch passgenau montierbar bleibt.
 
 
 \newpage
 
+
+
+Zum einen Muss eine Ma\ss{}genaue Halterung f\"ur den Ringkern angebracht werden. Dar\"uber hinaus sollte die Halterung einen Anschlag besitzen, um die Position sicher zu stellen. Abbildung~\ref{fig:BoxKreuzPolygon} zeigt die \"Uberarbeitete Halterung. Das Holzkreuz im hinteren Teil der Halterung ragt einige Millimeter \"uber den Rand des Inneren Halterungsrings hervor. Der Ring besitzt einen Au\ss{}endurchmesser von $\SI{129}{\milli\meter}$, damit MA-Ringkern mit einem Innenradius von $\SI{130}{\milli\meter}$ leicht und dennoch passgenau montierbar bleibt.
 
 \begin{figure}[htb]
 	\centering
@@ -42,14 +59,8 @@ Zum einen Muss eine Ma\ss{}genaue Halterung f\"ur den Ringkern angebracht werden
 	\caption{Halterung aus einem Polygon, welches auf ein Holzkreuz aufgesetzt wurde mit sichtbarem Anschlag.}
 	\label{fig:BoxKreuzPolygon}
 \end{figure}
-\par
+
 Auf der Innenseite des inneren Rings befindet sich ein Polygonzug. Durch diesen Polygonzug k\"onnen Kurzschlussb\"ugel reproduzierbar an immer gleichen Positionen platziert werden. Dazu wurden an den Fl\"achenmittelpunkten der inneren Polygonfl\"achen Bohrungen mit einem M4 Gewinde vorgesehen, an dem Kurzschl\"usse montiert werden k\"onnen. Abbildung~\ref{fig:BoxKreuzPolygonRK} zeigt den Polygonzug mit montiertem Ringkern.
-
-
-
-% \newpage
-
-
 
 \begin{figure}[htb]
 	\centering
@@ -60,6 +71,7 @@ Auf der Innenseite des inneren Rings befindet sich ein Polygonzug. Durch diesen 
 
 
 \newpage
+
 
 
 \subsection{Entwurf der Kurzschlussschienen}
@@ -82,10 +94,6 @@ Die getesteten Formen der Kurzschl\"usse sind in mehrere Variationsparameter unt
 	\item Blechdicke der K\"urzschl\"usse
 \end{itemize}
 
-
-\newpage
-
-
 F\"ur die Messung wurde eine ganze Reihe an Kurzschlussschienen angefertigt, damit f\"ur jede Form der Schienen unterschiedliche Anzahlen an Kurzschl\"ussen gemessen werden k\"onnen und mehrere Stufen f\"ur jeden Variationsparameter vorhanden sind. Ein Bild aller Kurzschlussschienen ist in Abbildung~\ref{fig:AlleKs} zu sehen.
 \par
 \begin{figure}[htb]
@@ -105,10 +113,6 @@ Insgesamt wurden folgende Kurzschl\"usse angefertigt:
 	\item 2x $\SI{160}{\milli\meter}$ H\"ohe in z-Richtung, $\SI{30}{\milli\meter}$ Breite in x-Richtung und $\SI{2}{\milli\meter}$ Blechdicke
 \end{itemize}
 Daraus l\"asst sich folglich eine Gesamtzahl von 18 Messungen mit Kurzschl\"ussen durchf\"uhren. 
-
-
-\newpage
-
 
 \section{Messdurchf\"uhrung}
 Die Messungen werden mit einem Agilent 8753ES~\cite{agilent2000} Network-Analyser durchgef\"uhrt, der mittels eines BNC-Kabels mit der Einkopplung verbunden wird. Um eine Unverf\"alschte Messung zu gew\"ahrleisten wird ein verwindungsfestes Kabel genutzt. Somit werden Phasenfehler, welche durch Lage\"anderung des Kabels nach der urspr\"unglichen Kalibrierung entstehen k\"onnen, vermieden. Abbildung~\ref{fig:messstand} bildet diesen Aufbau ab.
