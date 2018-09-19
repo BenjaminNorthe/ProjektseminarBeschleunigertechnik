@@ -36,6 +36,9 @@
         Abbildung~\ref{fig:BoxRKCST} bildet den modellierten Aufbau der Testbox mit Ringkern ab, wie er in \cite{bast2017ba} beschrieben wird.
 
         \subsection{Kurzschlüsse}
+        Die für die Parameteranalyse dieser Arbeit benötigten Kurzschlüsse sind in CST in verschiedenen, komplexen Ausführungen modelliert.\\
+        Die erste Version stellt ein einfacher, ellipsenförmiger Torus dar, wie er in Abbildung~\ref{fig:KSCST}\subref{subfig:V1} abgebildet ist. Als Material für die Simulation wird Kupfer aus der Datenbank von CST verwendet.\\
+        Die in Kapitel~\ref{sec:testbox} beschriebenen Verbesserungen der Kurzschlüsse für eine erhöhte Reproduzierbarkeit der Messungen, sind so in CST modelliert. Abbildung~\ref{fig:KSCST}\subref{subfig:V2} zeigt die Umformung des einfachen Torus zu einem schienenförmigen Kurzschluss. Die finale Version, die letztlich für die Messungen benutzt wurde, ist in Abbildung~\ref{fig:KSCST}\subref{subfig:V3} zu sehen. Die einfache Kupferschiene ist geometrisch an die verwendeten Kurzschlüsse angepasst und um die Verbindungsschrauben erweitert.
         
             \begin{figure}[htb]
                 \centering
@@ -54,12 +57,12 @@
                 \label{fig:KSCST}
             \end{figure}
         
-        \todo[inline,color=red!30]{Hier weiter ausarbeiten!}
-        
-        Die Aufgabe dieser Arbeit ist die Untersuchung des Einflusses von Kurzschlüssen auf die Impedanz eines MA-Ringkerns, hierfür wurden in der Simulation mit CST Studio Suite die Kurzschlüsse modelliert. Als Material wird ideales Kupfer, wie es in der Datenbank von CST zu finden ist, verwendet. Die Kurzschlüsse wurden in einer ersten Ausführung als einfache Ringe umgesetzt und im Laufe der Arbeit geometrisch an realen Versionen angepasst.\\
-        Es wurden wie bei der Messung mehrere, verschieden Formen und Abmessungen für die Untersuchung der Parameter modelliert und simuliert.
+        Um eine Parameteranalyse durchzuführen und die Simulationsergebnisse mit den Messungen gegenüberzustellen, ist die finale Version in den verschiedenen Ausführungen, wie sie aus Kapitel~\ref{sec:shorts} hervorgehen, nachgebildet.
         
         \subsection{Realitätsgetreue Anpassungen}
+        
+        \todo[inline,color=red!30]{Hier weiter ausarbeiten!}
+        
         Um das bestehende Testboxmodell und die Simulation noch besser mit der Realität und Messung in Übereinstimmung zu bringen, wurde es um einige Komponenten erweitert.\\
         Das Modell der Testbox wurde um die hölzerne Halterung der Ringkerne ergänzt, da durch die dielektrischen Eigenschaften von Holz ein wenn auch kleiner Einfluss auf die elektrischen Eigenschaften der Testbox zu erwarten ist. Außerdem wurden einige in der Testbox enthaltene Bauteile aus Kupfer hinzugefügt, da diese den Feldverlauf beeinflussen. Dies sind unter anderem ein Bügel, der oberhalb der Einkopplung angebracht ist, sowie eine zylinderförmige Verstärkung am hinteren Ende der Einkopplungsstange.
         
