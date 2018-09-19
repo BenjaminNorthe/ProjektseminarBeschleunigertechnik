@@ -4,21 +4,34 @@
     
     \section{Modellierung}
         \subsection{Bestehendes Testbox- und Ringkernmodell}
-        Als Grundgerüst für die Simulation der Testbox und des Ringkerns dient das Simulationsmodell aus der Bachelorarbeit von Denys Bast.\\
-        In dieser Arbeit sind bereits wichtige Teile der Testbox, sowie der Ringkern selbst modelliert. Für die Modellierung der Testboxwände wird reines Kupfer verwendet. Die Signaleinkopplung ist geometrisch sehr genau dargestellt, die Einkopplungsstange wird aus reinem Kupfer modelliert und wird am Anschlusspunkt mittels eines elektrisch-nicht-leitenden Materials von der Außenwand isoliert, sodass die Stange also Hin- und die Außenwand als Rückleiter fungieren.\\
+        Als Grundlage für die Simulation der Testbox und des Ringkerns dient das Simulationsmodell aus der Bachelorarbeit von Denys Bast \cite{bast2017ba}.\\
+        Die Außenwände der Testbox sind geometrisch sehr genau den Abmessungen des realen Teststandes entsprechend modelliert, als Material wird hierfür reines Kupfer verwendet, wie es in der Datenbank von CST zu finden ist.
+        \todo[inline,color=red!30]{Hier weiter ausarbeiten!}
+            \begin{figure}[htb]
+                \centering
+                \includegraphics[height=0.4\textwidth]{./Simulation/BoxWaende2.png}
+                \caption{Modell der Testbox in CST}
+                \label{fig:BoxCST}
+            \end{figure}
+    
+        Die Signaleinkopplung ist geometrisch sehr genau dargestellt, die Einkopplungsstange wird aus reinem Kupfer modelliert und wird am Anschlusspunkt mittels eines elektrisch-nicht-leitenden Materials von der Außenwand isoliert, sodass die Stange also Hin- und die Außenwand als Rückleiter fungieren.\\
         Ein grundsätzlicher Aspekt der Arbeit von Denys Bast war die Anpassung des Ringkernmaterials in der Simulation an die gemessenen Parameter. Diese Parameter wurden für die Simulation des Ringkerns beibehalten.\\
         Eine detaillierte Beschreibung der Modellierung kann der Arbeit von Denys Bast entnommen werden.
         
-        \subsection{Erweiterung}
-        Für die Simulation des Einflusses von Kurzschlüssen auf die Impedanz eines Ringkerns wurde das bestehende Simulationsmodell erweitert.
+        \subsection{Kurzschlüsse}
+        Die Aufgabe dieser Arbeit ist die Untersuchung des Einflusses von Kurzschlüssen auf die Impedanz eines MA-Ringkerns, hierfür wurden in der Simulation mit CST Studio Suite die Kurzschlüsse modelliert. Als Material wird ideales Kupfer, wie es in der Datenbank von CST zu finden ist, verwendet. Die Kurzschlüsse wurden in einer ersten Ausführung als einfache Ringe umgesetzt und im Laufe der Arbeit geometrisch an realen Versionen angepasst.\\
+        Es wurden wie bei der Messung mehrere, verschieden Formen und Abmessungen für die Untersuchung der Parameter modelliert und simuliert.
         
-            \begin{enumerate}
-                \item ergänzung der testbox um enthaltene kupferbauteile
-                \item einfügen der holzbauteile und der halterung
-                \item einbringen der modifikationen an der testbox, polygon, holzkreuz
-                \item modellierung der kurzschlüsse
-                \begin{enumerate}
-                    \item mit exakten abmessungen
-                    \item un den verschiedenen ausführungen
-                \end{enumerate}
-            \end{enumerate}
+        \subsection{Realitätsgetreue Anpassungen}
+        Um das bestehende Testboxmodell und die Simulation noch besser mit der Realität und Messung in Übereinstimmung zu bringen, wurde es um einige Komponenten erweitert.\\
+        Das Modell der Testbox wurde um die hölzerne Halterung der Ringkerne ergänzt, da durch die dielektrischen Eigenschaften von Holz ein wenn auch kleiner Einfluss auf die elektrischen Eigenschaften der Testbox zu erwarten ist. Außerdem wurden einige in der Testbox enthaltene Bauteile aus Kupfer hinzugefügt, da diese den Feldverlauf beeinflussen. Dies sind unter anderem ein Bügel, der oberhalb der Einkopplung angebracht ist, sowie eine zylinderförmige Verstärkung am hinteren Ende der Einkopplungsstange.
+        
+            \subsubsection{Ringkern}
+            Auch der Ringkern wurde im Laufe der Arbeit realitätsnäher modelliert.\\
+            Dazu wurde wie bereits in der Arbeit von Denys Bast vorgegangen und aus der gemessenen Gesamtimpedanz die verlustbehafteten, magnetischen Materialparameter $\mu'$ und $\mu''$ errechnet und schließlich in CST dem Ringkernmaterial hinzugefügt.\\
+            Zu Erst wird über die Impedanzgleichung einer Ersatzschaltungsanordnung für die TEstbox inklusive Ringkern die Impedanz des Ringkerns herausgerechnet. Daraus werden nun die Parameter gewonnen. Diese werden dann in CST den Materialparametern des Ringkerns hinterlegt.
+           \todo[inline, color=red!30]{Formeln, Referenz}
+        \subsection{Erweiterung des Modells}
+        Die Testbox wurde im Lauf dieser Arbeit modifiziert, um eine einfacherer Messdurchführung und eine erhöhte Reproduzierbarkeit der Messungen zu erreichen, diese Modifikationen wurden auch in die Simulationsmodellierung übernommen.\\
+        Die Ringkernhalterung wurde um das Holzkreuz ergänzt und der Polygonzug zur Befestigung der Kurzschlüsse wurde geometrisch exakt eingefügt.\\
+
