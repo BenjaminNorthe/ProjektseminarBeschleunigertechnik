@@ -4,21 +4,39 @@
     
     \section{Modellierung}
         \subsection{Bestehendes Testbox- und Ringkernmodell}
-        Als Grundlage für die Simulation der Testbox und des Ringkerns dient das Simulationsmodell aus der Bachelorarbeit von Denys Bast \cite{bast2017ba}.\\
-        Die Außenwände der Testbox sind geometrisch sehr genau den Abmessungen des realen Teststandes entsprechend modelliert, als Material wird hierfür reines Kupfer verwendet, wie es in der Datenbank von CST zu finden ist.
-        \todo[inline,color=red!30]{Hier weiter ausarbeiten!}
+        Als Grundlage für die Simulation der Testbox und des Ringkerns dient das Simulationsmodell von Testbox inklusive Ringkern aus der Bachelorarbeit von Denys Bast \cite{bast2017ba}.\\
+        Die Außenwände der Testbox sind geometrisch sehr genau den Abmessungen des realen Teststandes entsprechend modelliert, als Material wird hierfür reines Kupfer verwendet, wie es in der Datenbank von CST zu finden ist. Die leere Box ist in Abbildung~\ref{fig:BoxCST} dargestellt.
+        
             \begin{figure}[htb]
                 \centering
                 \includegraphics[height=0.4\textwidth]{./Simulation/BoxWaende2.png}
                 \caption{Modell der Testbox in CST}
                 \label{fig:BoxCST}
             \end{figure}
-    
-        Die Signaleinkopplung ist geometrisch sehr genau dargestellt, die Einkopplungsstange wird aus reinem Kupfer modelliert und wird am Anschlusspunkt mittels eines elektrisch-nicht-leitenden Materials von der Außenwand isoliert, sodass die Stange also Hin- und die Außenwand als Rückleiter fungieren.\\
-        Ein grundsätzlicher Aspekt der Arbeit von Denys Bast war die Anpassung des Ringkernmaterials in der Simulation an die gemessenen Parameter. Diese Parameter wurden für die Simulation des Ringkerns beibehalten.\\
-        Eine detaillierte Beschreibung der Modellierung kann der Arbeit von Denys Bast entnommen werden.
+        In Abbildung~\ref{fig:InnenleiterCST} ist die Signaleinkopplung der Testbox zu sehen.
+        Diese ist als Hohlzylinder aus Kupfer modelliert und geometrisch genau am realen Vorbild orientiert. Die Stange ist an der hinteren Wand elektrisch mit der Box verbunden und an der Vorderseite durch einen elektrisch nicht leitfähigen Ring aus Polyethylen (PE, CST Datenbank) von der Box isoliert. Hierdurch wird erreicht, dass die Stange als Hin- und die Boxaußenwände als Rückleiter für Signale dienen. Der Übergang zwischen Testbox, PE und Stange ist planar ausgeführt, um einen Signalport für die Simulation darzustellen.
         
+            \begin{figure}[htb]
+                \centering
+                \includegraphics[height=0.4\textwidth]{./Simulation/InnenleiterPE.png}
+                \caption{Modell der Einkopplungsstange mit elektrischer Isolation}
+                \label{fig:InnenleiterCST}
+            \end{figure}
+        
+        Der Ringkern ist als einfacher Hohlzylinder mit den geometrischen Abmessungen seines realen Vorbild modelliert. Der realem Aufbau entsprechend, ist er zentral im Testboxmodell, allerdings freischwebend, ohne die hölzerne Halterung, modelliert.\\
+        Ein grundlegender Aspekt der Arbeit von Denys Bast~\cite{bast2017ba} ist, die magnetische Permeabilität des Ringkernmaterials in der Simulation mit dem realen Material in Übereinstimmung zu bringen. Die dabei gewonnenen Daten wurden übernommen.
+        
+            \begin{figure}[htb]
+                \centering
+                \includegraphics[height=0.4\textwidth]{./Simulation/BoxRK.png}
+                \caption{Gesamtdarstellung der Modellierung von Testbox und Ringkern nach Denys Bast~\cite{bast2017ba}}
+                \label{fig:BoxRKCST}
+            \end{figure}
+        
+        Abbildung~\ref{fig:BoxRKCST} bildet den modellierten Aufbau der Testbox mit Ringkern ab, wie er in \cite{bast2017ba} beschrieben wird.
+
         \subsection{Kurzschlüsse}
+        \todo[inline,color=red!30]{Hier weiter ausarbeiten!}
         Die Aufgabe dieser Arbeit ist die Untersuchung des Einflusses von Kurzschlüssen auf die Impedanz eines MA-Ringkerns, hierfür wurden in der Simulation mit CST Studio Suite die Kurzschlüsse modelliert. Als Material wird ideales Kupfer, wie es in der Datenbank von CST zu finden ist, verwendet. Die Kurzschlüsse wurden in einer ersten Ausführung als einfache Ringe umgesetzt und im Laufe der Arbeit geometrisch an realen Versionen angepasst.\\
         Es wurden wie bei der Messung mehrere, verschieden Formen und Abmessungen für die Untersuchung der Parameter modelliert und simuliert.
         
