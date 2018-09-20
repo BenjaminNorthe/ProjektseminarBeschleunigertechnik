@@ -60,7 +60,11 @@
         Um eine Parameteranalyse durchzuführen und die Simulationsergebnisse mit den Messungen gegenüberzustellen, ist die finale Version in den verschiedenen Ausführungen, wie sie aus Kapitel~\ref{sec:shorts} hervorgehen, nachgebildet.
         
         \subsection{Realitätsgetreue Anpassungen}
-        
+        Das bestehende Modell wurde im Laufe der Arbeit weiter ausarbeitet, um die Übereinstimmung der Simulationsergebnisse mit den Messungen zu erhöhen. Die nachfolgenden Komponenten wurden in das CST-Modell übernommen, da aufgrund ihrer di-/elektrischen Eigenschaften ein Einfluss auf die Simulation zu erwarten ist.\\
+        \todo[inline,color=red!30]{$\uparrow$ Verweis auf Simulationsergebnisse, wenn Kapitel vorhanden. $\uparrow$}
+        Wie auf den Bildern der Testbox in Kapitel~\ref{chap:messaufbau} hervorgeht, befindet sich oberhalb der Einkopplungsstange an der Anschlussseite ein metallischer Bügel. Er ist möglichst exakt in CST nachgebildet (siehe Abb.~\ref{fig:AnpassungCST}\subref{subfig:Buegel}).\\
+        Am Ende der Einkopplungsstange, an der Rückwand ist eine zylinderförmige, kupferne Halterung für die Stange montiert, sich ist nach Abbildung~\ref{fig:AnpassungCST}\subref{subfig:Block} modelliert.\\
+        Zuletzt wurde für diese Arbeit auch die Holzkonstruktion in CST übernommen, die als Halterung für die Ringkerne in der Testbox dient (siehe Abb.~\ref{fig:AnpassungCST}\subref{subfig:HolzKonst}).
             \begin{figure}[htb]
                 \centering
                 \subfloat[Bügel]{
@@ -77,19 +81,17 @@
                 \caption{Anpassung des Simulationsmodells an den realen Aufbau \protect\subref{subfig:Buegel} Bügel über Einkopplung, \protect\subref{subfig:Block} Kupferzylinder an der Rückwand und \protect\subref{subfig:HolzKonst} die hölzerne Halterung des Ringkerns.}
                 \label{fig:AnpassungCST}
             \end{figure}
-        \todo[inline,color=red!30]{Hier weiter ausarbeiten!}
-        
-        Um das bestehende Testboxmodell und die Simulation noch besser mit der Realität und Messung in Übereinstimmung zu bringen, wurde es um einige Komponenten erweitert.\\
-        Das Modell der Testbox wurde um die hölzerne Halterung der Ringkerne ergänzt, da durch die dielektrischen Eigenschaften von Holz ein wenn auch kleiner Einfluss auf die elektrischen Eigenschaften der Testbox zu erwarten ist. Außerdem wurden einige in der Testbox enthaltene Bauteile aus Kupfer hinzugefügt, da diese den Feldverlauf beeinflussen. Dies sind unter anderem ein Bügel, der oberhalb der Einkopplung angebracht ist, sowie eine zylinderförmige Verstärkung am hinteren Ende der Einkopplungsstange.
         
             \subsubsection{Ringkern}
             
-            \begin{figure}[htb]
-                \centering
-                \includegraphics[height=0.4\textwidth]{./Simulation/RKFeRing.png}
-                \caption{Ringkernmodell mit innerem Eisenring}
-                \label{fig:RKFeRingCST}
-            \end{figure}
+            \todo[inline,color=red!30]{Hier weiter ausarbeiten!}
+            
+                \begin{figure}[htb]
+                    \centering
+                    \includegraphics[height=0.4\textwidth]{./Simulation/RKFeRing.png}
+                    \caption{Ringkernmodell mit innerem Eisenring}
+                    \label{fig:RKFeRingCST}
+                \end{figure}
         
             Auch der Ringkern wurde im Laufe der Arbeit realitätsnäher modelliert.\\
             Dazu wurde wie bereits in der Arbeit von Denys Bast vorgegangen und aus der gemessenen Gesamtimpedanz die verlustbehafteten, magnetischen Materialparameter $\mu'$ und $\mu''$ errechnet und schließlich in CST dem Ringkernmaterial hinzugefügt.\\
