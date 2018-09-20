@@ -65,6 +65,7 @@
         Wie auf den Bildern der Testbox in Kapitel~\ref{chap:messaufbau} hervorgeht, befindet sich oberhalb der Einkopplungsstange an der Anschlussseite ein metallischer Bügel. Er ist möglichst exakt in CST nachgebildet (siehe Abb.~\ref{fig:AnpassungCST}\subref{subfig:Buegel}).\\
         Am Ende der Einkopplungsstange, an der Rückwand ist eine zylinderförmige, kupferne Halterung für die Stange montiert, sich ist nach Abbildung~\ref{fig:AnpassungCST}\subref{subfig:Block} modelliert.\\
         Zuletzt wurde für diese Arbeit auch die Holzkonstruktion in CST übernommen, die als Halterung für die Ringkerne in der Testbox dient (siehe Abb.~\ref{fig:AnpassungCST}\subref{subfig:HolzKonst}).
+        
             \begin{figure}[htb]
                 \centering
                 \subfloat[Bügel]{
@@ -83,8 +84,7 @@
             \end{figure}
         
             \subsubsection{Ringkern}
-            
-            \todo[inline,color=red!30]{Hier weiter ausarbeiten!}
+            Die echten Ringkerne, wie sie bei der GSI benutzt werden, bestehen nicht nur aus dem MA-Material, sondern besitzen einen Innenkreis aus Eisen, der zur Montage dient. Da das Eisen andere Magnetische Eigenschaften als das MA-Material besitzt, wurde dies in das Modell übernommen. Die neue Modellierung des Ringkerns mit innerem Eisenring ist in Abbildung~\ref{fig:RKFeRingCST} dargestellt.
             
                 \begin{figure}[htb]
                     \centering
@@ -92,23 +92,23 @@
                     \caption{Ringkernmodell mit innerem Eisenring}
                     \label{fig:RKFeRingCST}
                 \end{figure}
-        
+                    
+            \todo[inline,color=red!30]{Hier weiter ausarbeiten!}
+            
             Auch der Ringkern wurde im Laufe der Arbeit realitätsnäher modelliert.\\
             Dazu wurde wie bereits in der Arbeit von Denys Bast vorgegangen und aus der gemessenen Gesamtimpedanz die verlustbehafteten, magnetischen Materialparameter $\mu'$ und $\mu''$ errechnet und schließlich in CST dem Ringkernmaterial hinzugefügt.\\
             Zu Erst wird über die Impedanzgleichung einer Ersatzschaltungsanordnung für die TEstbox inklusive Ringkern die Impedanz des Ringkerns herausgerechnet. Daraus werden nun die Parameter gewonnen. Diese werden dann in CST den Materialparametern des Ringkerns hinterlegt.
            \todo[inline, color=red!30]{Formeln, Referenz}
            
         \subsection{Erweiterung des Modells}
+        Wie bereits in Kapitel~\ref{chap:messaufbau} erläutert, wurde die Testbox für die einfachere Montage der Kurzschlüsse und die erhöhte Reproduzierbarkeit der Messungen modifiziert und um ein kreuzförmiges Gestell aus Holz, sowie einen nichtleitenden Ring mit einem Polygonzug als Innenkreis erweitert (Geometrie und Beschreibung siehe Kapitel~\ref{chap:messaufbau}). Diese Modifikationen sind mit CST geometrisch genau nachgebildet, die Materialeigenschaften sind dem Original nachempfunden (siehe Abb.~\ref{fig:KreuzPolygonCST}).
         
-        \begin{figure}[htb]
-            \centering
-            \includegraphics[height=0.4\textwidth]{./Simulation/KreuzPolygon.png}
-            \caption{Erweiterung der Testbox um die Holzkreuzhalterung und den Polygonzug zur Befestigung der Kurzschlüsse}
-            \label{fig:KreuzPolygonCST}
-        \end{figure}
-    
-        Die Testbox wurde im Lauf dieser Arbeit modifiziert, um eine einfacherer Messdurchführung und eine erhöhte Reproduzierbarkeit der Messungen zu erreichen, diese Modifikationen wurden auch in die Simulationsmodellierung übernommen.\\
-        Die Ringkernhalterung wurde um das Holzkreuz ergänzt und der Polygonzug zur Befestigung der Kurzschlüsse wurde geometrisch exakt eingefügt.\\
+            \begin{figure}[htb]
+                \centering
+                \includegraphics[height=0.4\textwidth]{./Simulation/KreuzPolygon.png}
+                \caption{Erweiterung der Testbox um die Holzkreuzhalterung und den Polygonzug zur Befestigung der Kurzschlüsse}
+                \label{fig:KreuzPolygonCST}
+            \end{figure}
         
         \sout{Dieser Text soll nicht sein.}\textcolor{red}{Dieser Schon.}
 
