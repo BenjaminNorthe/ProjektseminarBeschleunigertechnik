@@ -85,16 +85,47 @@
         
             \subsubsection{Ringkern}
             Die echten Ringkerne, wie sie bei der GSI benutzt werden, bestehen nicht nur aus dem MA-Material, sondern besitzen einen Innenkreis aus Eisen, der zur Montage dient. Da das Eisen andere Magnetische Eigenschaften als das MA-Material besitzt, wurde dies in das Modell übernommen. Die neue Modellierung des Ringkerns mit innerem Eisenring ist in Abbildung~\ref{fig:RKFeRingCST} dargestellt.
-            \par
-            Des Weiteren wurde für eine bessere Übereinstimmung von Simulation und Messung die magnetische Permeabilität des Ringkernmaterial den Messungen entsprechend aktualisiert. Die Anpassung der Materialparameter basiert auf der Arbeit von Denys Bast~\citep{bast2017ba} und den theoretischen Grundlagen nach ~\citep{Klingbeil2008}.\\
-            Wie in \citep{Klingbeil2008} beschrieben kann 
-            
+                
                 \begin{figure}[htb]
                     \centering
                     \includegraphics[height=0.4\textwidth]{./Simulation/RKFeRing.png}
                     \caption{Ringkernmodell mit innerem Eisenring}
                     \label{fig:RKFeRingCST}
                 \end{figure}
+            
+            \par
+            Des Weiteren wurde für eine bessere Übereinstimmung von Simulation und Messung die magnetische Permeabilität des Ringkernmaterials den Messungen entsprechend aktualisiert. Die Anpassung der Materialparameter basiert auf der Arbeit von Denys Bast~\citep{bast2017ba} und den theoretischen Grundlagen nach ~\citep{Klingbeil2008}.\\
+            Die Testbox und der Ringkern können in ein Ersatzschaltbild überführt und damit der Impedanzverlauf analysiert werden. Das Ersatzschaltbild ist in Abbildung~\ref{fig:BoxRKCircuit} dargestellt. Die Impedanz dieser Anordnung bestimmt sich nach
+                \begin{equation}\label{eq:Zges}
+                    Z_{ges} = \frac{R_{box}\cdot(Z_{rk}+j\omega L_{box})}{R_{box}+(Z_{rk}+j\omega L_{box})\cdot(1+j\omega R_{box}C_{box})}.
+                \end{equation}
+            Daraus lässt sich nun die Impedanz des Ringkerns $Z_{rk}$ bestimmen
+                \begin{equation}\label{eq:Zrk}
+                Z_{rk} = \frac{Z_{ges}\cdot(R_{box}+j\omega L_{box}-\omega^2\cdot R_{box}L_{box}C_{box}) - j\omega R_{box}L_{box}}{R_{box}-Z_{ges}\cdot(1+j\omega R_{box}C_{box})}.
+                \end{equation}
+            
+                \begin{figure}[htb]
+                    \centering
+                    \begin{tikzpicture}
+                    \begin{circuitikz}
+                    \draw
+                    (2,0) to [resistor =$R_{box}$] (2,3)
+                    (5,0) to [C, l=$C_{box}$] (5,3)
+                    (5,3) to [L, l=$L_{box}$] (9,3)
+                    (9,3) to [short, *-] (10,3)
+                    (9,0) to [short, *-] (10,0)
+                    (10,3) to [resistor =$Z_{rk}$] (10,0)
+                    (0,3) to [short, *-] (5,3)
+                    (0,0) to [short, *-] (5,0)
+                    (8,3) to [short, -*] (9,3)
+                    (5,0) to [short, -*] (9,0);
+                    % 		(0,0) to [short, *- , i_=$I_5$] (1.5,-2);
+                    \end{circuitikz}
+                    \end{tikzpicture}
+                    \caption{RLC-Ersatzschaltbild f\"ur die Testbox Modellierung mit Eingebrachtem Ringkern als Last.}
+                    \label{fig:BoxRKCircuit}
+                \end{figure}
+                
                     
             \todo[inline,color=red!30]{Hier weiter ausarbeiten!}
             
