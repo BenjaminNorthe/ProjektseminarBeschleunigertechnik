@@ -63,8 +63,9 @@
         Das bestehende Modell wurde im Laufe der Arbeit weiter ausarbeitet, um die Übereinstimmung der Simulationsergebnisse mit den Messungen zu erhöhen. Die nachfolgenden Komponenten wurden in das CST-Modell übernommen, da aufgrund ihrer di-/elektrischen Eigenschaften ein Einfluss auf die Simulation zu erwarten ist.\\
         \todo[inline,color=red!30]{$\uparrow$ Verweis auf Simulationsergebnisse, wenn Kapitel vorhanden. $\uparrow$}
         Wie auf den Bildern der Testbox in Kapitel~\ref{chap:messaufbau} hervorgeht, befindet sich oberhalb der Einkopplungsstange an der Anschlussseite ein metallischer Bügel. Er ist möglichst exakt in CST nachgebildet (siehe Abb.~\ref{fig:AnpassungCST}\subref{subfig:Buegel}).\\
-        Am Ende der Einkopplungsstange, an der Rückwand ist eine zylinderförmige, kupferne Halterung für die Stange montiert, sich ist nach Abbildung~\ref{fig:AnpassungCST}\subref{subfig:Block} modelliert.\\
-        Zuletzt wurde für diese Arbeit auch die Holzkonstruktion in CST übernommen, die als Halterung für die Ringkerne in der Testbox dient (siehe Abb.~\ref{fig:AnpassungCST}\subref{subfig:HolzKonst}).
+        Am Ende der Einkopplungsstange, an der Rückwand ist eine zylinderförmige, kupferne Halterung für die Stange montiert, sich ist nach Abbildung~\ref{fig:AnpassungCST}\subref{subfig:Block} modelliert.
+        \par
+        Zuletzt wurde für diese Arbeit auch die Holzkonstruktion in CST übernommen, die als Halterung für die Ringkerne in der Testbox dient (siehe Abb.~\ref{fig:AnpassungCST}\subref{subfig:HolzKonst}). Dabei wurden die Holzkreise mit einem dissipativen, durch Austesten und die Messung Anpassen bestimmten $\underline{\epsilon}_r$ modelliert, da es sich hierbei nicht um die Standardholzmodellierung von CST handelt, wie sie für die Holzbalken verwendet wird, sondern ein geschichtetes Pressspanholz verwendet wird.
         
             \begin{figure}[htb]
                 \centering
@@ -95,16 +96,17 @@
             
             \par
             Des Weiteren wurde für eine bessere Übereinstimmung von Simulation und Messung die magnetische Permeabilität des Ringkernmaterials den Messungen entsprechend aktualisiert. Die Anpassung der Materialparameter basiert auf der Arbeit von Denys Bast~\citep{bast2017ba} und den theoretischen Grundlagen nach ~\citep{Klingbeil2008}.\\
-            Die Testbox und der Ringkern können in ein Ersatzschaltbild überführt und damit der Impedanzverlauf analysiert werden. Das Ersatzschaltbild ist in Abbildung~\ref{fig:BoxRKCircuit} dargestellt. Die Impedanz dieser Anordnung bestimmt sich nach
+            Die Testbox und der Ringkern können in ein Ersatzschaltbild überführt und damit der Impedanzverlauf analysiert werden. Das Ersatzschaltbild ist in Abbildung~\ref{fig:BoxRKCircuit} dargestellt, dabei wurde die Vorlage aus \citep{bast2017ba} um einen Widerstand ergänzt, damit das hochfrequente Verhalten der Ersatzschaltung und der Messung besser übereinstimmen.\\
+            Die Impedanz dieser Anordnung bestimmt sich nach
                 \begin{equation}\label{eq:Zges}
-                    Z_{ges} = \frac{R_{box}\cdot(Z_{rk}+j\omega L_{box})}{R_{box}+(Z_{rk}+j\omega L_{box})\cdot(1+j\omega R_{box}C_{box})}.
+                    \underline{Z}_{ges} = \frac{R_{box}\cdot(\underline{Z}_{rk}+j\omega L_{box})}{R_{box}+(\underline{Z}_{rk}+j\omega L_{box})\cdot(1+j\omega R_{box}C_{box})}.
                 \end{equation}
             Daraus lässt sich nun die Impedanz des Ringkerns $Z_{rk}$ bestimmen
                 \begin{equation}\label{eq:Zrk}
-                Z_{rk} = \frac{Z_{ges}\cdot(R_{box}+j\omega L_{box}-\omega^2\cdot R_{box}L_{box}C_{box}) - j\omega R_{box}L_{box}}{R_{box}-Z_{ges}\cdot(1+j\omega R_{box}C_{box})}.
+                \underline{Z}_{rk} = \frac{\underline{Z}_{ges}\cdot(R_{box}+j\omega L_{box}-\omega^2\cdot R_{box}L_{box}C_{box}) - j\omega R_{box}L_{box}}{R_{box}-\underline{Z}_{ges}\cdot(1+j\omega R_{box}C_{box})}.
                 \end{equation}
-            Wird $Z_{ges}$ mit der aus der Messung bestimmten Impedanz gleichgesetzt, kann die Ringkernimpedanz dieser Messung bestimmt werden.\\
-            Nach~\cite{Klingbeil2008} kann diese als Reihenschaltung eines Widerstands $R_{rk}$ und einer Induktivität $L_{rk}$ als $Z_{rk} = R_{rk}+j\omega L_{rk}$ betrachtet werden. Für das dissipative $\underline{\mu}_r = \mu' -j\mu''$  des Ringkerns wird in \cite{bast2017ba} angef\"uhrt, wie sich mittels der Ersatzschaltung $\mu'$ und $\mu''$ berechnen lassen:
+            Wird für $\underline{Z}_{ges}$ die Impedanz aus der Messung eingesetzt, kann die Ringkernimpedanz dieser Messung bestimmt werden.\\
+            Nach~\cite{Klingbeil2008} kann diese als Reihenschaltung eines Widerstands $R_{rk}$ und einer Induktivität $L_{rk}$ als $\underline{Z}_{rk} = R_{rk}+j\omega L_{rk}$ betrachtet werden. Für das dissipative $\underline{\mu}_r = \mu' -j\mu''$  des Ringkerns wird in \cite{bast2017ba} angeführt, wie sich mittels der Ersatzschaltung $\mu'$ und $\mu''$ berechnen lassen:
                 \begin{equation}
                     \mu' = \frac{L_{rk}\cdot 2\pi}{d\cdot ln\frac{r_a}{r_i}}
                 \end{equation} 
@@ -139,22 +141,12 @@
                     \label{fig:BoxRKCircuit}
                 \end{figure}
                 
-                    
-            \todo[inline,color=red!30]{Hier weiter ausarbeiten!}
-	    \sout{%
-	    Auch der Ringkern wurde im Laufe der Arbeit realitätsnäher modelliert.\\
-            Dazu wurde wie bereits in der Arbeit von Denys Bast vorgegangen und aus der gemessenen Gesamtimpedanz die verlustbehafteten, magnetischen Materialparameter $\mu'$ und $\mu''$ errechnet und schließlich in CST dem Ringkernmaterial hinzugefügt.\\
-            Zu Erst wird über die Impedanzgleichung einer Ersatzschaltungsanordnung für die TEstbox inklusive Ringkern die Impedanz des Ringkerns herausgerechnet. Daraus werden nun die Parameter gewonnen. Diese werden dann in CST den Materialparametern des Ringkerns hinterlegt.
-            }
+            Ausgehend vom angepassten, dissipativen $\underline{\mu}_r$ kann nun die Simulation aktualisiert werden. Dazu werden die bestimmten Werte für $\mu'$ und $\mu''$ als Materialparameter in CST hinterlegt.
             
-            \textcolor{red}{%
-            Ausgehend von dem Angepassten dissipativen $\mu$ kann nun die Simulation wieder aktualisiert werden. Dazu werden die bestimmten Gr\"o\ss{}en f\"ur $\mu'$ und $\mu''$ als Materialparameter in CST hinterlegt.
-            }
-           \todo[inline, color=red!30]{Formeln, Referenz}
-           
+            \todo[inline,color=red!30]{Hier weiter ausarbeiten!}           
            
         \subsection{Erweiterung des Modells}
-        Wie bereits in Kapitel~\ref{chap:messaufbau} erläutert, wurde die Testbox für die einfachere Montage der Kurzschlüsse und die erhöhte Reproduzierbarkeit der Messungen modifiziert und um ein kreuzförmiges Gestell aus Holz, sowie einen nichtleitenden Ring mit einem Polygonzug als Innenkreis erweitert (Geometrie und Beschreibung siehe Kapitel~\ref{chap:messaufbau}). Diese Modifikationen sind mit CST geometrisch genau nachgebildet, die Materialeigenschaften sind dem Original nachempfunden (siehe Abb.~\ref{fig:KreuzPolygonCST}).
+        Wie bereits in Kapitel~\ref{chap:messaufbau} erläutert, wurde die Testbox für die einfachere Montage der Kurzschlüsse und die erhöhte Reproduzierbarkeit der Messungen modifiziert und um ein kreuzförmiges Gestell aus Holz, sowie einen nichtleitenden Ring mit einem Polygonzug als Innenkreis erweitert (Geometrie und Beschreibung siehe Kapitel~\ref{chap:messaufbau}). Diese Modifikationen sind mit CST geometrisch genau nachgebildet (siehe Abb.~\ref{fig:KreuzPolygonCST}). Für das Holzkreuz wurden die selben Materialparameter verwendet, die für die Holzkreise hinterlegt sind, da es sich auch hierbei das Pressspanholz handelt.
         
             \begin{figure}[htb]
                 \centering
