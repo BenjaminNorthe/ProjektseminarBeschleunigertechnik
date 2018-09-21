@@ -4,7 +4,7 @@
     
     \section{Modellierung}
         \subsection{Bestehendes Testbox- und Ringkernmodell}
-        Als Grundlage für die Simulation der Testbox und des Ringkerns dient das Simulationsmodell von Testbox inklusive Ringkern aus der Bachelorarbeit von Denys Bast \cite{bast2017ba}.\\
+        Als Grundlage für die Simulation der Testbox und des Ringkerns dient das Simulationsmodell von Testbox inklusive Ringkern aus der Bachelorarbeit von Denys Bast \citep{bast2017ba}.\\
         Die Außenwände der Testbox sind geometrisch sehr genau den Abmessungen des realen Teststandes entsprechend modelliert, als Material wird hierfür reines Kupfer verwendet, wie es in der Datenbank von CST zu finden ist. Die leere Box ist in Abbildung~\ref{fig:BoxCST} dargestellt.
         
             \begin{figure}[htb]
@@ -24,16 +24,16 @@
             \end{figure}
         
         Der Ringkern ist als einfacher Hohlzylinder mit den geometrischen Abmessungen seines realen Vorbild modelliert. Der realem Aufbau entsprechend, ist er zentral im Testboxmodell, allerdings freischwebend, ohne die hölzerne Halterung, modelliert.\\
-        Ein grundlegender Aspekt der Arbeit von Denys Bast~\cite{bast2017ba} ist, die magnetische Permeabilität des Ringkernmaterials in der Simulation mit dem realen Material in Übereinstimmung zu bringen. Die dabei gewonnenen Daten wurden übernommen.
+        Ein grundlegender Aspekt der Arbeit von Denys Bast~\citep{bast2017ba} ist, die magnetische Permeabilität des Ringkernmaterials in der Simulation mit dem realen Material in Übereinstimmung zu bringen. Die dabei gewonnenen Daten wurden übernommen.
         
             \begin{figure}[htb]
                 \centering
                 \includegraphics[height=0.4\textwidth]{./Simulation/BoxRK.png}
-                \caption{Gesamtdarstellung der Modellierung von Testbox und Ringkern nach Denys Bast~\cite{bast2017ba}}
+                \caption{Gesamtdarstellung der Modellierung von Testbox und Ringkern nach Denys Bast~\citep{bast2017ba}}
                 \label{fig:BoxRKCST}
             \end{figure}
         
-        Abbildung~\ref{fig:BoxRKCST} bildet den modellierten Aufbau der Testbox mit Ringkern ab, wie er in \cite{bast2017ba} beschrieben wird.
+        Abbildung~\ref{fig:BoxRKCST} bildet den modellierten Aufbau der Testbox mit Ringkern ab, wie er in \citep{bast2017ba} beschrieben wird.
 
         \subsection{Kurzschlüsse}
         Die für die Parameteranalyse dieser Arbeit benötigten Kurzschlüsse sind in CST in verschiedenen, komplexen Ausführungen modelliert.\\
@@ -85,6 +85,9 @@
         
             \subsubsection{Ringkern}
             Die echten Ringkerne, wie sie bei der GSI benutzt werden, bestehen nicht nur aus dem MA-Material, sondern besitzen einen Innenkreis aus Eisen, der zur Montage dient. Da das Eisen andere Magnetische Eigenschaften als das MA-Material besitzt, wurde dies in das Modell übernommen. Die neue Modellierung des Ringkerns mit innerem Eisenring ist in Abbildung~\ref{fig:RKFeRingCST} dargestellt.
+            \par
+            Des Weiteren wurde für eine bessere Übereinstimmung von Simulation und Messung die magnetische Permeabilität des Ringkernmaterial den Messungen entsprechend aktualisiert. Die Anpassung der Materialparameter basiert auf der Arbeit von Denys Bast~\citep{bast2017ba} und den theoretischen Grundlagen nach ~\citep{Klingbeil2008}.\\
+            Wie in \citep{Klingbeil2008} beschrieben kann 
             
                 \begin{figure}[htb]
                     \centering

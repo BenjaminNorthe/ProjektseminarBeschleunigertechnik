@@ -114,10 +114,11 @@
 \usepackage[american, breaklinks]{hyperref} 	% cross-referencing and PDF metadata (direct loading in non-PDF/A mode only)
 \usepackage{hyperxmp}
 \usepackage[sort,compress,noabbrev,nameinlink]{cleveref}	% simplified referencing
-% \usepackage[numbers]{natbib}
-\usepackage[backend=biber]{biblatex}
-\addbibresource{references.bib}
-% \bibliographystyle{unsrt}
+
+%\usepackage[backend=biber,bibstyle=alphabetic, citestyle=authoryear]{biblatex}
+%\addbibresource{references.bib}
+\usepackage[square]{natbib}
+
 
 %% hacks
 \usepackage{scrhack}					% fixes some latex interoperability issues
