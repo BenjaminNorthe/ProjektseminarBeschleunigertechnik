@@ -56,7 +56,14 @@ Um den Einfluss verschiedener Anzahlen an Kurzschl\"ussen zu analysieren werden 
 	\label{fig:ringcorenumberCST}
 \end{figure}
 \par
+\todo[inline,color=red!30]{Erkl\"aren warum 8KS bei der Auswertung nicht mehr auftaucht}  
 
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=\textwidth]{impedance_numberKS_ringcore}
+	\caption{Gegen\"uberstellung der Ringkernimpedanz f\"ur verschiedene Anzahlen an Kurzschl\"ussen}
+	\label{fig:ringcorenumber}
+\end{figure}
 
 
 \subsection{Breite der Kurzschl\"usse}
@@ -73,7 +80,14 @@ Die Breite der Kurzschl\"usse ist ein Parameter, welcher durch die Schienenartig
 \end{figure}
 \par
 Da eine h\"ohere Anzahl an Kurzschl\"ussen eine verringerte Ringkernimpedanz als Ergebnis liefert, liegt die Vermutung nahe, dass auch breitere Kurzschl\"usse die Ringkernimpedanz weiter verringern k\"onnen. Die Gegen\"uberstellung der Ringkernimpedanz $Z_{rk}$ ist in Abbildung~\ref{fig:ringcorewidth} zu sehen.
-\todo[inline,color=red!30]{Plot \"uber gesamten Frequenzbereich einf\"ugen}
+\begin{figure}[htb]
+	\centering
+	\subfloat[1 Kurzschluss]{\includegraphics[width=\textwidth]{Z_RK_width_1KS}}
+	\\
+	\subfloat[2 Kurzschl\"usse]{\includegraphics[width=\textwidth]{Z_RK_width_2KS}}
+	\caption{Gegen\"uberstellung der Ringkernimpedanz f\"ur verschiedene Breiten der Kurzschl\"usse.}
+	\label{fig:ringcorewidth}
+\end{figure}
 \par
 Auch hier wird wieder ein genaueres Augenmerk auf den relevanten Frequenzbereich unterhalb von $\SI{20}{\mega\hertz}$ gelegt. Dazu werden die Frequenzen von 5, 10 und $\SI{20}{\mega\hertz}$ geplottet und jeweils die verschiedenen Breiten gegen\"ubergestellt. Abbildung~\ref{fig:ringcorewidth20} zeigt die genannte Gegen\"uberstellung.
 \begin{figure}[htb]
@@ -95,6 +109,6 @@ Das Ergebnis zeigt, dass ein breiterer Kurzschluss das Ergebnis der resultierend
 	\subfloat[$\SI{200}{\milli\meter}$]{\includegraphics[height=0.3\textwidth]{1ksh200}}
 	\hspace{0.05\textwidth}
 	\subfloat[$\SI{250}{\milli\meter}$]{\includegraphics[height=0.3\textwidth]{1ksh250}}
-	\caption{Jeweils ein montierter Kurzschluss mit verschiedenen h\"ohen.}
+	\caption{Jeweils ein montierter Kurzschluss mit verschiedenen L\"angen.}
 	\label{fig:ringcoreheigthCST}
 \end{figure}
