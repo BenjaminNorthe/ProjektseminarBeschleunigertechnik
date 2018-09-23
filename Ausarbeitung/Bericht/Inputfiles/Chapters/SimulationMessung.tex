@@ -39,8 +39,19 @@ Dabei entspricht $Z_{max}$ der h\"ochsten gemessenen Impedanz unter \"Anderung d
 
 
 \subsection{Breite der Kurzschl\"usse}
-\todo[inline,color=red!30]{Bild von verschiedenen Breiten aus CST einf\"ugen}
-Die Breite der Kurzschl\"usse ist ein Parameter, welcher durch die Schienenartige Form der Kurzschl\"usse leicht zu variieren ist, da diese nur aus einem Blech geschnitten werden. Da eine h\"ohere Anzahl an Kurzschl\"ussen eine verringerte Ringkernimpedanz als Ergebnis liefert, liegt die Vermutung nahe, dass auch breitere Kurzschl\"usse die Ringkernimpedanz weiter verringern k\"onnen. Die Gegen\"uberstellung der Ringkernimpedanz $Z_{rk}$ ist in Abbildung~\ref{fig:ringcorewidth} zu sehen.
+Die Breite der Kurzschl\"usse ist ein Parameter, welcher durch die Schienenartige Form der Kurzschl\"usse leicht zu variieren ist, da diese nur aus einem Blech geschnitten werden. Die Montierten Kurzschl\"usse verschiedener Breiten sind in Abbildung~\ref{fig:ringcorewidthCST} abgebildet.
+\begin{figure}[htb]
+	\centering
+	\subfloat[$\SI{20}{\milli\meter}$]{\includegraphics[height=0.3\textwidth]{1ksb20}}
+	\hspace{0.02\textwidth}
+	\subfloat[$\SI{30}{\milli\meter}$]{\includegraphics[height=0.3\textwidth]{1ksb30}}
+	\hspace{0.02\textwidth}
+	\subfloat[$\SI{50}{\milli\meter}$]{\includegraphics[height=0.3\textwidth]{1ksb50}}
+	\caption{Jeweils ein montierter Kurzschluss mit verschiedenen Breiten.}
+	\label{fig:ringcorewidthCST}
+\end{figure}
+\par
+Da eine h\"ohere Anzahl an Kurzschl\"ussen eine verringerte Ringkernimpedanz als Ergebnis liefert, liegt die Vermutung nahe, dass auch breitere Kurzschl\"usse die Ringkernimpedanz weiter verringern k\"onnen. Die Gegen\"uberstellung der Ringkernimpedanz $Z_{rk}$ ist in Abbildung~\ref{fig:ringcorewidth} zu sehen.
 \todo[inline,color=red!30]{Plot \"uber gesamten Frequenzbereich einf\"ugen}
 \par
 Auch hier wird wieder ein genaueres Augenmerk auf den relevanten Frequenzbereich unterhalb von $\SI{20}{\mega\hertz}$ gelegt. Dazu werden die Frequenzen von 5, 10 und $\SI{20}{\mega\hertz}$ geplottet und jeweils die verschiedenen Breiten gegen\"ubergestellt. Abbildung~\ref{fig:ringcorewidth20} zeigt die genannte Gegen\"uberstellung.
