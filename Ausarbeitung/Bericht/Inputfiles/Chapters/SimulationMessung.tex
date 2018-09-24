@@ -15,7 +15,17 @@ Als n\"achstes in das Modell mit eingesetztem Ringkern zu evalieren. Dazu wird d
 Die Gegen\"uberstellung wird f\"ur alle in Abschnitt~\ref{sec:testbox} genannten Kurzschlussanordnungen in gleicher Form durchgef\"uhrt.
 
 \par
-Es zeigt sich schnell, dass insbesondere im niedrigen Frequenzbereich eine sehr geringe Abweichung zu erkennen ist. Die Mittlere Abweichung zwischen Simulation und Messung liegt unterhalb von $\SI{20}{\mega\hertz}$ bei nur \todo[inline,color=red!30]{wert und ggf Rechnung einf\"ugen}.   
+Es zeigt sich schnell, dass insbesondere im niedrigen Frequenzbereich eine sehr geringe Abweichung zu erkennen ist. Die Mittlere Abweichung zwischen Simulation und Messung liegt unterhalb von $\SI{20}{\mega\hertz}$ bei nur \todo[inline,color=red!30]{wert und ggf Rechnung einf\"ugen}.  
+\par
+Auch die Kurzschlussmessungen wurden mit der Simulation gegen\"ubergestellt. Es zeigt sich hierbei, dass die Simulation bei zunehmender Anzahl an Kurzschl\"ussen etwas st\"arker von der Messung abweicht, als bei wenigen Kurzschl\"ussen. Abbildung~\ref{fig:boxpolycrossrk7ks} zeigt diesen Effekt beispielhaft f\"ur eine Anzahl von sieben Kurzschl\"ussen.
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=\textwidth]{Z_ges_7KS_SimMeas}
+	\caption{Gegen\"uberstellung der gemessenen, mit der simulierten Ringkernimpedanz f\"ur eine Anzahl von sieben Kurzschl\"ussen}
+	\label{fig:boxpolycrossrk7ks}
+\end{figure}
+\par
+Eine m\"ogliche Erkl\"arung daf\"ur w\"are, dass die simulierten Kurzschl\"usse idealere Materialeigenschaften, bessere Kontaktierung sowie eine h\"ohere Formsicherheit aufweisen, als es das Kupfer und die Verschraubung in der Realit\"at liefern k\"onnen. Die Gegen\"uberstellung aller Kurzschlussanordnungen in Simulation und Messung sind in Anhang~\ref{sec:simmesskomplett} abgebildet.
 
 
 \section{Auswertung der Kurzschlussanordnungen}
@@ -58,7 +68,7 @@ Um den Einfluss verschiedener Anzahlen an Kurzschl\"ussen zu analysieren werden 
 \end{figure}
 \par
 % \todo[inline,color=red!30]{Erkl\"aren warum 8KS bei der Auswertung nicht mehr auftaucht}  
-Die achte Kurzschlusschiene, welche in Grafik~\ref{fig:ringcorenumberCST} zu sehen ist, konnte bei der endg\"ultigen Auswertung nicht ber\"ucksichtigt werden. Dieser Kurzschluss liegt sehr nah am Einkopplungsrohr, sodass ein direkter Kontakt dazu besteht. F\"ugt man einen Abstandshalter aus Schaumstoff zu, so wird das die Einkopplung etwas nach oben gebogen. Die Messung liefert daher verf\"alschte Ergebnisse. F\"ur die endg\"ultige Auswertung wurden folglich nur 1-7 Kurzschl\"usse betrachtet.
+Die achte Kurzschlusschiene, welche in Grafik~\ref{fig:ringcorenumberCST} zu sehen ist, konnte bei der endg\"ultigen Auswertung nicht ber\"ucksichtigt werden. Dieser Kurzschluss liegt sehr nah am Einkopplungsrohr, sodass ein direkter Kontakt dazu besteht. F\"ugt man einen Abstandshalter aus Schaumstoff zu, so wird das die Einkopplung etwas nach oben gebogen. Die Messung liefert daher verf\"alschte Ergebnisse auch dieses Verhalten ist in Anhang~\ref{sec:simmesskomplett} abgebildet. F\"ur die endg\"ultige Auswertung wurden folglich nur 1-7 Kurzschl\"usse betrachtet.
 \begin{figure}[htb]
 	\centering
 	\includegraphics[width=\textwidth]{impedance_numberKS_ringcore}
