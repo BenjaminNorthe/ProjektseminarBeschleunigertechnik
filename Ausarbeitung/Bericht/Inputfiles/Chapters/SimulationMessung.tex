@@ -82,13 +82,13 @@ Der Effekt der Kurzschl\"usse wird mittels Gleichung~\ref{eq:maxdiffpercent} err
 \par
 Das hei\ss{}t ein Kurzschluss verringert die Impedanz des Ringkerns bereits um $\SI{78,042}{\%}$ verglichen mit der Impedanz ohne Kurzschluss. Wird hingegen $Z_{max}$ auf $Z_{1KS}(\SI{20}{\mega\hertz})$ und $Z_{min}$ zu $Z_{2KS}(\SI{20}{\mega\hertz})$ gesetzt, so ergibt sich eine Abweichung nach Gleichung~\ref{eq:maxdiffpercentonetwo}.
 \begin{equation}
-	\frac{\SI{38,4525}{\Omega} - \SI{17,3717}{\Omega}}{SI{175,1145}{\Omega}}\cdot 100 = \SI{12,038}{\%}
+	\frac{\SI{38,4525}{\Omega} - \SI{17,3717}{\Omega}}{\SI{175,1145}{\Omega}}\cdot 100 = \SI{12,038}{\%}
 	\label{eq:maxdiffpercentonetwo}
 \end{equation}
 \par
 Die Verringerung der Impedanz f\"allt also deutlich geringer aus, als noch beim Unterschied von Null zu einem Kurzschluss. Auch der Vergleich von einem zu sieben Kurzschl\"ussen, also mit $Z_{max}$ gleich $Z_{1KS}(\SI{20}{\mega\hertz})$ und $Z_{min}$ gleich $Z_{7KS}(\SI{20}{\mega\hertz})$ f\"allt mit der Abweichung nach Gleichung~\ref{eq:maxdiffpercentoneseven}
 \begin{equation}
-	\frac{\SI{38,4525}{\Omega} - \SI{3,3453}{\Omega}}{SI{175,1145}{\Omega}}\cdot 100 = \SI{20,048}{\%}
+	\frac{\SI{38,4525}{\Omega} - \SI{3,3453}{\Omega}}{\SI{175,1145}{\Omega}}\cdot 100 = \SI{20,048}{\%}
 	\label{eq:maxdiffpercentoneseven}
 \end{equation}
 \par
@@ -126,10 +126,11 @@ Auch hier wird wieder ein genaueres Augenmerk auf den relevanten Frequenzbereich
 	\label{fig:ringcorewidth20}
 \end{figure}
 \par
-Das Ergebnis zeigt, dass ein breiterer Kurzschluss das Ergebnis der resultierenden Ringkernimpedanz weiter verringert. Diese Variation liefert im Extremfall, also dem Unterschied von $\SI{20}{\milli\meter}$ zu $\SI{50}{\milli\meter}$ bei einer Anzahl von zwei Kurzschl\"ussen und einer Frequenz von $\SI{20}{\mega\hertz}$, eine Verringerung der Ringkernimpedanz nach Gleichung~\ref{eq:maxdiffpercent} von rund $\SI{2,8}{\%}$. Das bedeutet, dass die Breite der Kurzschl\"usse wesentlich weniger Auswirkungen auf die resultierende Ringkernimpedanz hat, wie die Anzahl an Kurzschl\"ussen. Besonders deutlich wird das im Vergleich zwischen einem Kurzschluss der Breite $\SI{50}{\milli\meter}$ mit zwei Kurzschl\"ussen der Breite $\SI{20}{\milli\meter}$. Trotz des geringeren Platzbedarfs, liefern die zwei schmalen Kurzschl\"usse eine deutlich geringere Impedanz.  Sollte aus Platzgr\"unden eine Montage Breiterer Kurzschl\"usse in der Kavit\"at zu Problemen f\"uhren, so ist eine h\"ohere Anzahl von schmaleren Kurzschl\"ussen vorzuziehen. 
+Das Ergebnis zeigt, dass ein breiterer Kurzschluss das Ergebnis der resultierenden Ringkernimpedanz weiter verringert. Diese Variation liefert im Extremfall, also dem Unterschied von $\SI{20}{\milli\meter}$ zu $\SI{50}{\milli\meter}$ bei einer Anzahl von zwei Kurzschl\"ussen und einer Frequenz von $\SI{20}{\mega\hertz}$, eine Verringerung der Ringkernimpedanz nach Gleichung~\ref{eq:maxdiffpercent} von rund $\SI{2,8}{\%}$. Das bedeutet, dass die Breite der Kurzschl\"usse wesentlich weniger Auswirkungen auf die resultierende Ringkernimpedanz hat, wie die Anzahl an Kurzschl\"ussen. Besonders deutlich wird das im Vergleich zwischen einem Kurzschluss der Breite $\SI{50}{\milli\meter}$ mit zwei Kurzschl\"ussen der Breite $\SI{20}{\milli\meter}$. Trotz des geringeren Platzbedarfs, liefern die zwei schmalen Kurzschl\"usse eine deutlich geringere Impedanz.  Sollte aus Platzgr\"unden eine Montage breiterer Kurzschl\"usse in der Kavit\"at zu Problemen f\"uhren, so ist eine h\"ohere Anzahl von schmaleren Kurzschl\"ussen vorzuziehen. 
 
 
 \subsection{L\"ange der Kurzschl\"usse}
+\"Ahnlich wie die Breite ist auch die L\"ange der Kurzschl\"usse problemlos zu varrieren. Hierbei ist allerdings darauf zu achten, dass die Kurzschlussb\"ugel mit Erh\"ohung der L\"ange auch n\"aher an den Rand der Testbox, beziehungsweise der Kavit\"at heran ragen. Die getesteten verschiedenen L\"angen sind in Abbildung~\ref{fig:ringcoreheightCST} gezeigt.
 \begin{figure}[htb]
 	\centering
 	\subfloat[$\SI{160}{\milli\meter}$]{\includegraphics[height=0.3\textwidth]{1ksh160}}
@@ -138,17 +139,44 @@ Das Ergebnis zeigt, dass ein breiterer Kurzschluss das Ergebnis der resultierend
 	\hspace{0.05\textwidth}
 	\subfloat[$\SI{250}{\milli\meter}$]{\includegraphics[height=0.3\textwidth]{1ksh250}}
 	\caption{Jeweils ein montierter Kurzschluss mit verschiedenen L\"angen.}
-	\label{fig:ringcoreheigthCST}
+	\label{fig:ringcoreheightCST}
 \end{figure}
-
+\par 
+Die L\"ange der Kurzschl\"usse wird nach dem bekannten vorgehen analysiert. Zun\"achst wird die Ringkernimpedanz \"uber der Frequenz nach Abbildung~\ref{fig:ringcoreheight} aufgetragen.
+\begin{figure}[htb]
+	\centering
+	\subfloat[1 Kurzschluss]{\includegraphics[width=\textwidth]{Z_RK_length_1KS}}
+	\\
+	\subfloat[2 Kurzschl\"usse]{\includegraphics[width=\textwidth]{Z_RK_length_2KS}}
+	\caption{Gegen\"uberstellung der Ringkernimpedanz f\"ur verschiedene L\"angen der Kurzschl\"usse.}
+	\label{fig:ringcoreheight}
+\end{figure}
+\par
+Es f\"allt auf, das der Effekt von l\"angeren Kurzschl\"ussen besonders im unteren Frequenzbereich noch deutlich geringer ausf\"allt, als bei der Breitenvariation. Um das genauer Quantifizieren zu k\"onnen werden auch hier f\"ur Frequenzen von 5, 10 und $\SI{20}{\mega\hertz}$ die Ringkernimpedanz \"uber der l\"ange der Kurzschl\"usse aufgetragen. Das Ergebnis ist in Abbildung~\ref{fig:ringcoreheight20} zu sehen.
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=\textwidth]{RK_Impedanz_length_frequenz}
+	\caption{Gegen\"uberstellung der Ringkernimpedanz bei 5, 10 und $\SI{20}{\mega\hertz}$. Links: 1KS, rechts: 2KS.}
+	\label{fig:ringcoreheight20}
+\end{figure}
+\par
+Der Extremfall ist hier die Variation bei $\SI{20}{\mega\hertz}$ und zwei Kurzschl\"ussen zwischen $\SI{160}{\milli\meter}$ und $\SI{250}{\milli\meter}$ L\"ange. setzt man die Werte in Gleichung~\ref{eq:maxdiffpercent} ein, so erh\"alt man eine Abweichung von rund \todo[inline,color=red!30]{richtigen Wert einf\"ugen} $\SI{2,8}{\%}$. 
+\par
+Das bedeutet, dass eine geringere L\"ange der Kurzschl\"usse bessere Ergebnisse erzeugt, und diese nach M\"oglichkeit gering sein sollte. Allerdings f\"allt die Auswirkung sehr gering aus, weshalb dieser Parameter eher geringere Priorit\"at erhalten sollte, falls der Einbau durch eine zu geringe L\"ange der Kurzschl\"usse eingeschr\"ankt wird.
 
 \subsection{Dicke der Kurzschl\"usse}
-
+Die Variation der Dicke ist in der Fertigung etwas aufwendiger. Zun\"achst m\"ussen die B\"ugel aus einem anderen Blech geschnitten werden. insbesondere das Biegen der B\"ugel gestaltet sich hierbei aber schwierig, da die zunehmende Dicke der Bleche das Biegen erschweren und h\"ohere Dicken anderes Werkzeug erforderten. Daher ist dieser Variationsparameter nur f\"ur zwei Dicken, n\"amlich $\SI{1}{\milli\meter}$ und $\SI{2}{\milli\meter}$ vorgesehen worden.
+\par
+Die Auftragung der Ringkernimpedanz \"uber der Frequenz liefert das in Abbildung~\ref{fig:ringcorethick} gezeigte Ergebnis.
 \begin{figure}[htb]
 	\centering
 	\subfloat[1 Kurzschluss]{\includegraphics[width=\textwidth]{Z_RK_thick_1KS}}
 	\\
-	\subfloat[2 Kurzschl\"usse]{\includegraphics[width=\textwidth]{Z_RK_thick_2KS}}
+	\subfloat[2 Kurzschl\"usse]{\includegraphics[width=\textwidth]{Z_RK_thick_2KS}} 
 	\caption{Gegen\"uberstellung der Ringkernimpedanz f\"ur verschiedene Dicken der Kurzschl\"usse.}
 	\label{fig:ringcorethick}
 \end{figure}
+\par
+Da nur zwei Stufen f\"ur die Dicke gemessen wurden, wird in diesem Fall auf eine Grafik f\"ur die einzelnen Frequenzpunkte verzichtet. Die Berechnung der Abweichung f\"ur den Vergleich von zwei Kurzschl\"ussen bei $\SI{20}{\mega\hertz}$ mit verschiedenen Dicken liefert nach Gleichung~\ref{eq:maxdiffpercent} einen prozentualen Wert von\todo[inline,color=red!30]{richtigen Wert einf\"ugen}$\SI{2,8}{\%}$. 
+\par
+Das bedeutet, dass die Dicke des Blechs nahezu keinen Einfluss hat.
