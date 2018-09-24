@@ -37,7 +37,7 @@ Die maximale realtive Abweichung $a_{max}$ wird f\"ur einen Variationsparameter 
 	\label{eq:maxdiff}
 \end{equation}
 \par
-Dabei entspricht $Z_{max}$ der h\"ochsten gemessenen Impedanz unter \"Anderung des Variationsparameters und $Z_{min}$ der niedrigsten. $Z_{rk}$ bezeichnet die Impedanz des Rinkerns ohne Kurzschl\"usse. Um die relative Abweichung $a_{percent}$ in Prozent zu erhalten, wird die relative Abweichung $a_{max}E$ nach Gleichung~\ref{eq:maxdiffpercent} mit 100 multipliziert.
+Dabei entspricht $Z_{max}$ der h\"ochsten gemessenen Impedanz unter \"Anderung des Variationsparameters und $Z_{min}$ der niedrigsten. $Z_{rk}$ bezeichnet die Impedanz des Rinkerns ohne Kurzschl\"usse. Um die relative Abweichung $a_{percent}$ in Prozent zu erhalten, wird die relative Abweichung $a_{max}$ nach Gleichung~\ref{eq:maxdiffpercent} mit 100 multipliziert.
 \begin{equation}
 	\frac{Z_{max}(f) - Z_{min}(f)}{Z_{rk}(f)}\cdot 100 = a_{percent}(f)
 	\label{eq:maxdiffpercent}
@@ -68,15 +68,15 @@ Um den Einfluss verschiedener Anzahlen an Kurzschl\"ussen zu analysieren werden 
 \end{figure}
 \par
 % \todo[inline,color=red!30]{Erkl\"aren warum 8KS bei der Auswertung nicht mehr auftaucht}  
-Die achte Kurzschlusschiene, welche in Grafik~\ref{fig:ringcorenumberCST} zu sehen ist, konnte bei der endg\"ultigen Auswertung nicht ber\"ucksichtigt werden. Dieser Kurzschluss liegt sehr nah am Einkopplungsrohr, sodass ein direkter Kontakt dazu besteht. F\"ugt man einen Abstandshalter aus Schaumstoff zu, so wird das die Einkopplung etwas nach oben gebogen. Die Messung liefert daher verf\"alschte Ergebnisse auch dieses Verhalten ist in Anhang~\ref{sec:simmesskomplett} abgebildet. F\"ur die endg\"ultige Auswertung wurden folglich nur 1-7 Kurzschl\"usse betrachtet.
+Die achte Kurzschlusschiene, welche in Grafik~\ref{fig:ringcorenumberCST} zu sehen ist, konnte bei der endg\"ultigen Auswertung nicht ber\"ucksichtigt werden. Dieser Kurzschluss liegt sehr nah am Einkopplungsrohr, sodass ein direkter Kontakt dazu besteht. F\"ugt man einen Abstandshalter aus Schaumstoff zu, so wird das die Einkopplung etwas nach oben gebogen. Die Messung liefert daher verf\"alschte Ergebnisse, welche deutlich st\"arker von der Simulation abweichen, als bei anderen Messungen. Auch dieses Verhalten ist in Anhang~\ref{sec:simmesskomplett} abgebildet. F\"ur die endg\"ultige Auswertung wurden folglich nur 1-7 Kurzschl\"usse betrachtet. Die resultierende Ringkernimpedanz f\"ur die einzelnen Kurzschlussanordnungen ist in Abbildung~\ref{fig:ringcorenumber} \"uber der Frequenz aufgetragen.
 \begin{figure}[htb]
 	\centering
 	\includegraphics[width=\textwidth]{impedance_numberKS_ringcore}
-	\caption{Gegen\"uberstellung der Ringkernimpedanz f\"ur verschiedene Anzahlen an Kurzschl\"ussen}
+	\caption{Gegen\"uberstellung der Ringkernimpedanz \"uber der Frequenz f\"ur verschiedene Anzahlen an Kurzschl\"ussen}
 	\label{fig:ringcorenumber}
 \end{figure}
 \par
-Es f\"allt auf, dass der gr\"o\ss{}te Sprung zwischen null und einem Kurzschluss liegt. Das bedeutet, dass die Montage weiterer Kurzschl\"usse mit zunehmender Anzahl weniger effektiv ist. Um das zu verdeutlichen wird eine weitere Gegen\"uberstellung angesetzt, bei der eine bestimmte Frequenz fixiert wird, und die Impedanz $Z_{rk}$ \"uber der Anzahl an Kurzschl\"ussen aufgetragen ist. Die Fixierten Frequenzen liegen dabei bei 5, 10 und $\SI{20}{\mega\hertz}$, da insbesondere der niedrigere Frequenzbereich f\"ur den Beschleunigerbetrieb von Relevanz ist~\citep{frey2015status}. Die Gegen\"uberstellung ist in Abbildung~\ref{fig:ringcorenumber20} aufgetragen.
+Es f\"allt auf, dass der gr\"o\ss{}te Sprung zwischen null und einem Kurzschluss liegt. Das bedeutet, dass die Montage weiterer Kurzschl\"usse mit zunehmender Anzahl weniger effektiv ist. Um das zu verdeutlichen wird eine weitere Gegen\"uberstellung angesetzt, bei der eine bestimmte Frequenz fixiert wird, und die Ringkernimpedanz \"uber der Anzahl an Kurzschl\"ussen aufgetragen ist. Die fixierten Frequenzen liegen dabei bei 5, 10 und $\SI{20}{\mega\hertz}$, da insbesondere der niedrigere Frequenzbereich f\"ur den Beschleunigerbetrieb von Relevanz ist~\citep{frey2015status}. Die Gegen\"uberstellung ist in Abbildung~\ref{fig:ringcorenumber20} aufgetragen.
 \begin{figure}[htb]
 	\centering
 	\includegraphics[width=0.5\textwidth]{RK_Impedanz_numberKS_frequenz}
@@ -84,13 +84,13 @@ Es f\"allt auf, dass der gr\"o\ss{}te Sprung zwischen null und einem Kurzschluss
 	\label{fig:ringcorenumber20}
 \end{figure}
 \par
-Der Effekt der Kurzschl\"usse wird mittels Gleichung~\ref{eq:maxdiffpercent} errechnet. Wird $Z_{max}$ auf den Wert $Z_{rk}(\SI{20}{\mega\hertz})$ gesetzt, also den Fall ohne Kurzschl\"usse und $Z_{min}$ auf $Z_{1KS}(\SI{20}{\mega\hertz})$, so ergibt sich eine prozentuale Abweichung nach Gleichung~\ref{eq:maxdiffpercentzeroone}.
+Der Effekt der Kurzschl\"usse wird mittels Gleichung~\ref{eq:maxdiffpercent} errechnet. Wird $Z_{max}$ auf den Wert $Z_{rk}(\SI{20}{\mega\hertz})$ gesetzt, also den Fall ohne Kurzschl\"usse und $Z_{min}$ auf $Z_{1KS}(\SI{20}{\mega\hertz})$, so ergibt sich eine prozentuale Verringerung der Impedanz nach Gleichung~\ref{eq:maxdiffpercentzeroone}.
 \begin{equation}
 	\frac{\SI{175,1145}{\Omega} - \SI{38,4525}{\Omega}}{\SI{175,1145}{\Omega}}\cdot 100 = \SI{78,042}{\%}
 	\label{eq:maxdiffpercentzeroone}
 \end{equation}
 \par
-Das hei\ss{}t ein Kurzschluss verringert die Impedanz des Ringkerns bereits um $\SI{78,042}{\%}$ verglichen mit der Impedanz ohne Kurzschluss. Wird hingegen $Z_{max}$ auf $Z_{1KS}(\SI{20}{\mega\hertz})$ und $Z_{min}$ zu $Z_{2KS}(\SI{20}{\mega\hertz})$ gesetzt, so ergibt sich eine Abweichung nach Gleichung~\ref{eq:maxdiffpercentonetwo}.
+Das hei\ss{}t ein Kurzschluss verringert die Impedanz des Ringkerns bereits um $\SI{78,042}{\%}$ verglichen mit der Impedanz ohne Kurzschluss. Wird hingegen $Z_{max}$ auf $Z_{1KS}(\SI{20}{\mega\hertz})$ und $Z_{min}$ zu $Z_{2KS}(\SI{20}{\mega\hertz})$ gesetzt, so ergibt sich nach Gleichung~\ref{eq:maxdiffpercentonetwo}.
 \begin{equation}
 	\frac{\SI{38,4525}{\Omega} - \SI{17,3717}{\Omega}}{\SI{175,1145}{\Omega}}\cdot 100 = \SI{12,038}{\%}
 	\label{eq:maxdiffpercentonetwo}
@@ -102,7 +102,7 @@ Die Verringerung der Impedanz f\"allt also deutlich geringer aus, als noch beim 
 	\label{eq:maxdiffpercentoneseven}
 \end{equation}
 \par
-vergleichsweise gering aus. Je nach Anforderung ist also zu \"uberlegen, ob ein Kurzschluss bereits eine ausreichende Reduktion erzeugt. Das ist insbesondere beim Einbau in die Kavit\"at von Relevanz, da eine Montage mehrerer Kurzschl\"usse einen nicht unerheblichen Aufwand mit sich zieht. 
+vergleichsweise geringer aus. Je nach Anforderung ist also zu \"uberlegen, ob ein Kurzschluss bereits eine ausreichende Reduktion der Impedanz erzeugt. Das ist insbesondere beim Einbau in die Kavit\"at von Relevanz, da eine Montage mehrerer Kurzschl\"usse einen nicht unerheblichen Aufwand mit sich zieht. 
 
 
 \subsection{Breite der Kurzschl\"usse}
