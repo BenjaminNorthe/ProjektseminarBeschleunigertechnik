@@ -17,6 +17,7 @@
 \usepackage{import}
 \usepackage{multicol}
 \usepackage{subfig}
+\usepackage[binary-units=true,exponent-product=\cdot]{siunitx}
 % 
 \usepackage{pgfplots}					% graph plotting for pgf/tikz
 \pgfplotsset{compat=1.12, grid style={gray,dotted}}
@@ -81,40 +82,58 @@
 
 
 \begin{frame}\frametitle{Die Testbox}
-% \vspace{-2em}
-% 	\begin{figure}[h]
-% 		\centering
-% 		\includegraphics[width=0.72\textwidth]{opentest}
-% 	\end{figure}
+\begin{multicols}{2}
+\vspace{-2em}
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.5\textwidth]{boxleer}
+	\end{figure}
+	\vfill\null
+	\columnbreak
+	\begin{itemize}
+		\item Innen mit Kupferblech (Dicke $\SI{1}{\milli\meter}$ ausgekleidet
+		\item Holzkonstruktion als Ringkernhalterung
+		\item Kupferrohr zur Einkopplung
+		\begin{itemize}
+			\item Am Rand der Box mit BNC-Steckerausgang 
+		\end{itemize}
+	\end{itemize}
+\end{multicols}
 \end{frame}
 
 
 \begin{frame}\frametitle{Konstruktion der Ringkernhalterung}
- 
+
 \end{frame}
 
 
 \begin{frame}\frametitle{Entwurf der Kurzschlussschienen}
- 
+\begin{multicols}{2}
+\vspace{-2em}
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.25\textwidth]{KS}
+	\end{figure}
+	\vfill\null
+	\columnbreak
+	\begin{itemize}
+		\item Lochung im unteren Teil zur Montage
+		\item Lochungen im oberen Teil zur Kontaktherstellung
+		\item Mehrere Variationsparameter der Form gefertigt:
+		\begin{itemize}
+			\item H\"ohe der Kurzschl\"usse in z-Richtung
+			\item Breite der Kurzschl\"usse in x-Richtung
+			\item Blechdicke der K\"urzschl\"usse
+		\end{itemize}
+	\end{itemize}
+\end{multicols}
 \end{frame}
 
 
 
 
 \begin{frame}\frametitle{Messdurchf\"uhrung}
-% \begin{multicols}{2}
-% 	\vspace{-2em}
-% 	\begin{figure}[h]
-% 		\centering
-% 		\includegraphics[width=0.5\textwidth]{test_ks_adapted_v2}
-% 	\end{figure}
-% 	\vfill\null
-% 	\columnbreak
-% 	\begin{itemize}
-% 		\item Fixierung der Kurzschl\"usse schwierig
-% 		\item Messung dadurch nur bedingt reproduzierbar
-% 	\end{itemize}
-% \end{multicols}
+
 \end{frame}
 
 
@@ -123,14 +142,7 @@
 
 
 \begin{frame}\frametitle{Simulation}
-% Mithilfe von CST wurden mehrere Faktoren f\"ur die Kurzschl\"usse durchsimuliert:
-% \begin{itemize}
-% 	\item Anzahl der Kurzschl\"usse
-% 	\item Positionen der Kurzschl\"usse
-% 	\item Formen der Kurzschl\"usse
-% 	\item Verschiedene Abst\"ande der Kurzschlusswicklung zum Ringkern
-% 	\item Feldimpedanz mit einer unterbrochenen Schiene (wenn sich diese im Leerlauf befindet)
-% \end{itemize}
+
 \end{frame}
 
 
@@ -173,67 +185,35 @@
 
 
 \begin{frame}\frametitle{Anzahl der Kurzschl\"usse}
-% \vspace{-2em}
-% \begin{figure}[h]
-% 	\subfloat[]{\includegraphics[height = 0.3\textwidth]{1ksTorus}} \hspace{1em}
-% 	\subfloat[]{\includegraphics[height = 0.3\textwidth]{4ksTorus}}\hspace{1em}
-% 	\subfloat[]{\includegraphics[height = 0.3\textwidth]{24ksTorus}}
-% \end{figure}
+
 \end{frame}
 
 
 
 \begin{frame}\frametitle{Breite der Kurzschlüsse}
-% \vspace{-2em}
-% \begin{figure}[h]
-% 	\subfloat[]{\includegraphics[height = 0.4\textwidth]{4ksTorus}} \hspace{1em}
-% 	\subfloat[]{\includegraphics[height = 0.4\textwidth]{4ksTorus30Grad}}
-% \end{figure}
+
 \end{frame}
 
 
 \begin{frame}\frametitle{Länge der Kurzschlüsse}
-% \vspace{-2em}
-% \begin{figure}[h]
-% 	\subfloat[]{\includegraphics[height = 0.3\textwidth]{1ksTorus}} \hspace{1em}
-% 	\subfloat[]{\includegraphics[height = 0.3\textwidth]{1ksSchiene}}\hspace{1em}
-% 	\subfloat[]{\includegraphics[height = 0.3\textwidth]{1ksSchieneSchmal}}
-% \end{figure}
+
 \end{frame}
 
 
 \begin{frame}\frametitle{Dicke der Kurzschlüsse}
-% \vspace{-2em}
-% \begin{figure}[h]
-% 	\centering
-% 	\includegraphics[width=0.45\textwidth]{1ksSchieneWeit}
-% \end{figure}
+
 \end{frame}
 
 
 
 
 \begin{frame}\frametitle{Einfluss im Leerlauf befindlicher Schienen auf die Ringkernimpedanz}
-% \vspace{-2em}
-% \begin{figure}[h]
-% 	\centering
-% 	\includegraphics[width=0.35\textwidth]{1ksSchieneOffen}
-% \end{figure}
+
 \end{frame}
 
 
 
 \begin{frame}\frametitle{Fazit und Ausblick}
-% Was steht jetzt noch an:
-%         \begin{itemize}
-%             \item Montage der neuen Halterung
-%             \item Messung der simulierten Kurzschlussanordnungen
-%             \item Vergleich von Simulation und Messung
-%             \item Bewertung der Einflussfaktoren
-%             \item Ausarbeiten einer favorisierten Umsetzung der Kurzschlussanordnung
-%             \item Übertragen der Teststandmessung auf die Breitbandkavität
-%             
-%         \end{itemize}
 
 \end{frame}
 
