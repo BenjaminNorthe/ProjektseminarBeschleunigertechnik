@@ -161,8 +161,21 @@
             \end{figure}
         
     \section{Durchführung}
-    
-    \todo[inline,color=red!30]{Hier weiter ausarbeiten!}
-    
-    \sout{Dieser Text soll nicht sein.}\textcolor{red}{Dieser Schon.}
+        \subsection{Einstellungen in CST und Wahl des Numerischen Lösers}
+        Die Simulation in CST wurde weitgehend mit den Einstellungen und dem Löser durchgeführt, wie sie in \citep{bast2017ba} beschrieben werden. Einige wichtige Punkte werden an dieser Stelle kurz aufgegriffen, um ein Wiederholen der Simulationen zu ermöglichen.
+        \par
+        Die Modelle wurden mit dem Frequency Domain Solver von CST simuliert, der die Maxwell Gleichungen im Frequenzbereich numerisch behandelt, da es sich bei der Testbox um ein resonantes Konstrukt handelt und es sich bei den betrachteten Messdaten (Impedanzverläufe) um elektrische Parameter im Frequenzbereich handelt.\\
+        Die räumliche Diskretisierung der Modelle erfolgt mit einer adaptiven Gitterverfeinerung von Tetraedern und Curved-Elements, die besonders für die Approximation gekrümmter Strukturen geeignet sind.\\
+        Der betrachtete Frequenzbereich der Simulation wurde $\SI{0,01}{\mega\hertz}$ bis $\SI{100}{\mega\hertz}$ gewählt, da der Frequqenzbereich in dem die Ringkerne betrieben werden niedriger ist und dies der für den Impedanzverlauf der Testbox relevante Bereich ist, weil die Resonanz zwischen $\SI{80}{\mega\hertz}$ bis $\SI{90}{\mega\hertz}$ liegt.\\
+        Der numerische Löser ist mit einer Ordnung von 2 gewählt und die Genauigkeit für die Lösung der Gleichungssysteme auf $10^{-4}$ eingestellt.
+        \par 
+        Im Anschluss an die numerische Berechnung der elektromagnetischen Felder im Frequenzbereich wird in einem Post-Processing-Schritt die Eingangsimpedanz des Modells aus dem Streuparameter $S_{11}$ berechnet
+            \begin{equation}
+                Z = Z_0 \cdot\frac{1+S_{11}}{1-S_{11}},
+            \end{equation}
+        mit $Z_0 = \SI{50}{\Omega}$.
+        
+        \subsection{Variation der Kurzschlussparameter}
+        Für die Gegenüberstellung und Vergleichbarkeit von Simulation und Messung werden die Kurzschlüsse mit den gleichen Variationen der zu untersuchenden Parameter (siehe Kapitel~\ref{chap:messaufbau}) und der Messung entsprechenden Anordnung am Ringkern  nachgebildet.\\
+        Die Bilder der verschiedenen Anordnungen und Kurzschlussausführungen sind in Kapitel~\ref{chap:ergebnis} zu finden. In Abbildung~\ref{fig:ringcorenumberCST} ist dabei die Variation in der Anzahl der Kurzschlüsse dargestellt, die um den Ringkern angebracht sind. Abbildung~\ref{fig:ringcorewidthCST} zeigt die Simulation der verschiedenen Breiten und in Abbildung~\ref{fig:ringcoreheightCST} sind die verschiedenen Ringkernlängen zu sehen. Für die Simulation und Messung der Breiten-, Längen- und Dickenvariation wurde immer die in den Abbildungen gezeigte Position für einen Kurzschluss gewählt, der zweite Kurzschluss wurde dem ersten gegenüber angebracht.
 
