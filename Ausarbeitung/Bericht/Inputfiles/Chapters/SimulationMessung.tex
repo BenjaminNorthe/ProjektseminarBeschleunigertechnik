@@ -9,15 +9,41 @@ Ausgehend von den beschriebenen Modellierungsschritten kann nun eine sichere Eva
 \par
 Als n\"achstes in das Modell mit eingesetztem Ringkern zu evalieren. Dazu wird der Ringkern f\"ur die Simulation auf der Position um den Trovidur Ring gelegt, um die reale Box genau abzubilden. Der Aufbau ist in Abbildung~\ref{fig:RKFeRingCST} gezeigt worden. Auch hierbei wird wieder die gemessene Impedanz an der Einkopplung direkt mit der Impedanz aus der Simulation gegen\"ubergestellt. Diese Auswertung ist in Abbildung~\ref{fig:boxpolycrossrk} zu sehen.
 
-\todo[inline,color=red!30]{Plot einf\"ugen}   
 
-\par
-Die Gegen\"uberstellung wird f\"ur alle in Abschnitt~\ref{sec:testbox} genannten Kurzschlussanordnungen in gleicher Form durchgef\"uhrt.
 
+\newpage
+
+
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=\textwidth]{Zges_RK_SimMeas}
+	\caption{Gegen\"uberstellung der gemessenen, mit der simulierten Ringkernimpedanz ohne Kurzschl\"usse}
+	\label{fig:boxpolycrossrk}
+\end{figure}
 \par
-Es zeigt sich schnell, dass insbesondere im niedrigen Frequenzbereich eine sehr geringe Abweichung zu erkennen ist. Die Mittlere Abweichung zwischen Simulation und Messung liegt unterhalb von $\SI{20}{\mega\hertz}$ bei nur \todo[inline,color=red!30]{wert und ggf Rechnung einf\"ugen}.  
+Die Simulation zeigt auch nach mehrfacher Wiederholung mit verschiedenen Einstellungen eine starke Welligkeit. Die Konvergenz gegen die gemessenen Werte ist in dieser Anordnung daher schwer zu bewerten. 
+% \par
+% Die Gegen\"uberstellung wird f\"ur alle in Abschnitt~\ref{sec:testbox} genannten Kurzschlussanordnungen in gleicher Form durchgef\"uhrt.
+% Es zeigt sich schnell, dass insbesondere im niedrigen Frequenzbereich eine sehr geringe Abweichung zu erkennen ist. Die Mittlere Abweichung zwischen Simulation und Messung liegt unterhalb von $\SI{20}{\mega\hertz}$ bei nur 
+
+% \todo[inline,color=red!30]{wert und ggf Rechnung einf\"ugen}.  
 \par
-Auch die Kurzschlussmessungen wurden mit der Simulation gegen\"ubergestellt. Es zeigt sich hierbei, dass die Simulation bei zunehmender Anzahl an Kurzschl\"ussen etwas st\"arker von der Messung abweicht, als bei wenigen Kurzschl\"ussen. Abbildung~\ref{fig:boxpolycrossrk7ks} zeigt diesen Effekt beispielhaft f\"ur eine Anzahl von sieben Kurzschl\"ussen.
+Auch die Kurzschlussmessungen wurden mit der Simulation gegen\"ubergestellt. Zun\"achst wird die Anordnung mit nur einem Kurzschluss in betrachtet. Insbesondere im Bereich bis $\SI{50}{\mega\hertz}$ ist eine hohe \"Ubereinstimmung zu sehen. Lediglich im h\"oheren Frequenzbereich, nahe der Resonanz, weichen Messung und Simulation voneinander ab. Abbildung~\ref{fig:boxpolycrossrk1ks} zeigt die Gegen\"uberstellung.
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=\textwidth]{Z_ges_1KS_SimMeas}
+	\caption{Gegen\"uberstellung der gemessenen, mit der simulierten Ringkernimpedanz f\"ur einen Kurzschluss.}
+	\label{fig:boxpolycrossrk1ks}
+\end{figure}
+
+
+
+\newpage
+
+
+
+Die Simulation der weiteren Kurzschl\"ussanordnungen zeigt, dass die Simulation bei zunehmender Anzahl an Kurzschl\"ussen etwas st\"arker von der Messung abweicht, als bei wenigen Kurzschl\"ussen. Abbildung~\ref{fig:boxpolycrossrk7ks} zeigt diesen Effekt beispielhaft f\"ur eine Anzahl von sieben Kurzschl\"ussen.
 \begin{figure}[htb]
 	\centering
 	\includegraphics[width=\textwidth]{Z_ges_7KS_SimMeas}
@@ -69,6 +95,12 @@ Um den Einfluss verschiedener Anzahlen an Kurzschl\"ussen zu analysieren werden 
 \par
 % \todo[inline,color=red!30]{Erkl\"aren warum 8KS bei der Auswertung nicht mehr auftaucht}  
 Die achte Kurzschlusschiene, welche in Grafik~\ref{fig:ringcorenumberCST} zu sehen ist, konnte bei der endg\"ultigen Auswertung nicht ber\"ucksichtigt werden. Dieser Kurzschluss liegt sehr nah am Einkopplungsrohr, sodass ein direkter Kontakt dazu besteht. F\"ugt man einen Abstandshalter aus Schaumstoff zu, so wird das die Einkopplung etwas nach oben gebogen. Die Messung liefert daher verf\"alschte Ergebnisse, welche deutlich st\"arker von der Simulation abweichen, als bei anderen Messungen. Auch dieses Verhalten ist in Anhang~\ref{sec:simmesskomplett} abgebildet. F\"ur die endg\"ultige Auswertung wurden folglich nur 1-7 Kurzschl\"usse betrachtet. Die resultierende Ringkernimpedanz f\"ur die einzelnen Kurzschlussanordnungen ist in Abbildung~\ref{fig:ringcorenumber} \"uber der Frequenz aufgetragen.
+
+
+\newpage
+
+
+
 \begin{figure}[htb]
 	\centering
 	\includegraphics[width=\textwidth]{impedance_numberKS_ringcore}
@@ -117,7 +149,13 @@ Die Breite der Kurzschl\"usse ist ein Parameter, welcher durch die Schienenartig
 	\caption{Jeweils ein montierter Kurzschluss mit verschiedenen Breiten.}
 	\label{fig:ringcorewidthCST}
 \end{figure}
-\par
+
+
+
+\newpage
+
+
+
 Da eine h\"ohere Anzahl an Kurzschl\"ussen eine verringerte Ringkernimpedanz als Ergebnis liefert, liegt die Vermutung nahe, dass auch breitere Kurzschl\"usse die Ringkernimpedanz weiter verringern k\"onnen. Die Gegen\"uberstellung der Ringkernimpedanz $Z_{rk}$ ist in Abbildung~\ref{fig:ringcorewidth} zu sehen.
 \begin{figure}[htb]
 	\centering
@@ -129,7 +167,14 @@ Da eine h\"ohere Anzahl an Kurzschl\"ussen eine verringerte Ringkernimpedanz als
 \end{figure}
 \par
 Auch hier wird wieder ein genaueres Augenmerk auf den relevanten Frequenzbereich unterhalb von $\SI{20}{\mega\hertz}$ gelegt. Dazu werden die Frequenzen von 5, 10 und $\SI{20}{\mega\hertz}$ geplottet und jeweils die verschiedenen Breiten gegen\"ubergestellt. Abbildung~\ref{fig:ringcorewidth20} zeigt die genannte Gegen\"uberstellung.
-\begin{figure}[htb]
+
+
+
+\newpage
+
+
+
+\begin{figure}[h]
 	\centering
 	\includegraphics[width=\textwidth]{RK_Impedanz_width_frequenz}
 	\caption{Gegen\"uberstellung der Ringkernimpedanz bei 5, 10 und $\SI{20}{\mega\hertz}$. Links: 1KS, rechts: 2KS.}
@@ -163,6 +208,14 @@ Die L\"ange der Kurzschl\"usse wird nach dem bekannten vorgehen analysiert. Zun\
 \end{figure}
 \par
 Es f\"allt auf, das der Effekt von l\"angeren Kurzschl\"ussen besonders im unteren Frequenzbereich noch deutlich geringer ausf\"allt, als bei der Breitenvariation. Um das genauer Quantifizieren zu k\"onnen werden auch hier f\"ur Frequenzen von 5, 10 und $\SI{20}{\mega\hertz}$ die Ringkernimpedanz \"uber der l\"ange der Kurzschl\"usse aufgetragen. Das Ergebnis ist in Abbildung~\ref{fig:ringcoreheight20} zu sehen.
+
+
+
+
+\newpage
+
+
+
 \begin{figure}[htb]
 	\centering
 	\includegraphics[width=\textwidth]{RK_Impedanz_length_frequenz}
@@ -178,6 +231,14 @@ Das bedeutet, dass eine geringere L\"ange der Kurzschl\"usse bessere Ergebnisse 
 Die Variation der Dicke ist in der Fertigung etwas aufwendiger. Zun\"achst m\"ussen die B\"ugel aus einem anderen Blech geschnitten werden. insbesondere das Biegen der B\"ugel gestaltet sich hierbei aber schwierig, da die zunehmende Dicke der Bleche das Biegen erschweren und h\"ohere Dicken anderes Werkzeug erforderten. Daher ist dieser Variationsparameter nur f\"ur zwei Dicken, n\"amlich $\SI{1}{\milli\meter}$ und $\SI{2}{\milli\meter}$ vorgesehen worden.
 \par
 Die Auftragung der Ringkernimpedanz \"uber der Frequenz liefert das in Abbildung~\ref{fig:ringcorethick} gezeigte Ergebnis.
+
+
+
+\newpage
+
+
+
+
 \begin{figure}[htb]
 	\centering
 	\subfloat[1 Kurzschluss]{\includegraphics[width=\textwidth]{Z_RK_thick_1KS}}
@@ -190,3 +251,7 @@ Die Auftragung der Ringkernimpedanz \"uber der Frequenz liefert das in Abbildung
 Da nur zwei Stufen f\"ur die Dicke gemessen wurden, wird in diesem Fall auf eine Grafik f\"ur die einzelnen Frequenzpunkte verzichtet. Die Berechnung der Abweichung f\"ur den Vergleich von zwei Kurzschl\"ussen bei $\SI{20}{\mega\hertz}$ mit verschiedenen Dicken liefert nach Gleichung~\ref{eq:maxdiffpercent} einen prozentualen Wert von$\SI{0,286}{\%}$. 
 \par
 Das bedeutet, dass die Dicke des Blechs nahezu keinen Einfluss hat.
+
+
+
+\newpage
