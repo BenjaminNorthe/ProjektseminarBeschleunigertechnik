@@ -1,13 +1,16 @@
 \section{Gegen\"uberstellung der Simulations und Messergebnisse}\label{sec:gegenueberst}
-Ausgehend von den beschriebenen Modellierungsschritten kann nun eine sichere Evaluierung der Kurzschlussanordnungen angesetzt werden. Dabei k\"onnen die Messungen sowie das Simulationsmodell zur Kreuzvalidierung verwendet werden, sodass Mess- und Simulationsfehler weitestgehend auszuschlie\ss{}en sind. Dazu wurde das Simulationsmodell, nach den in Absatz~\ref{ch:sim} versehenen Anpassungen zun\"ach einmal zur Referenz mit den Messungen verglichen. Dazu wird zun\"achst die Testbox ohne Ringkern, jedoch mit fertigem Halterungsaufbau gegen\"ubergestellt. Abbildung~\ref{fig:boxpolycross} zeigt diese Gegen\"uberstellung.
+Ausgehend von den beschriebenen Modellierungsschritten kann nun eine sichere Evaluierung der Kurzschlussanordnungen angesetzt werden. Dabei k\"onnen die Messungen sowie das Simulationsmodell zur Kreuzvalidierung verwendet werden, sodass Mess- und Simulationsfehler weitestgehend auszuschlie\ss{}en sind. Dazu wurde das Simulationsmodell, nach den in Absatz~\ref{ch:sim} versehenen Anpassungen zun\"achst einmal zur Referenz mit den Messungen verglichen. Dazu wird die Testbox ohne Ringkern, jedoch mit fertigem Halterungsaufbau gegen\"ubergestellt. Abbildung~\ref{fig:boxpolycross} zeigt diese Gegen\"uberstellung.
 \begin{figure}[htb]
 	\centering
 	\includegraphics[width=\textwidth]{measurement_simulation_emptybox}
 	\caption{Gegen\"uberstellung der Simulation der Box mit Halterung aus Kreuz und Polygon zur entsprechenden Messung.}
 	\label{fig:boxpolycross}
 \end{figure}
+Mit Hilfe von Abbildung~\ref{fig:boxpolycross} können zunächst Messung und Simulation auf Plausibilität überprüft werden.\\
+Die Resonanzfrequenz $f_r = \frac{1}{2\pi \cdot \sqrt{LC}}$ eines LC-Schwingkreise sinkt mit steigendem $\varepsilon_r$, da hierdurch die Kapazität erhöht wird. Je mehr Einbauten der Testbox hinzugefügt werden, desto größer kann $\varepsilon_r$ im primitiven Ersatzschaltbild angesehen werden, wodurch die Resonanz zu niedrigeren Frequenzen hin verschoben wird.\\
+Außerdem zeigt die Abbildung, wie die Simulation durch die Veränderung von $\varepsilon_r$ der Holzkonstruktion mit der Messung besser in Übereinstimmung gebracht werden konnte. Es wurde hierbei vornehmlich $\varepsilon_r'$ variiert. Dieser Vorgehensweise liegt die Annahme zugrunde, dass das verwendete Material in der Testbox mit en für die Simulation hinterlegten Werten übereinstimmt.
 \par
-Als n\"achstes in das Modell mit eingesetztem Ringkern zu evalieren. Dazu wird der Ringkern f\"ur die Simulation auf der Position um den Trovidur Ring gelegt, um die reale Box genau abzubilden. Der Aufbau ist in Abbildung~\ref{fig:RKFeRingCST} gezeigt worden. Auch hierbei wird wieder die gemessene Impedanz an der Einkopplung direkt mit der Impedanz aus der Simulation gegen\"ubergestellt. Diese Auswertung ist in Abbildung~\ref{fig:boxpolycrossrk} zu sehen.
+Als n\"achstes in das Modell mit eingesetztem Ringkern zu evaluieren. Dazu wird der Ringkern f\"ur die Simulation auf der Position um den Trovidur Ring gelegt, um die reale Box genau abzubilden. Der Aufbau ist in Abbildung~\ref{fig:RKFeRingCST} gezeigt. Auch hierbei wird wieder die gemessene Impedanz an der Einkopplung direkt mit der Impedanz aus der Simulation gegen\"ubergestellt. Diese Auswertung ist in Abbildung~\ref{fig:boxpolycrossrk} zu sehen.
 
 
 
@@ -30,7 +33,7 @@ Die Simulation zeigt auch nach mehrfacher Wiederholung mit verschiedenen Einstel
 
 % \todo[inline,color=red!30]{wert und ggf Rechnung einf\"ugen}.  
 \par
-Auch die Kurzschlussmessungen wurden mit der Simulation gegen\"ubergestellt. Zun\"achst wird die Anordnung mit nur einem Kurzschluss in betrachtet. Insbesondere im Bereich bis $\SI{50}{\mega\hertz}$ ist eine hohe \"Ubereinstimmung zu sehen. Lediglich im h\"oheren Frequenzbereich, nahe der Resonanz, weichen Messung und Simulation voneinander ab. Abbildung~\ref{fig:boxpolycrossrk1ks} zeigt die Gegen\"uberstellung.
+Auch die Kurzschlussmessungen wurden mit der Simulation gegen\"ubergestellt. Zun\"achst wird die Anordnung mit nur einem Kurzschluss betrachtet. Insbesondere im Bereich bis $\SI{50}{\mega\hertz}$ ist eine hohe \"Ubereinstimmung zu sehen. Lediglich im h\"oheren Frequenzbereich, nahe der Resonanz, weichen Messung und Simulation voneinander ab. Abbildung~\ref{fig:boxpolycrossrk1ks} zeigt die Gegen\"uberstellung.
 \begin{figure}[htb]
 	\centering
 	\includegraphics[width=\textwidth]{Z_ges_1KS_SimMeas}
@@ -44,7 +47,7 @@ Auch die Kurzschlussmessungen wurden mit der Simulation gegen\"ubergestellt. Zun
 
 
 
-Die Simulation der weiteren Kurzschl\"ussanordnungen zeigt, dass die Simulation bei zunehmender Anzahl an Kurzschl\"ussen etwas st\"arker von der Messung abweicht, als bei wenigen Kurzschl\"ussen. Abbildung~\ref{fig:boxpolycrossrk7ks} zeigt diesen Effekt beispielhaft f\"ur eine Anzahl von sieben Kurzschl\"ussen.
+Die Simulation der weiteren Kurzschl\"ussanordnungen zeigt, dass je mehr Kurzschlüsse simuliert werden, die Abweichung zur Messung steigt. Abbildung~\ref{fig:boxpolycrossrk7ks} zeigt diesen Effekt beispielhaft f\"ur eine Anzahl von sieben Kurzschl\"ussen.
 \begin{figure}[htb]
 	\centering
 	\includegraphics[width=\textwidth]{Z_ges_7KS_SimMeas}
@@ -56,23 +59,18 @@ Eine m\"ogliche Erkl\"arung daf\"ur w\"are, dass die simulierten Kurzschl\"usse 
 
 
 \section{Auswertung der Kurzschlussanordnungen}
-Nachdem die Messungen, sowie die Simulationen gegeneinander abgeglichen sind, kann die Auswertung der Kurzschlussversuche begonnen werden. Dazu wird nur die reine Ringkernimpedanz r\"uckgerechnet. Analog zum in Abschnitt~\ref{sec:ringkern} beschriebenen vorgehen, wird auch hierzu die Impedanz $Z_{rk}$ aus der gemessenen Impedanz $Z_{ges}$ nach Gleichung~\ref{eq:Zrk} herausgerechnet. Somit l\"asst sich isoliert betrachten, welcher Anteil der Ringkernimpedanz nach dem zuf\"ugen der Kurzschl\"usse noch als Rest verbleibt. Gegen\"ubergestellt werden dazu die in Unterkapitel~\ref{sec:shorts} angef\"uhrten Variationsparameter.
+Nachdem die Messungen, sowie die Simulationen gegeneinander abgeglichen sind, kann die Auswertung der Kurzschlussversuche begonnen werden. Dazu wird nur die reine Ringkernimpedanz betrachtet und nach der Beschreibung in Kapitel~\ref{chap:simulation} berechnet. Analog zum in Abschnitt~\ref{sec:ringkern} beschriebenen Vorgehen, wird auch hierzu die Impedanz $Z_{rk}$ aus der gemessenen Impedanz $Z_{ges}$ nach Gleichung~\ref{eq:Zrk} herausgerechnet. Somit l\"asst sich isoliert betrachten, wie viel Anteil der Ringkernimpedanz durch das Hinzuf\"ugen der Kurzschl\"usse noch verbleibt. Dazu  werden die in Unterkapitel~\ref{sec:shorts} angef\"uhrten Variationsparameter gegenübergestellt.
 \par
-Die maximale realtive Abweichung $a_{max}$ wird f\"ur einen Variationsparameter  nach Gleichung~\ref{eq:maxdiff} berechnet.
+Für die Auswertung werden die Impedanzmesswerte in Relation zur Impedanz der Testbox ohne Kurzschlüsse gesetzt. Die prozentuale Abweichung kann dann wie folgt berechnet und für verschiedene Variationen verglichen werden.
 \begin{equation}
-	\frac{Z_{max}(f) - Z_{min}(f)}{Z_{rk}(f)} = a_{max}(f)
-	\label{eq:maxdiff}
-\end{equation}
-\par
-Dabei entspricht $Z_{max}$ der h\"ochsten gemessenen Impedanz unter \"Anderung des Variationsparameters und $Z_{min}$ der niedrigsten. $Z_{rk}$ bezeichnet die Impedanz des Rinkerns ohne Kurzschl\"usse. Um die relative Abweichung $a_{percent}$ in Prozent zu erhalten, wird die relative Abweichung $a_{max}$ nach Gleichung~\ref{eq:maxdiffpercent} mit 100 multipliziert.
-\begin{equation}
-	\frac{Z_{max}(f) - Z_{min}(f)}{Z_{rk}(f)}\cdot 100 = a_{percent}(f)
+	a_{Prozentual}(f) = \frac{Z_{rk}(f) - Z_{var}(f)}{Z_{rk}(f)}\cdot 100
 	\label{eq:maxdiffpercent}
 \end{equation}
-
+\par
+In der folgenden Ausführung wird für $Z_{var}$ die Impedanz des zu betrachtenden Parameters eingesetzt. $Z_{rk}$ bezeichnet die Impedanz des Ringkerns ohne Kurzschl\"usse.
 
 \subsection{Anzahl der Kurzschl\"usse}
-Um den Einfluss verschiedener Anzahlen an Kurzschl\"ussen zu analysieren werden ein bis acht identische Kurzschl\"usse in der Testbox montiert. Abbildung~\ref{fig:ringcorenumberCST} zeigt die Positionen der montierten Kurzschl\"usse.
+Um den Einfluss verschiedener Anzahlen an Kurzschl\"ussen zu analysieren, werden ein bis acht identische Kurzschl\"usse in der Testbox montiert. Abbildung~\ref{fig:ringcorenumberCST} zeigt die Positionen der montierten Kurzschl\"usse.
 \begin{figure}[htb]
 	\centering
 	\subfloat{\includegraphics[height=0.24\textwidth]{1ksb30}}
@@ -95,7 +93,7 @@ Um den Einfluss verschiedener Anzahlen an Kurzschl\"ussen zu analysieren werden 
 \end{figure}
 \par
 % \todo[inline,color=red!30]{Erkl\"aren warum 8KS bei der Auswertung nicht mehr auftaucht}  
-Die achte Kurzschlusschiene, welche in Grafik~\ref{fig:ringcorenumberCST} zu sehen ist, konnte bei der endg\"ultigen Auswertung nicht ber\"ucksichtigt werden. Dieser Kurzschluss liegt sehr nah am Einkopplungsrohr, sodass ein direkter Kontakt dazu besteht. F\"ugt man einen Abstandshalter aus Schaumstoff zu, so wird das die Einkopplung etwas nach oben gebogen. Die Messung liefert daher verf\"alschte Ergebnisse, welche deutlich st\"arker von der Simulation abweichen, als bei anderen Messungen. Auch dieses Verhalten ist in Anhang~\ref{sec:simmesskomplett} abgebildet. F\"ur die endg\"ultige Auswertung wurden folglich nur 1-7 Kurzschl\"usse betrachtet. Die resultierende Ringkernimpedanz f\"ur die einzelnen Kurzschlussanordnungen ist in Abbildung~\ref{fig:ringcorenumber} \"uber der Frequenz aufgetragen.
+Die achte Kurzschlusschiene, welche in Grafik~\ref{fig:ringcorenumberCST} zu sehen ist, konnte bei der endg\"ultigen Auswertung nicht ber\"ucksichtigt werden. Dieser Kurzschluss liegt sehr nah am Einkopplungsrohr, sodass ein direkter Kontakt dazu besteht. F\"ugt man einen Abstandshalter aus Schaumstoff zu, so wird die Einkopplung etwas nach oben gebogen. Die Messung liefert daher verf\"alschte Ergebnisse, welche deutlich st\"arker von der Simulation abweichen, als bei anderen Messungen. Auch dieses Verhalten ist in Anhang~\ref{sec:simmesskomplett} abgebildet. F\"ur die endg\"ultige Auswertung wurden folglich nur ein bis sieben Kurzschl\"usse betrachtet. Die resultierende Ringkernimpedanz f\"ur die einzelnen Kurzschlussanordnungen ist in Abbildung~\ref{fig:ringcorenumber} \"uber der Frequenz aufgetragen.
 
 
 \newpage
