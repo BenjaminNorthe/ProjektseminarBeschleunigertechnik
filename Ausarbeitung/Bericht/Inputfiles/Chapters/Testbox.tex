@@ -1,6 +1,7 @@
 \section{Testbox}
 \label{sec:testbox}
-Der f\"ur Messungen verwendete Testaufbau wurde aus einem vorangegangenen Projekt an der GSI \"ubernommen~\citep{harzheim2016modeling}. Ziel des Testaufbaus war es, eine reproduzierbare Vermessung des Einflusses der MA-Ringkerne auf die Impedanz einer Einkopplung zu erreichen. Dadurch soll eine Absch\"atzung des Einflusses auf die Strahlimpedanz in der Kavit\"at, sowie die Impedanz, welche der \textcolor{red}{Verst\"arker} am Eingang der Kavit\"at sieht, erm\"oglicht werden. Im Rahmen der Bachelorarbeit von Denys Bast am Fachgebiet Beschleunigertechnik~\citep{bast2017ba} wurde f\"ur diese Testbox auch ein Simulationsmodell erstellt. Dieses wird in Abschnitt~\ref{ch:sim} behandelt. 
+Der f\"ur Messungen verwendete Testaufbau wurde aus einem vorangegangenen Projekt an der GSI \"ubernommen~\citep{harzheim2016modeling}. Ziel des Testaufbaus ist es, eine reproduzierbare Vermessung des Einflusses der MA-Ringkerne auf die Impedanz einer Einkopplung zu erreichen. Dadurch soll eine Absch\"atzung des Einflusses auf die Strahlimpedanz in der Kavit\"at, sowie die Impedanz, welche der \textcolor{red}{Verst\"arker} am Eingang der Kavit\"at sieht, erm\"oglicht werden. Im Rahmen der Bachelorarbeit von Denys Bast am Fachgebiet Beschleunigertechnik~\citep{bast2017ba} wurde f\"ur diese Testbox ein Simulationsmodell erstellt. Dieses wird in Abschnitt~\ref{ch:sim} behandelt.
+
 \par
 Die Abmessungen der Testbox sind Abbildung~\ref{fig:boxdimensions} zu entnehmen.
 \par
@@ -16,24 +17,19 @@ H1 = $\SI{350}{\milli\meter}$\\
 H2 = $\SI{445}{\milli\meter}$\\
 H3 = $\SI{595}{\milli\meter}$
 
-
+Die Testbox selbst besteht aus einem auf Rollen gelagerten Holzrahmen. Dieser ist von innen komplett mit Kupferblech der Dicke $\SI{1}{\milli\meter}$ \"uberzogen. Der Überzug schirmt die Messungen in der Testbox von \"au\ss{}eren Einfl\"ussen ab. Au\ss{}erdem wird damit f\"ur alle Messungen eine identische Umgebung geschaffen, womit diese am Ende vergleichbar bleiben. Um sp\"ater Ringkerne einbringen zu k\"onnen, befindet sich eine Konstruktion aus Holz in der Box, welche als Halterung dient. Diese besteht aus einem Quer- und einem senkrechten Balken, an dem die eigentliche Halterung angeschraubt werden kann. Diese Halterung ist rund und entspricht mit $\SI{260}{\milli\meter}$ dem Innendurchmesser der Ringkerne. Diese k\"onnen dadurch passgenau eingeh\"angt werden. Etwas versetzt zur Mitte der Halterung ist durch ein Loch das Einkopplungsrohr gef\"uhrt, welches mit einem Netzwerk-Analysator verbunden werden kann, um die Feldimpedanz zu messen. Abbildung~\ref{fig:leereBox} zeigt das Innere der Testbox mit eingeh\"angtem Ringkern. 
 \par
-Ausgehend von den bestehenden Aufbauten und Modellen wird im Folgenden analysiert, inwiefern ein oder mehrere sekund\"are Kurzschl\"usse die durch den Ringkern verursachte Impedanz reduzieren k\"onnen. 
-
-
-\newpage
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=0.5\textwidth]{boxleer}
+	\caption{Ge\"offnete Testbox mit Holzkonstruktion als Halterung f\"ur den MA-Ringkern.}
+	\label{fig:leereBox}
+\end{figure}
 
 
 \subsection{Anfangsmessung}
-Um eine grobe Tendenz und ein Gef\"uhl f\"ur den Messaufbau zu erreichen wurden zun\"acht einige Messungen an der unmodifizierten Testbox ausgef\"uhrt. Die Testbox selbst besteht aus einem auf Rollen gelagerten Holzrahmen. Dieser ist von innen komplett mit Kupferblech der Dicke $\SI{1}{\milli\meter}$ \"uberzogen. Der Überzug schirmt die Messungen in der Testbox von \"au\ss{}eren Einfl\"ussen ab. Au\ss{}erdem wird damit f\"ur alle Messungen eine identische Umgebung geschaffen, womit diese am Ende vergleichbar bleiben. Um sp\"ater Ringkerne einbringen zu k\"onnen, befindet sich eine Konstruktion aus Holz in der Box, welche als Halterung dient. Diese besteht aus einem Quer- und einem senkrechten Balken, an dem die eigentliche Halterung angeschraubt werden kann. Diese Halterung ist rund und entspricht mit $\SI{260}{\milli\meter}$ dem Innendurchmesser der Ringkerne. Diese k\"onnen dadurch passgenau eingeh\"angt werden. Etwas versetzt zur Mitte der Halterung ist durch ein Loch das Einkopplungsrohr gef\"uhrt, welches mit einem Netzwerk-Analysator verbunden werden kann, um die Feldimpedanz zu messen. Abbildung~\ref{fig:leereBox} zeigt das Innere der Testbox mit eingeh\"angtem Ringkern.
-\par
-\begin{figure}[htb]
-		\centering
-		\includegraphics[width=0.5\textwidth]{boxleer}
-		\caption{Ge\"offnete Testbox mit Holzkonstruktion als Halterung f\"ur den MA-Ringkern.}
-		\label{fig:leereBox}
-\end{figure}
-F\"ur die ersten Kurzschlussversuche wurden im Test einfache Kupferdr\"ahte mit L\"usterklemmen verwendet. Die Kupferdr\"ahte sind isoliert, sodass diese keinen Kontakt zum Ringkern herstellen. Lediglich die Enden in den Klemmen wurden abgeschliffen, um einen Kontakt herzustellen. Diese Kupferdr\"ahte lassen sich problemlos durch die Bohrungen an der Innenseite des Ringkerns (siehe Abbildung~\ref{fig:innenKern}) f\"uhren, was in Position zumindest an der Innenseite fixiert.
+Um eine grobe Tendenz und ein Gef\"uhl f\"ur den Messaufbau zu erreichen wurden zun\"acht einige Messungen an der unmodifizierten Testbox ausgef\"uhrt. 
+F\"ur die ersten Kurzschlussversuche wurden im Test einfache Kupferdr\"ahte mit L\"usterklemmen verwendet. Die Kupferdr\"ahte sind isoliert, sodass diese keinen Kontakt zum Ringkern herstellen. Lediglich die Enden in den Klemmen wurden für zum Erreichen einer besseren Verbindung abgeschliffen. Diese Kupferdr\"ahte lassen sich problemlos durch die Bohrungen an der Innenseite des Ringkerns (siehe Abbildung~\ref{fig:innenKern}) f\"uhren. Das fixiert die Position, l\"asst aber dennoch Spielraum um die L\"ange zu ver\"andern.
 \par
 \begin{figure}[htb]
 		\centering
@@ -42,12 +38,12 @@ F\"ur die ersten Kurzschlussversuche wurden im Test einfache Kupferdr\"ahte mit 
 		\label{fig:innenKern}
 \end{figure}
 
-
 \newpage
 
 
+
 \subsection{Modifikation der Ringkernhalterung}
-Um reproduzierbare Messungen durchf\"uhren zu k\"onnen sind mehrere Anforderungen an den Aufbau der Testbox zu stellen. Zun\"achst muss die M\"oglichkeit bestehen, den MA-Ringkern in die Testbox einzubringen, sodass sich dieser bei jeder Messung an der gleichen Position befindet. Des weiteren ist eine M\"oglichkeit zu schaffen, bei der die Kurzschl\"usse an festgelegten  Stellen um den Ringkern zu f\"uhren sind, ohne dass diese den Kern dabei ber\"uhren. Um das zu erreichen wurde die Halterung wie in Abbildungen~\ref{fig:BoxKreuzPolygon} und~\ref{fig:BoxKreuzPolygonRK} modifiziert.
+Damit reproduzierbare Messungen durchgef\"uhrt werden k\"onnen, sind mehrere Anforderungen an den Aufbau der Testbox zu stellen. Zun\"achst muss die M\"oglichkeit bestehen, den MA-Ringkern in die Testbox einzubringen, sodass sich dieser bei jeder Messung an der gleichen Position befindet. Des weiteren ist eine M\"oglichkeit zu schaffen, bei der die Kurzschl\"usse an festgelegten  Stellen um den Ringkern zu f\"uhren sind, ohne dass diese den Kern dabei ber\"uhren. Um das zu erreichen wurde die Halterung wie in Abbildungen~\ref{fig:BoxKreuzPolygon} und~\ref{fig:BoxKreuzPolygonRK} modifiziert.
 
 
 % Zum einen Muss eine Ma\ss{}genaue Halterung f\"ur den Ringkern angebracht werden. Dar\"uber hinaus sollte die Halterung einen Anschlag besitzen, um die Position sicher zu stellen. Abbildung~\ref{fig:BoxKreuzPolygon} zeigt die \"Uberarbeitete Halterung. Das Holzkreuz im hinteren Teil der Halterung ragt einige Millimeter \"uber den Rand des Inneren Halterungsrings hervor. Dieser ist zur Widerstandsf\"ahigkeit Fertigung aus Trovidur~\citep{roechling2016} gefertigt, in diesem Material k\"onnen auch problemlos Gewinde eingeschnitten werden. Der Ring besitzt einen Au\ss{}endurchmesser von $\SI{129}{\milli\meter}$, damit MA-Ringkern mit einem Innenradius von $\SI{130}{\milli\meter}$ leicht und dennoch passgenau montierbar bleibt.
@@ -69,7 +65,7 @@ Auf der Innenseite des inneren Rings befindet sich ein Polygonzug. Durch diesen 
 \end{figure}
 
 
-\newpage
+
 
 
 
@@ -95,7 +91,7 @@ Die getesteten Formen der Kurzschl\"usse sind in mehrere Variationsparameter unt
 
 
 
-\newpage
+
 
 
 
@@ -120,7 +116,7 @@ Insgesamt wurden folgende Kurzschl\"usse angefertigt:
 Augehend davon wurden insgesamt 18 verschiedene Messungen durchgef\"uhrt, wobei immer nur eine Form der Schienen gleichzeitig montiert wurde.
 
 
-\newpage
+
 
 
 
