@@ -17,3 +17,5 @@
 *.raw
 *.run.xml
 *.toc
+*.pdf
+!ProjektseminarBeschleunigung.pdf
