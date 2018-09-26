@@ -29,7 +29,7 @@
 % % \tikzset{external/force remake = false}
 % \tikzexternalize
 
-\graphicspath{{graph/}}
+\graphicspath{{graph/}{../../Bericht/Inputfiles/Graphics/}{../../Bericht/Inputfiles/Graphics/Simulation/}}
 
 \author{Julian Buschbaum, Benjamin Northe, Rainer Stellnberger}
 \institute{Institut TEMF~\textbar~Fachgebiet Beschleunigertechnik}
@@ -51,7 +51,6 @@
 
 
 
-
 \begin{frame}\frametitle{Inhalt}
 	\begin{itemize}
 		\item Aufgabenstellung
@@ -64,6 +63,7 @@
 \end{frame}
 
 
+
 \begin{frame}\frametitle{Aufgabenstellung}
 \vspace{-1em}
 \begin{multicols}{2}
@@ -74,9 +74,9 @@
 	\vfill\null
 	\columnbreak
 	\begin{itemize}
-		\item MA(Magnetic Alloy)-Ringkerne zur Stimmung der Kavit\"at
-		\item Im passiven Betrieb der Kavit\"at m\"oglichst wenig Einfluss auf den Strahl gewünscht (Impendanz)
-		\item Theorie: Kurzschlussschaltung um die Ringkerne soll deren Einfluss auf die Impedanz reduzieren
+		\item MA(Magnetic Alloy)-Ringkerne als Last der Kavit\"at
+		\item Im nicht beschleunigenden Betrieb Kavit\"at m\"oglichst wenig Einfluss auf den Strahl gewünscht (geringe Shuntimpendanz)
+		\item Theorie: Kurzschlussschaltung um die Ringkerne soll dessen Einfluss auf die Impedanz reduzieren
 	\end{itemize}
 \end{multicols}
 \end{frame}
@@ -276,7 +276,8 @@
 \begin{frame}\frametitle{Ringkernmodellierung}
 \begin{itemize}
 	\item Ringkernmaterial anhand von Messung modelliert
-	\item Dissipatives, komplexes $\underline{\mu}_r $
+	\item Dissipatives, komplexes $\underline{\mu}_r$
+	\item Material in CST \"ubergeben und f\"ur Simulation verwendet
 \end{itemize}
 \end{frame}
 
@@ -299,9 +300,7 @@
 
 
 \begin{frame}\frametitle{Auswertung der Kurzschlussanordnungen}
-\begin{itemize}
-	\item is ok 
-\end{itemize}
+Zur Gegen\"uberstellung werden folgende 
 
 \end{frame}
 
@@ -330,35 +329,35 @@
 \vspace{-1em}
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.95\textwidth]{Z_RK_width_1KS}
+	\includegraphics[width=0.95\textwidth]{Z_ges_width_frequency_SimMeas}
 \end{figure}
 \end{frame}
 
 
-\begin{frame}\frametitle{Breite der Kurzschlüsse}
-\vspace{-1em}
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.95\textwidth]{RK_Impedanz_width_frequenz}
-\end{figure}
-\end{frame}
+% \begin{frame}\frametitle{Breite der Kurzschlüsse}
+% \vspace{-1em}
+% \begin{figure}[h]
+% 	\centering
+% 	\includegraphics[width=0.95\textwidth]{RK_Impedanz_width_frequenz}
+% \end{figure}
+% \end{frame}
 
 \begin{frame}\frametitle{Länge der Kurzschlüsse}
 \vspace{-1em}
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.95\textwidth]{Z_RK_length_1KS}
+	\includegraphics[width=0.95\textwidth]{Z_ges_length_frequency_SimMeas}
 \end{figure}
 \end{frame}
 
 
-\begin{frame}\frametitle{Länge der Kurzschlüsse}
-\vspace{-1em}
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.95\textwidth]{RK_Impedanz_length_frequenz}
-\end{figure}
-\end{frame}
+% \begin{frame}\frametitle{Länge der Kurzschlüsse}
+% \vspace{-1em}
+% \begin{figure}[h]
+% 	\centering
+% 	\includegraphics[width=0.95\textwidth]{RK_Impedanz_length_frequenz}
+% \end{figure}
+% \end{frame}
 
 
 
