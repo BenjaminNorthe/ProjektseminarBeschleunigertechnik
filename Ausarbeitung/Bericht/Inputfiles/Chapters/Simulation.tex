@@ -23,7 +23,7 @@
                 \label{fig:InnenleiterCST}
             \end{figure}
         
-        Der Ringkern ist als einfacher Hohlzylinder mit den geometrischen Abmessungen des realen Vorbilds modelliert (siehe~Abschnitt~\ref{chap:einleitung}). Dem realen Aufbau entsprechend ist er zentral im Testboxmodell, allerdings freischwebend und ohne die hölzerne Halterung, modelliert.\\
+        Der Ringkern ist als einfacher Hohlzylinder mit den geometrischen Abmessungen des realen Vorbilds modelliert. Dem realen Aufbau entsprechend ist er zentral im Testboxmodell, allerdings freischwebend und ohne die hölzerne Halterung, modelliert.\\
         Ein grundlegender Aspekt der Arbeit von Denys Bast~\citep{bast2017ba} ist, die magnetische Permeabilität des Ringkernmaterials in der Simulation mit dem realen Material in Übereinstimmung zu bringen. Die dabei gewonnenen Daten wurden anfänglich übernommen.\\
         Abbildung~\ref{fig:BoxRKCST} bildet den modellierten Aufbau der Testbox mit Ringkern ab, wie er in \citep{bast2017ba} beschrieben wird.
         
@@ -60,11 +60,12 @@
         
         \subsection{Realitätsgetreue Anpassungen}
         Das bestehende Modell der Testbox und des Ringkerns wurde im Laufe der Arbeit weiter ausgearbeitet, um die Übereinstimmung der Simulationsergebnisse mit den Messungen zu erhöhen. Die nachfolgenden Komponenten wurden in das CST-Modell übernommen, da aufgrund ihrer di-/elektrischen Eigenschaften ein Einfluss auf die Simulation zu erwarten ist.\\
-        \todo[inline,color=red!30]{$\uparrow$ Verweis auf Simulationsergebnisse, wenn Kapitel vorhanden. $\uparrow$}
         Wie aus den Bildern der Testbox in Kapitel~\ref{chap:messaufbau} hervorgeht, befindet sich oberhalb der Einkopplungsstange auf der Anschlussseite ein metallischer Bügel. Er ist möglichst exakt in CST nachgebildet (siehe Abb.~\ref{fig:AnpassungCST}\subref{subfig:Buegel}).\\
         Am Ende der Einkopplungsstange an der Rückwand ist eine zylinderförmige, kupferne Halterung für die Stange montiert, sie ist nach Abbildung~\ref{fig:AnpassungCST}\subref{subfig:Block} modelliert.
         \par
-        Zuletzt wurde für diese Arbeit auch die Holzkonstruktion in CST übernommen, die als Halterung für die Ringkerne in der Testbox dient (siehe Abb.~\ref{fig:AnpassungCST}\subref{subfig:HolzKonst}). Dabei wurden die Holzkreise mit einem dissipativen, durch Austesten und die Messung Anpassen bestimmten $\underline{\varepsilon}_r(\omega) = \varepsilon_r'(\omega)-i\varepsilon_r''(\omega)$ modelliert, da es sich hierbei nicht um die Standardholzmodellierung von CST handelt, wie sie für die Holzbalken verwendet wird, sondern ein geschichtetes Pressspanholz verwendet wird.
+        Zuletzt wurde für diese Arbeit auch die Holzkonstruktion in CST übernommen, die als Halterung für die Ringkerne in der Testbox dient (siehe Abb.~\ref{fig:AnpassungCST}\subref{subfig:HolzKonst}). Dabei wurden die Holzkreise mit einem dissipativen $\underline{\varepsilon}_r(\omega) = \varepsilon_r'(\omega)-i\varepsilon_r''(\omega)$ modelliert. Anfänglich wurde das in CST vorhandene dissipative Holzmaterial verwendet. Da die Simulation aber weiterhin eine Abweichung zur Messung lieferte, wurde das Material nach und nach weiter angepasst (siehe Kapitel \ref{sec:gegenueberst}).
+        
+        % Dabei wurden die Holzkreise mit einem dissipativen, durch Austesten und die Messung Anpassen bestimmten $\underline{\varepsilon}_r(\omega) = \varepsilon_r'(\omega)-i\varepsilon_r''(\omega)$ modelliert, da es sich hierbei nicht um die Standardholzmodellierung von CST handelt, wie sie für die Holzbalken verwendet wird, sondern ein geschichtetes Pressspanholz verwendet wird.
         
             \begin{figure}[htb]
                 \centering
@@ -83,9 +84,11 @@
                 \label{fig:AnpassungCST}
             \end{figure}
         
+        	\newpage
+        
             \subsubsection{Ringkern}
             \label{sec:ringkern}
-            Die echten Ringkerne, wie sie bei der GSI benutzt werden (siehe~Abschnitt~\ref{chap:einleitung}), bestehen nicht nur aus dem MA-Material, sondern besitzen einen Innenkreis aus Eisen, der zur Montage dient. Da das Eisen andere magnetische Eigenschaften als das MA-Material besitzt, wurde dies in das Modell übernommen. Die neue Modellierung des Ringkerns mit innerem Eisenring ist in Abbildung~\ref{fig:RKFeRingCST} dargestellt.
+            Die echten Ringkerne, wie sie bei der GSI benutzt werden, bestehen nicht nur aus dem MA-Material, sondern besitzen einen Innenkreis aus Edelstahl, der zur Montage dient. Der Ringkern mit Halterung wurde daher wie Abbildung~\ref{fig:RKFeRingCST} dargestellt, modeliert und in CST eingefügt. Zun\"achst wurde der gesamte Ringkern mit dissipativen Materialparametern versehen. Durch eine Nachfrage bei der Firma Magnetec konnte in Erfahrung gebracht werden, dass die Halterung als unmagnetisch($\mu_r = 1$) angesehen werden kann. Genauere Simulationsergebnisse können deshalb durch Abändern des Ringkernhalterungsmaterials erhalten werden. Hierbei ist zu beachten, dass auch der Innenradius $r_i$ f\"ur die Berechnung von $\underline{\mu}$ in diesem Schritt ber\"ucksichtigt werden muss. Eine genauere Betrachtung der unterschiedlichen Simulationen ist in Kapitel \ref{sec:gegenueberst} ersichtlich.
                 
                 \begin{figure}[htb]
                     \centering
