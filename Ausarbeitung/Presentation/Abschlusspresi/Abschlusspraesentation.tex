@@ -18,6 +18,7 @@
 \usepackage{multicol}
 \usepackage{subfig}
 \usepackage[binary-units=true,exponent-product=\cdot]{siunitx}
+\usepackage[siunitx, european]{circuitikz}
 % 
 \usepackage{pgfplots}					% graph plotting for pgf/tikz
 \pgfplotsset{compat=1.12, grid style={gray,dotted}}
@@ -194,11 +195,35 @@
 		$\SI{160}{\milli\meter}$ & $\SI{30}{\milli\meter}$ & $\SI{2}{\milli\meter}$ & 1-2 \\ \hline
 	\end{tabular}
 \end{minipage}
-
 \end{frame}
 
 
-
+\begin{frame}\frametitle{RLC-Ersatzschaltbild der Testbox mit Ringkern}
+\begin{figure}[htb]
+                    \centering
+                    \begin{tikzpicture}
+                    \node[above] at (-0.25,1.6) {$Z_{ges}$};
+                    \draw (-0.5,1.4) -- (0.1,1.4);
+                    \draw (-0.5,1.6) -- (0.1,1.6);
+                    \path[fill=black, draw=black]
+                        (0.1,1.3)  -- (0.1,1.7)  -- (0.5,1.5) --  (0.1,1.3);
+                    \begin{circuitikz}
+                    \draw
+                    (2,0) to [resistor =$R_{box}$] (2,3)
+                    (5,0) to [C, l=$C_{box}$] (5,3)
+                    (5,3) to [L, l=$L_{box}$] (9,3)
+                    (9,3) to [short, *-] (10,3)
+                    (9,0) to [short, *-] (10,0)
+                    (10,3) to [resistor =$Z_{rk}$] (10,0)
+                    (0,3) to [short, *-] (5,3)
+                    (0,0) to [short, *-] (5,0)
+                    (8,3) to [short, -*] (9,3)
+                    (5,0) to [short, -*] (9,0);
+                    % 		(0,0) to [short, *- , i_=$I_5$] (1.5,-2);
+                    \end{circuitikz}
+                    \end{tikzpicture}
+                \end{figure}
+\end{frame}
 
 
 
@@ -245,30 +270,76 @@
 
 
 \begin{frame}\frametitle{Anzahl der Kurzschl\"usse}
+\vspace{-1em}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.95\textwidth]{impedance_numberKS_ringcore}
+\end{figure}
+\end{frame}
 
+
+\begin{frame}\frametitle{Anzahl der Kurzschl\"usse}
+ \vspace{-1em}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.65\textwidth]{RK_Impedanz_numberKS_frequenz}
+\end{figure}
 \end{frame}
 
 
 
 \begin{frame}\frametitle{Breite der Kurzschlüsse}
+\vspace{-1em}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.95\textwidth]{Z_RK_width_1KS}
+\end{figure}
+\end{frame}
 
+
+\begin{frame}\frametitle{Breite der Kurzschlüsse}
+\vspace{-1em}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.95\textwidth]{RK_Impedanz_width_frequenz}
+\end{figure}
+\end{frame}
+
+\begin{frame}\frametitle{Länge der Kurzschlüsse}
+\vspace{-1em}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.95\textwidth]{Z_RK_length_1KS}
+\end{figure}
 \end{frame}
 
 
 \begin{frame}\frametitle{Länge der Kurzschlüsse}
-
+\vspace{-1em}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.95\textwidth]{RK_Impedanz_length_frequenz}
+\end{figure}
 \end{frame}
+
 
 
 \begin{frame}\frametitle{Dicke der Kurzschlüsse}
-
+\vspace{-1em}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.95\textwidth]{Z_RK_thick_1KS}
+\end{figure}
 \end{frame}
-
 
 
 
 \begin{frame}\frametitle{Einfluss im Leerlauf befindlicher Schienen auf die Ringkernimpedanz}
-
+\vspace{-1em}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.95\textwidth]{Z_RK_numKS_open}
+\end{figure}
 \end{frame}
 
 
