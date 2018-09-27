@@ -88,8 +88,13 @@
 
 \begin{frame}\frametitle{Herangehensweise}
 \begin{itemize}
-	\item Abwechselnd in Messung und Simulation
+	\item Abwechselnde Messungen und Simulationen
 	\item Parameter f\"ur Kurzschl\"usse abgeleitet
+	\begin{itemize}
+		\item Form
+		\item Abmessungen
+		\item Anzahl
+	\end{itemize}
 \end{itemize}
 \end{frame}
 
@@ -150,7 +155,7 @@
 		\item Lochungen im oberen Teil zur Kontaktherstellung
 		\item Mehrere Variationsparameter der Form gefertigt:
 		\begin{itemize}
-			\item H\"ohe der Kurzschl\"usse in z-Richtung
+			\item L\"ange der Kurzschl\"usse in z-Richtung
 			\item Breite der Kurzschl\"usse in x-Richtung
 			\item Blechdicke der K\"urzschl\"usse
 		\end{itemize}
@@ -197,7 +202,7 @@
 	\begin{tabular}{ | l | l |  l | l | }
 		\hline
 		\multicolumn{3}{|l|}{Kurzschlussform} & Anzahl \\ \cline{0-2}
-		H\"ohe in z & Breite in x & Blechdicke & Kurzschl\"usse \\\hline
+		L\"ange in z & Breite in x & Blechdicke & Kurzschl\"usse \\\hline
 		$\SI{160}{\milli\meter}$ & $\SI{30}{\milli\meter}$ & $\SI{1}{\milli\meter}$ & 1-8 \\
 		$\SI{160}{\milli\meter}$ & $\SI{20}{\milli\meter}$ & $\SI{1}{\milli\meter}$ & 1-2 \\
 		$\SI{160}{\milli\meter}$ & $\SI{50}{\milli\meter}$ & $\SI{1}{\milli\meter}$ & 1-2 \\
@@ -311,12 +316,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%  TEIL3: Rainer %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}\frametitle{Auswertung der Kurzschlussanordnungen}
-Zur Gegen\"uberstellung werden folgende 
-
-\end{frame}
-
-
 
 \begin{frame}\frametitle{Anzahl der Kurzschl\"usse}
 \vspace{-1em}
@@ -394,10 +393,10 @@ Zur Gegen\"uberstellung werden folgende
 \begin{frame}\frametitle{Zusammenfassung}
 Was wurde erreicht:
 \begin{itemize}
-	\item Testbox wurde vermessen
-	\item Testbox wurde modifiziert um reproduzierbar zu messen
-	\item Messungen wurde durchgef\"uhrt und sind pr\"azise und reproduzierbar
-	\item Simulation angepasst, dass diese für weitere Variationen genutzt werden kann
+	\item Messung Testbox
+	\item Modifikation 
+	\item Reproduzierbare Messungen
+	\item Simulation
 	\item Ergebnisse quantifiziert, evaluiert
 \end{itemize}
 \end{frame}
@@ -405,20 +404,18 @@ Was wurde erreicht:
 
 \begin{frame}\frametitle{Fazit}
 \begin{itemize}
-	\item Ein Kurzschluss bewirkt eine Verringerung der Impedanz von ca. $\SI{80}{\%}$
-	\item Mit sieben Kurzschl\"ussen Verringerung \"uber $\SI{98}{\%}$
-	\item Breite, Länge und Dicke haben vergleichbar geringen Einfluss
-\end{itemize}
-Welche Schlüsse werden daraus gezogen:
-\begin{itemize}
-	\item Je nach Einbaumöglichkeit besser schmalere, kurze, nah um den Ringkern und passende Anzahl wählen
+	\item Reduktion ein Kurzschluss: \textbf{80\,\%}
+	\item Reduktion sieben Kurzschl\"usse:  \textbf{>\,98\,\%}
+	\item Geringer Einfluss restlicher Paramter
+	\item Empfehlung
 \end{itemize}
 \end{frame}
 
 \begin{frame}\frametitle{Ausblick}
 \begin{itemize}
-	\item Verbesserung des Simulationsmodells mit besserer Anpassung der Materialparameter
-	\item Anpassung der Parameter an die Umgebung der Kavität
+	\item Verbesserung des Simulationsmodells
+	\item Modelierung der Kavit\"at in CST
+	\item Messung an der Kavit\"at
 \end{itemize}
 \end{frame}
 
