@@ -1,5 +1,5 @@
 \section{Gegen\"uberstellung der Simulations und Messergebnisse}\label{sec:gegenueberst}
-Ausgehend von den beschriebenen Modellierungsschritten kann nun eine sichere Evaluierung der Kurzschlussanordnungen angesetzt werden. Dabei k\"onnen die Messungen sowie das Simulationsmodell zur Kreuzvalidierung verwendet werden, sodass Mess- und Simulationsfehler weitestgehend auszuschlie\ss{}en sind. Dazu wurde das Simulationsmodell, nach den in Absatz~\ref{ch:sim} versehenen Anpassungen zun\"achst einmal zur Referenz mit den Messungen verglichen. Dazu wird die Testbox ohne Ringkern, jedoch mit fertigem Halterungsaufbau gegen\"ubergestellt. Abbildung~\ref{fig:boxpolycross} zeigt diese Gegen\"uberstellung.
+Ausgehend von den beschriebenen Modellierungsschritten kann nun eine sichere Evaluierung der Kurzschlussanordnungen angesetzt werden. Dabei k\"onnen die Messungen sowie das Simulationsmodell zur Kreuzvalidierung verwendet werden, sodass Mess- und Simulationsfehler weitestgehend auszuschlie\ss{}en sind. Dazu wurde das Simulationsmodell, nach den in Absatz~\ref{chap:simulation} versehenen Anpassungen zun\"achst einmal zur Referenz mit den Messungen verglichen. Dazu wird die Testbox ohne Ringkern, jedoch mit fertigem Halterungsaufbau gegen\"ubergestellt. Abbildung~\ref{fig:boxpolycross} zeigt diese Gegen\"uberstellung.
 
 \begin{figure}[htb]
 	\centering
@@ -9,8 +9,13 @@ Ausgehend von den beschriebenen Modellierungsschritten kann nun eine sichere Eva
 \end{figure}
 
 Mit Hilfe von Abbildung~\ref{fig:boxpolycross} können zunächst Messung und Simulation auf Plausibilität überprüft werden.\\
+<<<<<<< HEAD
+Die Resonanzfrequenz $f_r = \frac{1}{2\pi \cdot \sqrt{LC}}$ eines LC-Schwingkreise sinkt mit steigendem $\varepsilon_r$, da hierdurch die Kapazität erhöht wird. Je mehr Einbauten der Testbox hinzugefügt werden, desto größer kann $\varepsilon_r$ im primitiven Ersatzschaltbild angesehen werden, wodurch die Resonanz zu niedrigeren Frequenzen hin verschoben wird.\\
+Außerdem zeigt die Abbildung, wie die Simulation durch die Veränderung von $\varepsilon_r$ der Holzkonstruktion mit der Messung besser in Übereinstimmung gebracht werden konnte. Es wurde hierbei vornehmlich $\varepsilon_r'$ variiert. Dieser Vorgehensweise liegt die Annahme zugrunde, dass das verwendete Material in der Testbox mit en für die Simulation hinterlegten Werten übereinstimmt.
+=======
 Die Resonanzfrequenz $f_r = \frac{1}{2\pi \cdot \sqrt{LC}}$ eines LC-Schwingkreise sinkt mit steigendem $\varepsilon_r$, da hierdurch die Kapazität erhöht wird. Je mehr Einbauten der Testbox hinzugefügt werden, desto größer kann $\varepsilon_r$ einer Ersatzkapazit\"at angesehen werden, wodurch die Resonanz zu niedrigeren Frequenzen hin verschoben wird.\\
 Außerdem zeigt die Abbildung, wie die Simulation durch die Veränderung von $\varepsilon_r$ der Holzkonstruktion mit der Messung besser in Übereinstimmung gebracht werden konnte. Es wurde hierbei vornehmlich $\varepsilon_r'$ variiert. Dieser Vorgehensweise liegt die Annahme zugrunde, dass das verwendete Material in der Testbox mit den für die Simulation hinterlegten Werten übereinstimmt.
+>>>>>>> 699c838b2c1928b020b3f7dfead72a908fac4304
 \par
 Als n\"achstes ist das Modell mit eingesetztem Ringkern zu evaluieren. Dazu wird der Ringkern f\"ur die Simulation auf der Position um den Trovidur Ring gelegt, um die reale Box genau abzubilden. Der Aufbau ist in Abbildung~\ref{fig:RKFeRingCST} gezeigt. Auch hierbei wird wieder die gemessene Impedanz an der Einkopplung direkt mit der Impedanz aus der Simulation gegen\"ubergestellt. Diese Auswertung ist in Abbildung~\ref{fig:boxpolycrossrk} zu sehen.
 
@@ -27,8 +32,8 @@ Als n\"achstes ist das Modell mit eingesetztem Ringkern zu evaluieren. Dazu wird
 	\label{fig:boxpolycrossrk}
 \end{figure}
 
-F\"ur die erste Simulation wurde sowohl der Ringkern als auch die Halterung als dissipativ modeliert. In den CST-Einstellung wurde das Adaptive Mesh Refinement ausgeschaltet und eine fixe Meshgr\"o\ss{}e von rund $3\cdot10^6$ Meshzellen verwendet. Die Simulation zeigt eine gewisse Welligkeit und nach wie vor eine Abweichung zur Messung. Diese Abweichung konnte bis $\SI{20}{\mega\hertz}$ minimiert werden indem die Ringkernhaltung durch Edelstahl mit $\mu_r = 1$ modeliert.
-Dieses Vorgehen wurde jedoch nicht für die weiteren Kurzschluss-Simulationen angewendet (siehe \ref{sec:rksimulation}). 
+Die Simulation zeigt auch nach mehrfacher Wiederholung mit verschiedenen Einstellungen eine starke Welligkeit. Die Konvergenz gegen die gemessenen Werte ist in dieser Anordnung daher schwer zu bewerten. 
+\todo[inline,color=red!30]{Etwas mehr ausarbeiten wenn mir was einf\"allt}
 % \par
 % Die Gegen\"uberstellung wird f\"ur alle in Abschnitt~\ref{sec:testbox} genannten Kurzschlussanordnungen in gleicher Form durchgef\"uhrt.
 % Es zeigt sich schnell, dass insbesondere im niedrigen Frequenzbereich eine sehr geringe Abweichung zu erkennen ist. Die Mittlere Abweichung zwischen Simulation und Messung liegt unterhalb von $\SI{20}{\mega\hertz}$ bei nur 
