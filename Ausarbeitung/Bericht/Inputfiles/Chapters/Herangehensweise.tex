@@ -1,6 +1,14 @@
 \section{Herangehensweise}
-Für die Analyse des Kurzschließens der Ringkerne wurden in einem ersten Schritt Messungen an einer Testbox durchgeführt. Diese Messungen wurden noch sehr einfach gehalten, um erste Tendenzen für die Einflüsse verschiedener Parameter zu gewinnen. Mit diesen Beobachtungen wurden dann Simulationen mit der Software CST durchgeführt, bei denen diese ersten Ergebnisse noch weiter ausgearbeitet wurden und für eine Verbesserung der Herangehensweise an die Messungen dienten.
-Der bestehende Testaufbau wurde entsprechend der gewonnen Erkenntnisse modifiziert, um eine reproduzierbare Analyse relevanter Parameter zu erreichen.
-Abschließend wurden die Ergebnisse aus Simulation und Messung gegenübergestellt und untersucht, welche Parameter besonders ins Gewicht fallen. Somit kann schließlich eine Aussage darüber getroffen werden, wie MA-Ringkerne bestmöglich kurzgeschlossen werden können.
+Die Analyse des Kurzschließens der MA-Ringkerne wurden nach dem Verfahren einer Kreuzvalidierung erarbeitet. Dazu wurden abwechselnd Messungen und Simulationen durchgeführt, die Ergebnisse aufeinander abgestimmt und für das weitere Vorgehen zu Grunde gelegt.\\
+In einem ersten Schritt wurden dazu Messungen an einer Testbox (siehe Kapitel~\ref{chap:messaufbau}) durchgeführt, um erste Erkenntnisse über das Verhalten der Ringkernimpedanz bei Kurzschließen zu erlangen. Aus diesen Erkenntnissen wurden erste Parameter für die Kurzschlüsse abgeleitet, die einen Einfluss auf die Ringkernimpedanz haben können:
+    \begin{itemize}
+        \item die Form
+        \item die Anzahl
+        \item die geometrischen Abmessungen
+        \item die Anordnung um den Ringkern
+    \end{itemize}
+Dabei zeigte sich auch, dass für die Reproduzierbarkeit der Messungen Modifikationen an der vorhandenen Testbox erfolgen müssen, welche in Kapitel~\ref{chap:messaufbau} näher ausgeführt werden. Einige Einflussparameter, wie etwa die Anordnung der Kurzschlüsse um den Ringkern, wurden nicht weiter untersucht, da der beobachtete Einfluss aufgrund der Geometrie (Symmetrie) einer Kavität und den darin befindenden Ringkernen nicht relevant ist. Ergebnisse hierfür sind im Anhang~\ref{anhang:Anordnung} dargestellt.\\
+Mit den verschiedenen Parametern wurden in einem zweiten Schritt Simulationen mit der Software CST für numerische Feldberechnungen aufgesetzt, die die ersten Messergebnisse überprüfen sollten und weitere Erkenntnisse für den weiteren Arbeitsprozess liefern sollten. Aus diesen wurden dann Variationen für die Kurzschlüsse erarbeitet, die die genannten Parameter validierbar machen (siehe dazu Abschnitt~\ref{sec:shorts}). Außerdem wurden die Modifikationen ausgearbeitet, die die Messungen reproduzierbar machen.\\
+Die modifizierte Testbox und die ausgearbeiteten Kurzschlüsse wurden in dann in einem weiteren Durchgang vermessen. Daraufhin wurde die Simulation besser an die realen Umstände, wie Geometrie, Materialparameter und dergleichen angepasst (Kapitel~\ref{chap:simulation}), um in einem letzten Schritt die gesammelten Ergebnisse plausibel auszuwerten. Hieraus wurden schließlich Gesichtspunkte für ein gutes Kurzschließen der Ringkerne abgeleitet.
 \par
-Die erläuterten Arbeitsschritte werden in den folgenden Kapiteln jeweils näher ausgeführt.
+Die erläuterten Arbeitsschritte, technische Details der Mess- und Simulationsumgebung sowie die Ergebnisse der Kreuzvalidierung werden in den folgenden Kapiteln jeweils näher ausgeführt.
