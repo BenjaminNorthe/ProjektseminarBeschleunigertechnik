@@ -1,2 +1,2 @@
-lualatex --enable-write18 Abschlusspraesentation.tex
+pdflatex --enable-write18 Abschlusspraesentation.tex
 
