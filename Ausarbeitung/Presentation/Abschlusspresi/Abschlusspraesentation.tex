@@ -110,7 +110,7 @@
 	\vfill\null
 	\columnbreak
 	\begin{itemize}
-		\item Innen mit Kupferblech (Dicke $\SI{1}{\milli\meter}$ ausgekleidet
+		\item Innen mit Kupferblech (Dicke $\SI{1}{\milli\meter}$) ausgekleidet
 		\item Holzkonstruktion als Ringkernhalterung
 		\item Kupferrohr zur Einkopplung
 		\begin{itemize}
@@ -489,7 +489,7 @@
 Ausblick:
 \begin{itemize}
 	\item Verbesserung des Simulationsmodells
-	\item Modelierung der Kavit\"at in CST
+	\item Modellierung der Kavit\"at in CST
 	\item Messung an der Kavit\"at
 \end{itemize}
 \end{frame}
@@ -539,6 +539,21 @@ Ausblick:
 		\underline{Z}_{rk} = \frac{\underline{Z}_{ges}\cdot(R_{box}+j\omega L_{box}-\omega^2\cdot R_{box}L_{box}C_{box}) - j\omega R_{box}L_{box}}{R_{box}-\underline{Z}_{ges}\cdot(1+j\omega R_{box}C_{box})}
 	\end{equation}
 \end{frame}
+
+
+\begin{frame}\frametitle{Backup: Simulationseinstellung}
+\begin{itemize}
+	\item 2te Ordnung Approximation
+	\item Tetraeder Gitter
+	\item Kein ``Adaptive Mesh Refinement''
+	\begin{itemize}
+		\item Zun\"achst Gitter erstellt und begutachtet
+		\item Gr\"o\ss{}tes Gitter (ca 3 Mio Zellen) Bei Simulation mit Kern ohne Kurzschl\"usse
+	\end{itemize}
+
+\end{itemize}
+\end{frame}
+
 
 
 \end{document}
